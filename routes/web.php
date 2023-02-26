@@ -16,3 +16,19 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('layout', function () {
+    return view('profile.layout');
+});
+Route::get('u', function () {
+    return view('profile.u');
+});
+Route::get('dashboard', function () {
+    return view('profile.dashboard');
+});
+Route::get('overview', function () {
+    return view('admin.overview');
+});
+Route::get('profile', function () {
+    return view('admin.profile');
+});
