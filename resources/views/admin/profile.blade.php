@@ -65,17 +65,16 @@
                     </a>
 
                     <a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#" data-bs-toggle="dropdown">
-                        <img src="img/avatars/avatar.jpg" class="avatar img-fluid rounded me-1" alt="Charles Hall" />
+                        <img src="./vesctor.png" class="avatar img-fluid rounded me-1" alt="Charles Hall" />
                         <span class="text-dark">admin</span>
                     </a>
                     <div class="dropdown-menu dropdown-menu-end">
-                        <a class="dropdown-item" href="pages-profile.html"><i class="align-middle me-1"
+                        <a class="dropdown-item" href="profile"><i class="align-middle me-1"
                                 data-feather="user"></i> Profile</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="index.html"><i class="align-middle me-1"
-                                data-feather="settings"></i> Settings & Privacy</a>
-                        <a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="help-circle"></i>
-                            Help Center</a>
+                                data-feather="settings"></i> Settings</a>
+                     
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Log out</a>
                     </div>
@@ -98,7 +97,7 @@
                             <h5 class="card-title mb-0">Profile Details</h5>
                         </div>
                         <div class="card-body text-center">
-                            <img src="img/avatars/avatar-4.jpg" alt="Christina Mason"
+                            <img src="./vesctor.png" alt="Christina Mason"
                                 class="img-fluid rounded-circle mb-2" width="128" height="128" />
                             <h5 class="card-title mb-0">U K</h5>
                             <div class="text-muted mb-2">Graphic Designer | Web Developer</div>
@@ -141,141 +140,62 @@
                     </div>
                 </div>
 
-                <div class="col-md-8 col-xl-9">
-                    <div class="card">
+
+                <div class="col-12 col-md-8 d-flex order-2 order-xxl-3">
+                    <div class="card flex-fill w-100">
                         <div class="card-header">
 
-                            <h5 class="card-title mb-0">Activities</h5>
+                            <h5 class="card-title mb-0">Admin Profile</h5>
                         </div>
-                        <div class="card-body h-100">
+                        <div class="card-body d-flex">
+                            <div class="align-self-center w-100">
 
-                            <div class="d-flex align-items-start">
-                                <img src="img/avatars/avatar-5.jpg" width="36" height="36" class="rounded-circle me-2"
-                                    alt="Vanessa Tucker">
-                                <div class="flex-grow-1">
-                                    <small class="float-end text-navy">5m ago</small>
-                                    <strong>Vanessa Tucker</strong> started following <strong>Christina
-                                        Mason</strong><br />
-                                    <small class="text-muted">Today 7:51 pm</small><br />
+                                <table class="table">
+                                    <th>Profile Details</th>
+                                    <tbody>
 
-                                </div>
-                            </div>
-
-                            <hr />
-                            <div class="d-flex align-items-start">
-                                <img src="img/avatars/avatar.jpg" width="36" height="36" class="rounded-circle me-2"
-                                    alt="Charles Hall">
-                                <div class="flex-grow-1">
-                                    <small class="float-end text-navy">30m ago</small>
-                                    <strong>Charles Hall</strong> posted something on <strong>Christina Mason</strong>'s
-                                    timeline<br />
-                                    <small class="text-muted">Today 7:21 pm</small>
-
-                                    <div class="border text-sm text-muted p-2 mt-1">
-                                        Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper
-                                        libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel,
-                                        luctus
-                                        pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec
-                                        vitae sapien ut libero venenatis faucibus. Nullam quis ante.
-                                    </div>
-
-                                    <a href="#" class="btn btn-sm btn-danger mt-1"><i class="feather-sm"
-                                            data-feather="heart"></i> Like</a>
-                                </div>
-                            </div>
-
-                            <hr />
-                            <div class="d-flex align-items-start">
-                                <img src="img/avatars/avatar-4.jpg" width="36" height="36" class="rounded-circle me-2"
-                                    alt="Christina Mason">
-                                <div class="flex-grow-1">
-                                    <small class="float-end text-navy">1h ago</small>
-                                    <strong>Christina Mason</strong> posted a new blog<br />
-
-                                    <small class="text-muted">Today 6:35 pm</small>
-                                </div>
-                            </div>
-
-                            <hr />
-                            <div class="d-flex align-items-start">
-                                <img src="img/avatars/avatar-2.jpg" width="36" height="36" class="rounded-circle me-2"
-                                    alt="William Harris">
-                                <div class="flex-grow-1">
-                                    <small class="float-end text-navy">3h ago</small>
-                                    <strong>William Harris</strong> posted two photos on <strong>Christina
-                                        Mason</strong>'s timeline<br />
-                                    <small class="text-muted">Today 5:12 pm</small>
-
-                                    <div class="row g-0 mt-1">
-                                        <div class="col-6 col-md-4 col-lg-4 col-xl-3">
-                                            <img src="img/photos/unsplash-1.jpg" class="img-fluid pe-2" alt="Unsplash">
-                                        </div>
-                                        <div class="col-6 col-md-4 col-lg-4 col-xl-3">
-                                            <img src="img/photos/unsplash-2.jpg" class="img-fluid pe-2" alt="Unsplash">
-                                        </div>
-                                    </div>
-
-                                    <a href="#" class="btn btn-sm btn-danger mt-1"><i class="feather-sm"
-                                            data-feather="heart"></i> Like</a>
-                                </div>
-                            </div>
-
-                            <hr />
-                            <div class="d-flex align-items-start">
-                                <img src="img/avatars/avatar-2.jpg" width="36" height="36" class="rounded-circle me-2"
-                                    alt="William Harris">
-                                <div class="flex-grow-1">
-                                    <small class="float-end text-navy">1d ago</small>
-                                    <strong>William Harris</strong> started following <strong>Christina
-                                        Mason</strong><br />
-                                    <small class="text-muted">Yesterday 3:12 pm</small>
-
-                                    <div class="d-flex align-items-start mt-1">
-                                        <a class="pe-3" href="#">
-                                            <img src="img/avatars/avatar-4.jpg" width="36" height="36"
-                                                class="rounded-circle me-2" alt="Christina Mason">
-                                        </a>
-                                        <div class="flex-grow-1">
-                                            <div class="border text-sm text-muted p-2 mt-1">
-                                                Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.
-                                                Maecenas nec odio et ante tincidunt tempus.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <hr />
-                            <div class="d-flex align-items-start">
-                                <img src="img/avatars/avatar-4.jpg" width="36" height="36" class="rounded-circle me-2"
-                                    alt="Christina Mason">
-                                <div class="flex-grow-1">
-                                    <small class="float-end text-navy">1d ago</small>
-                                    <strong>Christina Mason</strong> posted a new blog<br />
-                                    <small class="text-muted">Yesterday 2:43 pm</small>
-                                </div>
-                            </div>
-
-                            <hr />
-                            <div class="d-flex align-items-start">
-                                <img src="img/avatars/avatar.jpg" width="36" height="36" class="rounded-circle me-2"
-                                    alt="Charles Hall">
-                                <div class="flex-grow-1">
-                                    <small class="float-end text-navy">1d ago</small>
-                                    <strong>Charles Hall</strong> started following <strong>Christina
-                                        Mason</strong><br />
-                                    <small class="text-muted">Yesterdag 1:51 pm</small>
-                                </div>
-                            </div>
-
-                            <hr />
-                            <div class="d-grid">
-                                <a href="#" class="btn btn-primary">Load more</a>
+                                        <tr>
+                                            <td>username</td>
+                                            <td class="text-end">Ume Kulsoom</td>
+                                 
+                                          
+                                        </tr>
+                                        <tr>
+                                            <td>email</td>
+                                            <td class="text-end">kulsoom2204e@aptechgdn.net</td>
+                                
+                                        </tr>
+                                        <tr>
+                                            <td>Phone</td>
+                                            <td class="text-end">021438322</td>
+                                         
+                                        </tr>
+                                        <tr>
+                                            <td>project name</td>
+                                            <td class="text-end">Immunify</td>
+                                           
+                                        </tr>
+                                        <tr>
+                                            <td>begining date</td>
+                                            <td class="text-end">12-1-23</td>
+                                           
+                                        </tr>
+                                        <tr>
+                                            <td>ending date</td>
+                                            <td class="text-end">16-6-23</td>
+                                           
+                                        </tr>
+                                  
+                                    
+                                   
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </div> 
+
             </div>
+
 
  
 @endsection

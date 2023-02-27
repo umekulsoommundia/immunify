@@ -5,7 +5,7 @@
                 <li class="nav-item dropdown">
                     <a class="nav-icon dropdown-toggle" href="#" id="alertsDropdown" data-bs-toggle="dropdown">
                         <div class="position-relative">
-                            <i class="align-middle" data-feather="bell"> f</i>
+                            <i class="align-middle" data-feather="bell"> </i>
                             <span class="indicator">4</span>
                         </div>
                     </a>
@@ -65,16 +65,15 @@
 
                     <a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#" data-bs-toggle="dropdown">
                         <img src="img/avatars/avatar.jpg" class="avatar img-fluid rounded me-1" alt="Charles Hall" />
-                        <span class="text-dark">Admin</span>
+                        <span style="color:#203C71;" >Admin</span>
                     </a>
                     <div class="dropdown-menu dropdown-menu-end">
-                        <a class="dropdown-item" href="pages-profile.html"><i class="align-middle me-1"
+                        <a class="dropdown-item" href="profile"><i class="align-middle me-1"
                                 data-feather="user"></i> Profile</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="index.html"><i class="align-middle me-1"
-                                data-feather="settings"></i> Settings & Privacy</a>
-                        <a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="help-circle"></i>
-                            Help Center</a>
+                                data-feather="settings"></i> Settings</a>
+                     
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Log out</a>
                     </div>
@@ -86,7 +85,7 @@
     <main class="content">
         <div class="container-fluid p-0">
 
-            <h1 class="h3 mb-3"><strong>Analytics</strong> Dashboard</h1>
+            <h1 style="color:#203C71;  font-size:30px;" class="h3 mb-3"><strong style="font-weight:35px; font-size:30px; ">Analytics</strong> Dashboard</h1>
 
             <div class="row">
                 <div class="col-xl-6 col-xxl-5 d-flex">
@@ -97,7 +96,7 @@
                                     <div class="card-body">
                                         <div class="row">
                                             <div class="col mt-0">
-                                                <h5 class="card-title">New Patients</h5>
+                                                <h5 class="card-title" style="color: #0A77B1;">New Patients</h5>
                                             </div>
 
                                             <div class="col-auto">
@@ -106,7 +105,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <h1 class="mt-1 mb-3">120</h1>
+                                        <h1 style="color:#203C71;" class="mt-1 mb-3">120</h1>
                                         <div class="mb-0">
                                             <span class="text-danger"> <i class="mdi mdi-arrow-bottom-right"></i> -3.65%
                                             </span>
@@ -118,7 +117,7 @@
                                     <div class="card-body">
                                         <div class="row">
                                             <div class="col mt-0">
-                                                <h5 class="card-title">Monthly Visitors</h5>
+                                                <h5 class="card-title" style="color: #0A77B1;">Monthly Visitors</h5>
                                             </div>
 
                                             <div class="col-auto">
@@ -127,7 +126,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <h1 class="mt-1 mb-3">40</h1>
+                                        <h1  style="color:#203C71;" class="mt-1 mb-3">40</h1>
                                         <div class="mb-0">
                                             <span class="text-success"> <i class="mdi mdi-arrow-bottom-right"></i> 5.25%
                                             </span>
@@ -141,7 +140,7 @@
                                     <div class="card-body">
                                         <div class="row">
                                             <div class="col mt-0">
-                                                <h5 class="card-title">Appointments</h5>
+                                                <h5 class="card-title" style="color: #0A77B1;">Appointments</h5>
                                             </div>
 
                                             <div class="col-auto">
@@ -150,7 +149,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <h1 class="mt-1 mb-3">56</h1>
+                                        <h1  style="color:#203C71;"class="mt-1 mb-3">56</h1>
                                         <div class="mb-0">
                                             <span class="text-success"> <i class="mdi mdi-arrow-bottom-right"></i> 6.65%
                                             </span>
@@ -162,7 +161,7 @@
                                     <div class="card-body">
                                         <div class="row">
                                             <div class="col mt-0">
-                                                <h5 class="card-title">Requests</h5>
+                                                <h5 class="card-title"  style="color: #0A77B1;" >Requests</h5>
                                             </div>
 
                                             <div class="col-auto">
@@ -170,8 +169,8 @@
                                                     <i class="align-middle" data-feather="shopping-cart"></i>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <h1 class="mt-1 mb-3">42</h1>
+                                                        </div>
+                                        <h1 style="color:#203C71;" class="mt-1 mb-3">42</h1>
                                         <div class="mb-0">
                                             <span class="text-danger"> <i class="mdi mdi-arrow-bottom-right"></i> -2.25%
                                             </span>
@@ -188,7 +187,7 @@
                     <div class="card flex-fill w-100">
                         <div class="card-header">
 
-                            <h5 class="card-title mb-0">Analytics</h5>
+                            <h5 style="color: #0A77B1;" class="card-title mb-0">Analytics</h5>
                         </div>
                         <div class="card-body py-3">
                             <div class="chart chart-sm">
@@ -204,7 +203,7 @@
                     <div class="card flex-fill w-100">
                         <div class="card-header">
 
-                            <h5 class="card-title mb-0">Requests</h5>
+                            <h5 style="color: #0A77B1;"  class="card-title mb-0">Requests</h5>
                         </div>
                         <div class="card-body d-flex">
                             <div class="align-self-center w-100">
@@ -218,7 +217,7 @@
                                             <td class="text-end">3:00 pm</td>
                                             <td class="text-end">Indus</td>
                                             <td class="text-end">13-10-22</td>
-                                            <td><span class="btn btn-success">Accept</span></td>
+                                            <td><span style="background-color:#3A55A4;" class="btn text-white ">Accept</span></td>
                                             <td><span class="btn ">x</span></td>
                                           
                                         </tr>
@@ -227,7 +226,7 @@
                                             <td class="text-end">3:00 pm</td>
                                             <td class="text-end">Indus</td>
                                             <td class="text-end">13-10-22</td>
-                                            <td><span class="btn btn-success">Accept</span></td>
+                                            <td><span style="background-color:#3A55A4;" class="btn text-white ">Accept</span></td>
                                             <td><span class="btn ">x</span></td>
                                         </tr>
                                         <tr>
@@ -235,7 +234,7 @@
                                             <td class="text-end">3:00 pm</td>
                                             <td class="text-end">Indus</td>
                                             <td class="text-end">13-10-22</td>
-                                            <td><span class="btn btn-success">Accept</span></td>
+                                            <td><span  style="background-color:#3A55A4;" class="btn text-white ">Accept</span></td>
                                             <td><span class="btn ">x</span></td>
                                         </tr>
                                         <tr>
@@ -243,7 +242,7 @@
                                             <td class="text-end">3:00 pm</td>
                                             <td class="text-end">Indus</td>
                                             <td class="text-end">13-10-22</td>
-                                            <td><span class="btn btn-success">Accept</span></td>
+                                            <td><span  style="background-color:#3A55A4;" class="btn text-white ">Accept</span></td>
                                             <td><span class="btn ">x</span></td>
                                         </tr>
                                         <tr>
@@ -251,7 +250,7 @@
                                             <td class="text-end">3:00 pm</td>
                                             <td class="text-end">Indus</td>
                                             <td class="text-end">13-10-22</td>
-                                            <td><span class="btn btn-success">Accept</span></td>
+                                            <td><span  style="background-color:#3A55A4;" class="btn text-white ">Accept</span></td>
                                             <td><span class="btn">x</span></td>
                                         </tr>
                                         <tr>
@@ -259,7 +258,7 @@
                                             <td class="text-end">3:00 pm</td>
                                             <td class="text-end">Indus</td>
                                             <td class="text-end">13-10-22</td>
-                                            <td><span class="btn btn-success">Accept</span></td>
+                                            <td><span  style="background-color:#3A55A4;" class="btn text-white ">Accept</span></td>
                                             <td><span class="btn ">x</span></td>
                                         </tr>
                                     </tbody>
@@ -276,12 +275,12 @@
                     <div class="card flex-fill">
                         <div class="card-header">
 
-                            <h5 class="card-title mb-0">Calendar</h5>
+                            <h5 style="color: #0A77B1;"  class="card-title mb-0">Calendar</h5>
                         </div>
                         <div class="card-body d-flex">
                             <div class="align-self-center w-100">
-                                <div class="chart">
-                                    <div id="datetimepicker-dashboard"></div>
+                                <div  class="chart">
+                                    <div style="color: red;" id="datetimepicker-dashboard"></div>
                                 </div>
                             </div>
                         </div>
@@ -294,7 +293,7 @@
                     <div class="card flex-fill">
                         <div class="card-header">
 
-                            <h5 class="card-title mb-0">Schedule Appointments</h5>
+                            <h5 style=" color:#0A77B1;" class="card-title mb-0">Schedule Appointments</h5>
                         </div>
                         <table class="table table-hover my-0">
                             <thead>
@@ -372,6 +371,7 @@
 
             </div>
 
-
+</div>
+</main>
 
 @endsection

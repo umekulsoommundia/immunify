@@ -29,14 +29,32 @@
 * {
     font-family: 'Lato', sans-serif;
 }
+
+
+
+
+.flatpickr-day.selected {
+  background-color: #3A55A4!important;
+  color:"white";
+  border-color: #3A55A4;
+}
+
+/* Change the border and fill color of the today's date */
+
+
+/* Change the border and fill color of the hovered date */
+.flatpickr-day:hover {
+  background-color: white;
+  border-color: blue;
+}
 </style>
 
 <body>
     <div class="wrapper">
-        <nav id="sidebar" class="sidebar js-sidebar">
-            <div class="sidebar-content js-simplebar">
+        <nav id="sidebar" class="sidebar js-sidebar" >
+            <div  style="background-color:#0a77b1;" class="sidebar-content js-simplebar">
                 <a class="sidebar-brand" href="index.html">
-                    <span class="align-middle">Immunify</span>
+                  <span class="align-middle">   <img src="./logo.png" height="80px" width="80px"></span>
                 </a>
 
                 <ul class="sidebar-nav">
@@ -44,35 +62,35 @@
                         Pages
                     </li>
 
-                    <li class="sidebar-item ">
-                        <a class="sidebar-link" href="overview">
+                    <li class="sidebar-item " >
+                        <a class="sidebar-link" href="overview" style="background-color:#0a77b1;">
                             <i class="align-middle" data-feather="sliders"></i> <span
                                 class="align-middle">OverView</span>
                         </a>
                     </li>
 
                     <li class="sidebar-item">
-                        <a class="sidebar-link" href="profile">
+                        <a class="sidebar-link" href="profile" style="background-color:#0a77b1;">
                             <i class="align-middle" data-feather="user"></i> <span class="align-middle">profile</span>
                         </a>
                     </li>
 
 
                     <li class="sidebar-item">
-                        <a class="sidebar-link" href="pages-sign-in.html">
+                        <a class="sidebar-link" href="pages-sign-in.html" style="background-color:#0a77b1;">
                             <i class="align-middle" data-feather="log-in"></i> <span class="align-middle">Sign In</span>
                         </a>
                     </li>
 
                     <li class="sidebar-item">
-                        <a class="sidebar-link" href="pages-sign-up.html">
+                        <a class="sidebar-link" href="pages-sign-up.html" style="background-color:#0a77b1;">
                             <i class="align-middle" data-feather="user-plus"></i> <span class="align-middle">Sign
                                 Up</span>
                         </a>
                     </li>
 
-                    <li class="sidebar-item">
-                        <a class="sidebar-link" href="pages-blank.html">
+                    <li class="sidebar-item"> 
+                        <a class="sidebar-link" href="pages-blank.html" style="background-color:#0a77b1;">
                             <i class="align-middle" data-feather="book"></i> <span class="align-middle">Schedule</span>
                         </a>
                     </li>
@@ -82,35 +100,35 @@
                     </li>
 
                     <li class="sidebar-item">
-                        <a class="sidebar-link" href="ui-buttons.html">
+                        <a class="sidebar-link" href="ui-buttons.html" style="background-color:#0a77b1;">
                             <i class="align-middle" data-feather="square"></i> <span class="align-middle">Add
                                 Hospital</span>
                         </a>
                     </li>
 
                     <li class="sidebar-item">
-                        <a class="sidebar-link" href="ui-forms.html">
+                        <a class="sidebar-link" href="hospital" style="background-color:#0a77b1;">
                             <i class="align-middle" data-feather="check-square"></i> <span
                                 class="align-middle">Hospitals</span>
                         </a>
                     </li>
 
                     <li class="sidebar-item">
-                        <a class="sidebar-link" href="ui-cards.html">
+                        <a class="sidebar-link" href="ui-cards.html" style="background-color:#0a77b1;">
                             <i class="align-middle" data-feather="grid"></i> <span class="align-middle">Add
                                 Admins</span>
                         </a>
                     </li>
 
                     <li class="sidebar-item">
-                        <a class="sidebar-link" href="ui-typography.html">
+                        <a class="sidebar-link" href="ui-typography.html" style="background-color:#0a77b1;">
                             <i class="align-middle" data-feather="align-left"></i> <span
                                 class="align-middle">Vaccines</span>
                         </a>
                     </li>
 
                     <li class="sidebar-item">
-                        <a class="sidebar-link" href="icons-feather.html">
+                        <a class="sidebar-link" href="icons-feather.html"style="background-color:#0a77b1;">
                             <i class="align-middle" data-feather="coffee"></i> <span class="align-middle">Parents</span>
                         </a>
                     </li>
@@ -120,14 +138,14 @@
                     </li>
 
                     <li class="sidebar-item">
-                        <a class="sidebar-link" href="charts-chartjs.html">
+                        <a class="sidebar-link" href="charts-chartjs.html" style="background-color:#0a77b1;">
                             <i class="align-middle" data-feather="bar-chart-2"></i> <span
                                 class="align-middle">Charts</span>
                         </a>
                     </li>
 
                     <li class="sidebar-item">
-                        <a class="sidebar-link" href="maps-google.html">
+                        <a class="sidebar-link" href="maps-google.html" style="background-color:#0a77b1;">
                             <i class="align-middle" data-feather="map"></i> <span class="align-middle">Maps</span>
                         </a>
                     </li>
@@ -176,8 +194,9 @@ document.addEventListener("DOMContentLoaded", function() {
             datasets: [{
                 label: "Sales ($)",
                 fill: true,
+             
                 backgroundColor: gradient,
-                borderColor: window.theme.primary,
+                borderColor:"#0A77B1",
                 data: [
                     2115,
                     1562,
@@ -271,10 +290,11 @@ document.addEventListener("DOMContentLoaded", function() {
             ],
             datasets: [{
                 label: "This year",
-                backgroundColor: window.theme.primary,
-                borderColor: window.theme.primary,
-                hoverBackgroundColor: window.theme.primary,
-                hoverBorderColor: window.theme.primary,
+                color:"#3A55A4",
+                backgroundColor:"#3A55A4",
+                borderColor: "#3A55A4",
+                hoverBackgroundColor: "#3A55A4",
+                hoverBorderColor:"#3A55A4",
                 data: [54, 67, 41, 55, 62, 45, 55, 73, 60, 76, 48, 79],
                 barPercentage: .75,
                 categoryPercentage: .5
@@ -298,7 +318,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 xAxes: [{
                     stacked: false,
                     gridLines: {
-                        color: "transparent"
+                        color: "#0A77B1"
                     }
                 }]
             }
@@ -385,6 +405,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 </script>
+
 
 </body>
 

@@ -16,7 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-<<<<<<< HEAD
 
 Route::get('layout', function () {
     return view('profile.layout');
@@ -32,17 +31,14 @@ Route::get('overview', function () {
 });
 Route::get('profile', function () {
     return view('admin.profile');
-=======
-Route::get('profile', function () {
-    return view('profile.index');
 });
-Route::get('pages-profile', function () {
-    return view('profile.pages-profile');
+Route::get('hospital', function () {
+    return view('admin.hospital');
 });
-Route::get('pages-sign-in', function () {
-    return view('profile.pages-sign-in');
+
+Route::get('setting', function () {
+    return view('admin.hospital');
 });
-Route::get('pages-sign-up', function () {    
-    return view('pages-sign-up');
->>>>>>> bafbbbb5afeee689b6839155b142579d3cf9b7d5
+Route::get('notification', function () {
+    return view('admin.notifications');
 });

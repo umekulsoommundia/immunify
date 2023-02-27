@@ -53,7 +53,7 @@
             </a>
         </div>
         <div class="dropdown-menu-footer">
-            <a href="#" class="text-muted">Show all notifications</a>
+            <a href="notification" class="text-muted">Show all notifications</a>
         </div>
     </div>
 </li>
