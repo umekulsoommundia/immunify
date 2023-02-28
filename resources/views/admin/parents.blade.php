@@ -91,17 +91,17 @@
                 <div class="card flex-fill">
                     <div class="card-header">
 
-                        <h5 class="card-title mb-0">Hospitals Data</h5>
+                        <h5 class="card-title mb-0">Parents  Data</h5>
                     </div>
                     <table class="table table-hover my-0">
                         <thead>
                             <tr>
                                 <th>Id</th>
-                                <th class="d-none d-xl-table-cell">Name</th>
-                                <th class="d-none d-xl-table-cell">Vaccine</th>
-                                <th>contact</th>
-                                <th class="d-none d-md-table-cell">Address</th>
-                                <th class="d-none d-md-table-cell">Timing</th>
+                                <th class="d-none d-xl-table-cell">username</th>
+                                <th class="d-none d-xl-table-cell">email</th>
+                                <th>password</th>
+                                <th class="d-none d-md-table-cell">contact</th>
+                                <th class="d-none d-md-table-cell">address</th>
                             </tr>
                         </thead>
                         <tbody>

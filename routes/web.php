@@ -37,8 +37,33 @@ Route::get('hospital', function () {
 });
 
 Route::get('setting', function () {
-    return view('admin.hospital');
+    return view('admin.setting');
 });
+
 Route::get('notification', function () {
     return view('admin.notifications');
+});
+
+Route::get('addHospital', function () {
+    return view('admin.addhospitals');
+});
+
+Route::get('vaccines', function () {
+    return view('admin.vaccines');
+});
+
+Route::get('parents', function () {
+    return view('admin.parents');
+});
+Route::get('child', function () {
+    return view('admin.child');
+});
+Route::get('schedule', function () {
+    return view('admin.schedule');
+});
+Route::get('signup', function () {
+    return view('admin.signup');
+});
+Route::get('signin', function () {
+    return view('admin.signin');
 });

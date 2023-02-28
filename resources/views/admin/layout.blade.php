@@ -17,6 +17,7 @@
 
     <title>Admin Panel</title>
 
+
     <link href="css/app.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -76,22 +77,10 @@
                     </li>
 
 
-                    <li class="sidebar-item">
-                        <a class="sidebar-link" href="pages-sign-in.html" style="background-color:#0a77b1;">
-                            <i class="align-middle" data-feather="log-in"></i> <span class="align-middle">Sign In</span>
-                        </a>
-                    </li>
-
-                    <li class="sidebar-item">
-                        <a class="sidebar-link" href="pages-sign-up.html" style="background-color:#0a77b1;">
-                            <i class="align-middle" data-feather="user-plus"></i> <span class="align-middle">Sign
-                                Up</span>
-                        </a>
-                    </li>
 
                     <li class="sidebar-item"> 
-                        <a class="sidebar-link" href="pages-blank.html" style="background-color:#0a77b1;">
-                            <i class="align-middle" data-feather="book"></i> <span class="align-middle">Schedule</span>
+                        <a class="sidebar-link" href="schedule" style="background-color:#0a77b1;">
+                            	<i class="align-middle me-2" data-feather="calendar"></i></i> <span class="align-middle">Schedule</span>
                         </a>
                     </li>
 
@@ -100,7 +89,7 @@
                     </li>
 
                     <li class="sidebar-item">
-                        <a class="sidebar-link" href="ui-buttons.html" style="background-color:#0a77b1;">
+                        <a class="sidebar-link" href="addHospital" style="background-color:#0a77b1;">
                             <i class="align-middle" data-feather="square"></i> <span class="align-middle">Add
                                 Hospital</span>
                         </a>
@@ -113,42 +102,28 @@
                         </a>
                     </li>
 
-                    <li class="sidebar-item">
-                        <a class="sidebar-link" href="ui-cards.html" style="background-color:#0a77b1;">
-                            <i class="align-middle" data-feather="grid"></i> <span class="align-middle">Add
-                                Admins</span>
-                        </a>
-                    </li>
+         
 
                     <li class="sidebar-item">
-                        <a class="sidebar-link" href="ui-typography.html" style="background-color:#0a77b1;">
-                            <i class="align-middle" data-feather="align-left"></i> <span
+                        <a class="sidebar-link" href="vaccines" style="background-color:#0a77b1;">
+                            <i class="align-middle" data-feather="database"></i> <span
                                 class="align-middle">Vaccines</span>
                         </a>
                     </li>
 
                     <li class="sidebar-item">
-                        <a class="sidebar-link" href="icons-feather.html"style="background-color:#0a77b1;">
-                            <i class="align-middle" data-feather="coffee"></i> <span class="align-middle">Parents</span>
+                        <a class="sidebar-link" href="parents"style="background-color:#0a77b1;">
+                            <i class="align-middle" data-feather="user"></i> <span class="align-middle">Parents</span>
                         </a>
                     </li>
-
-                    <li class="sidebar-header">
-                        Plugins & Addons
-                    </li>
-
                     <li class="sidebar-item">
-                        <a class="sidebar-link" href="charts-chartjs.html" style="background-color:#0a77b1;">
-                            <i class="align-middle" data-feather="bar-chart-2"></i> <span
-                                class="align-middle">Charts</span>
+                        <a class="sidebar-link" href="child"style="background-color:#0a77b1;">
+                            <i class="align-middle" data-feather="user"></i> <span class="align-middle">Child</span>
                         </a>
                     </li>
 
-                    <li class="sidebar-item">
-                        <a class="sidebar-link" href="maps-google.html" style="background-color:#0a77b1;">
-                            <i class="align-middle" data-feather="map"></i> <span class="align-middle">Maps</span>
-                        </a>
-                    </li>
+
+             
                 </ul>
 
 
