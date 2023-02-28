@@ -67,3 +67,6 @@ Route::get('signup', function () {
 Route::get('signin', function () {
     return view('admin.signin');
 });
+Route::get('index', function () {
+    return view('immunify.index');
+});
