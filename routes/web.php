@@ -70,3 +70,54 @@ Route::get('signin', function () {
 Route::get('index', function () {
     return view('immunify.index');
 });
+
+Route::get('hospitalOverview', function () {
+    return view('hospital.hospitalOverview');
+});
+
+Route::get('parentOverview', function () {
+    return view('parents.parentOverview');
+});
+Route::get('check', function () {
+    return view('parents.check');
+});
+Route::get('hospitalProfile', function () {
+    return view('hospital.profile');
+});
+Route::get('hospitalAppointments', function () {
+    return view('hospital.appointments');
+});
+Route::get('hospitalPatients', function () {
+    return view('hospital.patients');
+});
+Route::get('hospitalRequests', function () {
+    return view('hospital.requests');
+});
+Route::get('hospitalVaccines', function () {
+    return view('hospital.vaccines');
+});
+Route::get('hospitalSchedule', function () {
+    return view('hospital.schedule');
+});
+
+Route::get('patientsmore', function () {
+    return view('hospital.patientsmore');
+});
+Route::get('parentProfile', function () {
+    return view('parents.profile');
+});
+Route::get('parentAppointment', function () {
+    return view('parents.appointment');
+});
+Route::get('parentHospitals', function () {
+    return view('parents.hospital');
+});
+Route::get('parentMedicalreport', function () {
+    return view('parents.medicalreport');
+});
+Route::get('parentVaccine', function () {
+    return view('parents.vaccine');
+});
+Route::get('parentSchedule', function () {
+    return view('parents.schedule');
+});
