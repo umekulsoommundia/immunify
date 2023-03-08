@@ -71,6 +71,10 @@ Route::get('index', function () {
     return view('immunify.index');
 });
 
+Route::get('extra', function () {
+    return view('immunify.extra');
+});
+
 Route::get('hospitalOverview', function () {
     return view('hospital.hospitalOverview');
 });
@@ -121,3 +125,13 @@ Route::get('parentVaccine', function () {
 Route::get('parentSchedule', function () {
     return view('parents.schedule');
 });
+
+Route::get('admin',[adminControl::class,'login']);
+
+Route::post('loginPost',[adminControl::class,'loginPostfun']);
+
+Route::get('register',[adminControl::class,'register']);
+
+
+
+route::post('userRegister',[adminControl::class,'userRegister']);

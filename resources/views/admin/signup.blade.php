@@ -60,7 +60,7 @@ body {
                                         <img src="./logoBluePng.png" alt="Charles Hall" class="img-fluid" width="132"
                                             height="132" />
                                     </div>
-                                    <form>
+                                    <form method="POST" enctype="multipart-formdata">
 
                                         <div class="mb-3">
                                             <label class="form-label">username</label>

@@ -1,1226 +1,718 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Untree.co">
+    <link rel="shortcut icon" href="favicon.png">
 
-    <title>Medilab Bootstrap Template - Index</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
+    <meta name="description" content="" />
+    <meta name="keywords" content="bootstrap, bootstrap4" />
 
-    <!-- Favicons -->
-    <link href="assetss/img/favicon.png" rel="icon">
-    <link href="assetss/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Source+Serif+Pro:wght@400;700&display=swap"
         rel="stylesheet">
 
-    <!-- Vendor CSS Files -->
-    <link href="assetss/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-    <link href="assetss/vendor/animate.css/animate.min.css" rel="stylesheet">
-    <link href="assetss/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assetss/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assetss/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="assetss/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="assetss/vendor/remixicon/remixicon.css" rel="stylesheet">
-    <link href="assetss/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="css/daterangepicker.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400&display=swap"
+        rel="stylesheet">
 
-    <!-- Template Main CSS File -->
-    <link href="assetss/css/style.css" rel="stylesheet">
+    <title>Immunify</title>
 
-
+    <style>
+    * {
+        font-family: 'Lato', sans-serif;
+    }
+    </style>
 </head>
 
 <body>
 
-    <!-- ======= Top Bar ======= -->
 
+    <div class="site-mobile-menu site-navbar-target">
+        <div class="site-mobile-menu-header">
+            <div class="site-mobile-menu-close">
+                <span class="icofont-close js-menu-toggle"></span>
+            </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+    </div>
 
-    <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top">
-        <div class="container d-flex align-items-center">
+    <nav class="site-nav">
+        <div class="container">
+            <div class="site-navigation">
+                <a href="index.html" class="logo m-0"> <img src="./logoBluePng.png" height="80px" width="80px"> <span
+                        class="text-primary">.</span></a>
 
-
-
-            <a href="index.html" class="logo me-auto"><img src="./logoBluePng.png" alt="" class="img-fluid"></a>
-
-            <nav id="navbar" class="navbar order-last order-lg-0">
-                <ul>
-                    <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-                    <li><a class="nav-link scrollto" href="#about">About</a></li>
-                    <li><a class="nav-link scrollto" href="#services">Services</a></li>
-                    <li><a class="nav-link scrollto" href="#departments">Departments</a></li>
-                    <li><a class="nav-link scrollto" href="#doctors">Doctors</a></li>
-                    <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-                        <ul>
-                            <li><a href="#">Drop Down 1</a></li>
-                            <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i
-                                        class="bi bi-chevron-right"></i></a>
-                                <ul>
-                                    <li><a href="#">Deep Drop Down 1</a></li>
-                                    <li><a href="#">Deep Drop Down 2</a></li>
-                                    <li><a href="#">Deep Drop Down 3</a></li>
-                                    <li><a href="#">Deep Drop Down 4</a></li>
-                                    <li><a href="#">Deep Drop Down 5</a></li>
+                <ul class="js-clone-nav d-none d-lg-inline-block text-left site-menu float-right">
+                    <li class="active"><a href="index.html" style="color:#0976B1;">Home</a></li>
+                    <li class="has-children">
+                        <a href="#" style="color:#0976B1;">Dropdown</a>
+                        <ul class="dropdown">
+                            <li><a href="elements.html" style="color:#0976B1;">Elements</a></li>
+                            <li><a href="#">Menu One </a></li>
+                            <li class="has-children">
+                                <a href="#">Menu Two</a>
+                                <ul class="dropdown">
+                                    <li><a href="#">Sub Menu One</a></li>
+                                    <li><a href="#">Sub Menu Two</a></li>
+                                    <li><a href="#">Sub Menu Three</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#">Drop Down 2</a></li>
-                            <li><a href="#">Drop Down 3</a></li>
-                            <li><a href="#">Drop Down 4</a></li>
+                            <li><a href="#">Menu Three</a></li>
                         </ul>
                     </li>
-                    <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                    <li><a href="services.html" style="color:#0976B1;">Why</a></li>
+                    <li><a href="about.html" style="color:#0976B1;">About</a></li>
+                    <li><a href="contact.html" style="color:#3B54A5;">Contact Us</a></li>
+                    <li><a href="contact.html"> <button type="button" class="btn btn-info"
+                                style="background-color:#0976B1;">Log In</button></a></li>
+
                 </ul>
-                <i class="bi bi-list mobile-nav-toggle"></i>
-            </nav><!-- .navbar -->
 
-            <a href="#appointment" class="appointment-btn scrollto"><span class="d-none d-md-inline">Make an</span>
-                Appointment</a>
+                <a href="#"
+                    class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none light"
+                    data-toggle="collapse" data-target="#main-navbar">
+                    <span></span>
+                </a>
 
+            </div>
         </div>
-    </header><!-- End Header -->
-
-    <!-- ======= Hero Section ======= -->
-    <section class="vh-100">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-6 text-black">
-
-                    <div class="px-5 ms-xl-4">
-                        <i class="fas fa-crow fa-2x me-3 pt-5 mt-xl-4" style="color: #709085;"></i>
-                        <span class="h1 fw-bold mb-0">Logo</span>
-                    </div>
-
-                    <div class="d-flex align-items-center h-custom-2 px-5 ms-xl-4 mt-5 pt-5 pt-xl-0 mt-xl-n5">
-
-                        <form style="width: 23rem;">
-
-                            <h3 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Log in</h3>
-
-                            <div class="form-outline mb-4">
-                                <input type="email" id="form2Example18" class="form-control form-control-lg" />
-                                <label class="form-label" for="form2Example18">Email address</label>
-                            </div>
-
-                            <div class="form-outline mb-4">
-                                <input type="password" id="form2Example28" class="form-control form-control-lg" />
-                                <label class="form-label" for="form2Example28">Password</label>
-                            </div>
-
-                            <div class="pt-1 mb-4">
-                                <button class="btn btn-info btn-lg btn-block" type="button">Login</button>
-                            </div>
-
-                            <p class="small mb-5 pb-lg-2"><a class="text-muted" href="#!">Forgot password?</a></p>
-                            <p>Don't have an account? <a href="#!" class="link-info">Register here</a></p>
-
-                        </form>
-
-                    </div>
-
-                </div>
-
-
-
-                <div class="bg-image col-sm-6 px-0 d-none d-sm-block w-100 vh-100" style="
-    background-image: url('./pexels-anna-shvets-3786234.jpg');
-    object-fit: cover; object-position: left;
-    height: 100vh; width:100%;"></div>
-            </div>
-
-        </div>
-        </div>
-    </section>
-
-
-
-
-
-
-
-
-
-
-    <!-- Background image -->
-
-
-    <section class="vh-100">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-6 text-black">
-
-                    <div class="px-5 ms-xl-4">
-                        <i class="fas fa-crow fa-2x me-3 pt-5 mt-xl-4" style="color: #709085;"></i>
-                        <span class="h1 fw-bold mb-0">Logo</span>
-                    </div>
-
-                    <div class="d-flex align-items-center h-custom-2 px-5 ms-xl-4 mt-5 pt-5 pt-xl-0 mt-xl-n5">
-
-                        <form style="width: 23rem;">
-
-                            <h3 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Log in</h3>
-
-                            <div class="form-outline mb-4">
-                                <input type="email" id="form2Example18" class="form-control form-control-lg" />
-                                <label class="form-label" for="form2Example18">Email address</label>
-                            </div>
-
-                            <div class="form-outline mb-4">
-                                <input type="password" id="form2Example28" class="form-control form-control-lg" />
-                                <label class="form-label" for="form2Example28">Password</label>
-                            </div>
-
-                            <div class="pt-1 mb-4">
-                                <button class="btn btn-info btn-lg btn-block" type="button">Login</button>
-                            </div>
-
-                            <p class="small mb-5 pb-lg-2"><a class="text-muted" href="#!">Forgot password?</a></p>
-                            <p>Don't have an account? <a href="#!" class="link-info">Register here</a></p>
-
-                        </form>
-
-                    </div>
-
-
-                    <div class="col-sm-6 px-0 d-none d-sm-block">
-                        <img src="./pexels-anna-shvets-3786234.jpg" alt="Login image" class="w-100 vh-100"
-                            style="object-fit: cover; object-position: left;">
-                    </div>
-                </div>
-            </div>
-    </section>
-
-    <div class="bg-image" style="
-    background-image: url('./pexels-anna-shvets-3786234.jpg');
-    height: 100vh; width:100%;
-  "></div>
-
-
-
-
-
-    <div class="container-fluid">
-
-
-        <div class="row">
-            <div class="col-md-6 col-xl-6 flex">
-
-                <h1>YOUR IMMUNITY IS <br>
-                    OUR PRIORITY</h1>
-                <h2>Welcome To Immunify</h2>
-                <a href="#about" class="btn-get-started scrollto">Get Started</a>
-            </div>
-
-            <div class="row">
-                <div class="col-12 col-md-4 d-flex order-2 order-xxl-3">
-
-                    <img src="./pexels-anna-shvets-3786234.jpg" alt="login form" class="img-fluid" />
-                </div>
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <section>
-                <div class="container py-5 h-100">
-
-                    <div class="col-md-6 col-lg-6 d-flex">
-                        <div class="text-center mt-4">
-                            <h1>YOUR IMMUNITY IS <br>
-                                OUR PRIORITY</h1>
-                            <h2>Welcome To Immunify</h2>
-                            <a href="#about" class="btn-get-started scrollto">Get Started</a>
-                            <div class="row g-0">
-                                <div class="col-md-6 col-lg-6 d-none d-md-block">
-                                    <img src="./pexels-anna-shvets-3786234.jpg" alt="login form" class="img-fluid" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-            </section>
-
-            <section class="d-flex align-items-center">
-                <div class="container">
-
-
-
-                    <h1>YOUR IMMUNITY IS <br>
-                        OUR PRIORITY</h1>
-                    <h2>Welcome To Immunify</h2>
-                    <a href="#about" class="btn-get-started scrollto">Get Started</a>
-                </div>
-            </section><!-- End Hero -->
-
-            <main id="main">
-
-                <!-- ======= Why Us Section ======= -->
-                <section id="why-us" class="why-us">
-                    <div class="container">
-
-
-
-
-
-
-
-
-
-                        <div class="col-lg-8 d-flex align-items-stretch">
-                            <div class="icon-boxes d-flex flex-column justify-content-center">
-                                <div class="row">
-                                    <div class="col-xl-4 d-flex align-items-stretch">
-                                        <div class="icon-box mt-4 mt-xl-0">
-                                            <i class="bx bx-receipt"></i>
-                                            <h4>Corporis voluptates sit</h4>
-                                            <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi
-                                                ut
-                                                aliquip</p>
+    </nav>
+
+
+    <div class="hero" style="background-color:#FFFFFF;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <div class="intro-wrap">
+                        <h1 class="mb-5" style="color:#203C71;"><span class="d-block">Your Immunity Is </span> Our <span
+                                class="typed-words" style="font-weight:35px; font-size:70px;"></span></h1>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <form class="form">
+                                    <div class="row mb-2">
+                                        <div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-3">
+                                            <select name="" id="" class="form-control custom-select">
+                                                <option value="">Location</option>
+                                                <option value="">Karachi</option>
+                                                <option value="">Islamabad</option>
+                                                <option value="">Lahore</option>
+                                                <option value="">Quetta</option>
+
+                                            </select>
                                         </div>
-                                    </div>
-                                    <div class="col-xl-4 d-flex align-items-stretch">
-                                        <div class="icon-box mt-4 mt-xl-0">
-                                            <i class="bx bx-cube-alt"></i>
-                                            <h4>Ullamco laboris ladore pan</h4>
-                                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                                                deserunt</p>
+                                        <div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-5">
+                                            <input type="text" class="form-control" name="daterange">
                                         </div>
-                                    </div>
-                                    <div class="col-xl-4 d-flex align-items-stretch">
-                                        <div class="icon-box mt-4 mt-xl-0">
-                                            <i class="bx bx-images"></i>
-                                            <h4>Labore consequatur</h4>
-                                            <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis
-                                                facere
-                                            </p>
+
+                                        <div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-4">
+                                            <select name="" id="" class="form-control custom-select">
+                                                <option value="">Vaccine Type</option>
+                                                <option value="">Karachi</option>
+                                                <option value="">Islamabad</option>
+                                                <option value="">Lahore</option>
+                                                <option value="">Quetta</option>
+
+                                            </select>
+
                                         </div>
+
                                     </div>
-                                </div>
-                            </div><!-- End .content-->
+                                    <br>
+                                    <div class="row align-items-center">
+                                        <div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-4">
+                                            <input type="submit" class=" align-items-center btn btn-primary btn-block"
+                                                style="background-color:#203C71;" value="Submit">
+                                        </div>
+
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="slides">
+                        <img src="./header1.jpg" alt="Image" class="img-fluid active">
+                        <img src="./header2.jpg" alt="Image" class="img-fluid">
+                        <img src="./header3.jpg" alt="Image" class="img-fluid">
+                        <img src="./header1.jpg" alt="Image" class="img-fluid">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="untree_co-section">
+        <div class="container">
+            <div class="row mb-5 justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <h2 class="section-title text-center mb-3"
+                        style=" font-family: 'Lato', sans-serif;  font-size:54px; color:#203C71;">Why Should I Vaccine?
+                    </h2>
+                    <!-- <p style=" font-family: 'Lato', sans-serif; font-size:18px; color: #0A77B1;">Vaccination is a safe and effective way to protect children from serious and sometimes deadly diseases. It works by stimulating the immune system to produce antibodies against specific viruses or bacteria, so that if your child is exposed to the disease in the future, their immune system can quickly recognize and fight it off.</p> -->
+                </div>
+            </div>
+            <div class="row align-items-stretch">
+                <div class="col-lg-4 order-lg-1">
+                    <div class="h-100">
+                        <div class="frame h-100">
+                            <div class="feature-img-bg h-100" style="background-image: url('./h2.jpg');"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-sm-6 col-lg-4 feature-1-wrap d-md-flex flex-md-column order-lg-1">
+
+                    <div class="feature-1 d-md-flex">
+                        <div class="align-self-center">
+                            <!-- <span class="flaticon-house display-4 text-primary"></span> -->
+                            <h3 style="color:#203C71;">Protect against diseases</h3>
+                            <p style="color: #0A77B1;" class="mb-0">Vaccines protect children from a range of diseases,
+                                such as measles, polio, whooping cough, and more.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-1 ">
+                        <div class="align-self-center">
+                            <!-- <span class="flaticon-restaurant display-4 text-primary"></span> -->
+                            <h3 style="color:#203C71;">Prevent outbreaks:</h3>
+                            <p style="color: #0A77B1;" class="mb-0">When enough people in a community are vaccinated
+                                against a disease, it becomes much less likely to spread. </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-6 col-sm-6 col-lg-4 feature-1-wrap d-md-flex flex-md-column order-lg-3">
+
+                    <div class="feature-1 d-md-flex">
+                        <div class="align-self-center">
+                            <!-- <span class="flaticon-mail display-4 text-primary"></span> -->
+                            <h3 style="color:#203C71;">Safe and effective</h3>
+                            <p style="color: #0A77B1;" class="mb-0">The risks of getting a vaccine are far less than the
+                                risks of getting the diseases they protect against</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-1 d-md-flex">
+                        <div class="align-self-center">
+                            <!-- <span class="flaticon-phone-call display-4 text-primary"></span> -->
+                            <h3 style="color:#203C71;">Saves time and money</h3>
+                            <p style="color: #0A77B1;" class="mb-0">Preventing disease through vaccination saves time
+                                and money by avoiding the need for medical treatment, hospitalization</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="untree_co-section count-numbers py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+                    <div class="counter-wrap">
+                        <div class="counter">
+                            <span class="" data-number="9313">0</span>
+                        </div>
+                        <span class="caption">Completed Vaccination</span>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+                    <div class="counter-wrap">
+                        <div class="counter">
+                            <span class="" data-number="65">0</span>
+                        </div>
+                        <span class="caption">Hospitals</span>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+                    <div class="counter-wrap">
+                        <div class="counter">
+                            <span class="" data-number="12000">0</span>
+                        </div>
+                        <span class="caption">Users</span>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+                    <div class="counter-wrap">
+                        <div class="counter">
+                            <span class="" data-number="22">0</span>
+                        </div>
+                        <span class="caption">Cities</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="untree_co-section">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+
+                <div class="col-lg-6">
+
+                    <img src="./h2.jpg" alt="Image" class="img-fluid rounded-20">
+                    </figure>
+                </div>
+
+
+                <div class="col-lg-4">
+                    <div class="custom-block" data-aos="fade-up" data-aos-delay="100">
+                        <h2 class="section-title"
+                            style=" font-family: 'Lato', sans-serif;  font-size:34px; color:#203C71;">Book Appointment
+                        </h2>
+                        <form class="contact-form bg-white">
+
+
+                            <div class="form-group">
+                                <label class="text-black" for="email"
+                                    style=" font-family: 'Lato', sans-serif; font-size:18px; color:#0A77B1;">Name</label>
+                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+
+                            </div>
+
+                            <div class="form-group">
+                                <label class="text-black" for="email"
+                                    style=" font-family: 'Lato', sans-serif; font-size:18px; color:#0A77B1;">Hospital
+                                    Name</label>
+                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+
+                            </div>
+                            <div class="form-group">
+                                <label class="text-black" for="password"
+                                    style=" font-family: 'Lato', sans-serif; font-size:18px; color:#0A77B1;">Vaccine
+                                    Name</label>
+                                <input type="password" class="form-control" id="password">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="text-black" for="select"
+                                    style=" font-family: 'Lato', sans-serif; font-size:18px; color:#0A77B1;">Select</label>
+
+                                <select name="" id="select" class="custom-select">
+                                    <option value="">xyz vaccine</option>
+                                    <option value="">abc vaccine</option>
+                                </select>
+
+                            </div>
+                            <div class="form-group">
+
+                            </div>
+                            <button type="submit" class="btn btn-primary">Book</button>
+                        </form>
+                    </div>
+
+            
+                </div>
+
+
+            </div>
 
         </div>
-        </section><!-- End Why Us Section -->
+    </div>
+    </div>
+    </div>
 
-        <!-- ======= About Section ======= -->
-        <section id="about" class="about">
-            <div class="container-fluid">
 
+    <div class="untree_co-section">
+        <div class="container">
+            <div class="row text-center justify-content-center mb-5">
+                <div class="col-lg-7">
+                    <h2 class="section-title text-center">Hospitals</h2>
+                </div>
+            </div>
+
+            <div class="owl-carousel owl-3-slider">
+
+                <div class="item">
+                    <a class="media-thumb" href="images/hero-slider-1.jpg" data-fancybox="gallery">
+                        <div class="media-text">
+                            <h3>xyz</h3>
+                            <span class="location">karachi</span>
+                        </div>
+                        <img src="./hospital1.jpg" alt="Image" class="img-fluid">
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a class="media-thumb" href="images/hero-slider-2.jpg" data-fancybox="gallery">
+                        <div class="media-text">
+                            <h3>Oia</h3>
+                            <span class="location">Greece</span>
+                        </div>
+                        <img src="./hospital.jpg" alt="Image" class="img-fluid">
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a class="media-thumb" href="images/hero-slider-3.jpg" data-fancybox="gallery">
+                        <div class="media-text">
+                            <h3>Perhentian Islands</h3>
+                            <span class="location">Malaysia</span>
+                        </div>
+                        <img src="./hospital4.jpg" alt="Image" class="img-fluid">
+                    </a>
+                </div>
+
+
+                <div class="item">
+                    <a class="media-thumb" href="images/hero-slider-4.jpg" data-fancybox="gallery">
+                        <div class="media-text">
+                            <h3>Rialto Bridge</h3>
+                            <span class="location">Italy</span>
+                        </div>
+                        <img src="./hospital5.jpg" alt="Image" class="img-fluid">
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a class="media-thumb" href="images/hero-slider-5.jpg" data-fancybox="gallery">
+                        <div class="media-text">
+                            <h3>San Francisco, United States</h3>
+                            <span class="location">United States</span>
+                        </div>
+                        <img src="./hospital9.jpg" alt="Image" class="img-fluid">
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a class="media-thumb" href="images/hero-slider-1.jpg" data-fancybox="gallery">
+                        <div class="media-text">
+                            <h3>Lake Thun</h3>
+                            <span class="location">Switzerland</span>
+                        </div>
+                        <img src="./hospital8.jpg" alt="Image" class="img-fluid">
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="untree_co-section testimonial-section mt-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7 text-center">
+                    <h2 class="section-title text-center mb-5">Testimonials</h2>
+
+                    <div class="owl-single owl-carousel no-nav">
+                        <div class="testimonial mx-auto">
+                            <figure class="img-wrap">
+                                <img src="images/person_2.jpg" alt="Image" class="img-fluid">
+                            </figure>
+                            <h3 class="name">Adam Aderson</h3>
+                            <blockquote>
+                                <p>&ldquo;There live the blind texts. Separated they live in Bookmarksgrove right at the
+                                    coast of the Semantics, a large language ocean.&rdquo;</p>
+                            </blockquote>
+                        </div>
+
+                        <div class="testimonial mx-auto">
+                            <figure class="img-wrap">
+                                <img src="images/person_3.jpg" alt="Image" class="img-fluid">
+                            </figure>
+                            <h3 class="name">Lukas Devlin</h3>
+                            <blockquote>
+                                <p>&ldquo;There live the blind texts. Separated they live in Bookmarksgrove right at the
+                                    coast of the Semantics, a large language ocean.&rdquo;</p>
+                            </blockquote>
+                        </div>
+
+                        <div class="testimonial mx-auto">
+                            <figure class="img-wrap">
+                                <img src="images/person_4.jpg" alt="Image" class="img-fluid">
+                            </figure>
+                            <h3 class="name">Kayla Bryant</h3>
+                            <blockquote>
+                                <p>&ldquo;There live the blind texts. Separated they live in Bookmarksgrove right at the
+                                    coast of the Semantics, a large language ocean.&rdquo;</p>
+                            </blockquote>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="hero hero-inner" style="background-color:#0a77b1;" >
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mx-auto text-center">
+          <div class="intro-wrap">
+            <h1 class="mb-0">About Us</h1>
+            <p class="text-white">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  
+  <div class="untree_co-section" >
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7">
+          <div class="owl-single dots-absolute owl-carousel">
+            <img src="images/slider-1.jpg" alt="Free HTML Template by Untree.co" class="img-fluid rounded-20">
+            <img src="images/slider-2.jpg" alt="Free HTML Template by Untree.co" class="img-fluid rounded-20">
+            <img src="images/slider-3.jpg" alt="Free HTML Template by Untree.co" class="img-fluid rounded-20">
+            <img src="images/slider-4.jpg" alt="Free HTML Template by Untree.co" class="img-fluid rounded-20">
+            <img src="images/slider-5.jpg" alt="Free HTML Template by Untree.co" class="img-fluid rounded-20">
+          </div>
+        </div>
+        <div class="col-lg-5 pl-lg-5 ml-auto">
+          <h2 class="section-title mb-4">About Immunify</h2>
+          <p>Our mission is to provide reliable and accurate information about vaccines and promote the importance of vaccination for all age groups. We believe that every individual deserves access to the tools and knowledge necessary to make informed decisions about their health, and vaccines are a critical component of that.<br><br>
+
+Our team of experts includes healthcare professionals, scientists, and communicators who are passionate about public health and dedicated to sharing the latest research and recommendations regarding vaccines. We strive to make our content accessible to everyone, including parents, caregivers, educators, and healthcare providers.
+
+Our website provides information about the types of vaccines available, their safety and effectiveness</p>
+         
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero hero-inner" style="background-color:#0a77b1;">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mx-auto text-center">
+          <div class="intro-wrap">
+            <h1 class="mb-0">Contact Us</h1>
+            <p class="text-white">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+    <div class="untree_co-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 mb-5 mb-lg-0">
+          <form class="contact-form" data-aos="fade-up" data-aos-delay="200">
+            <div class="row">
+              <div class="col-6">
+                <div class="form-group">
+                  <label class="text-black" for="fname">First name</label>
+                  <input type="text" class="form-control" id="fname">
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="form-group">
+                  <label class="text-black" for="lname">Last name</label>
+                  <input type="text" class="form-control" id="lname">
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="text-black" for="email">Email address</label>
+              <input type="email" class="form-control" id="email">
+            </div>
+
+            <div class="form-group">
+              <label class="text-black" for="message">Message</label>
+              <textarea name="" class="form-control" id="message" cols="30" rows="5"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+        <div class="col-lg-5 ml-auto">
+          <div class="quick-contact-item d-flex align-items-center mb-4">
+            <span class="flaticon-house"></span>
+            <address class="text">
+              155 Market St #101, Paterson, NJ 07505, United States
+            </address>
+          </div>
+          <div class="quick-contact-item d-flex align-items-center mb-4">
+            <span class="flaticon-phone-call"></span>
+            <address class="text">
+              +1 202 2020 200
+            </address>
+          </div>
+          <div class="quick-contact-item d-flex align-items-center mb-4">
+            <span class="flaticon-mail"></span>
+            <address class="text">
+              @info@mydomain.com
+            </address>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+    <div class="py-5 cta-section"  style="background-color:#0a77b1;">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <h2 class="mb-2 text-white">Lets you Explore the Best. Contact Us Now</h2>
+                    <p class="mb-4 lead text-white text-white-opacity">Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Excepturi, fugit?</p>
+                    <p class="mb-0"><a href="booking.html"
+                            class="btn btn-outline-white text-white btn-md font-weight-bold">Get in touch</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="site-footer">
+        <div class="inner first">
+            <div class="container">
                 <div class="row">
-                    <div
-                        class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch position-relative">
-                        <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox play-btn mb-4"></a>
-                    </div>
-
-                    <div
-                        class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
-                        <h3>Enim quis est voluptatibus aliquid consequatur fugiat</h3>
-                        <p>Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus. Non ipsam et sed
-                            minima temporibus laudantium. Soluta voluptate sed facere corporis dolores excepturi. Libero
-                            laboriosam sint et id nulla tenetur. Suscipit aut voluptate.</p>
-
-                        <div class="icon-box">
-                            <div class="icon"><i class="bx bx-fingerprint"></i></div>
-                            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-                            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias
-                                excepturi sint occaecati cupiditate non provident</p>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="widget">
+                            <h3 class="heading">About Immunify</h3>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                                there live the blind texts.</p>
                         </div>
-
-                        <div class="icon-box">
-                            <div class="icon"><i class="bx bx-gift"></i></div>
-                            <h4 class="title"><a href="">Nemo Enim</a></h4>
-                            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                                blanditiis praesentium voluptatum deleniti atque</p>
-                        </div>
-
-                        <div class="icon-box">
-                            <div class="icon"><i class="bx bx-atom"></i></div>
-                            <h4 class="title"><a href="">Dine Pad</a></h4>
-                            <p class="description">Explicabo est voluptatum asperiores consequatur magnam. Et veritatis
-                                odit. Sunt aut deserunt minus aut eligendi omnis</p>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-        </section><!-- End About Section -->
-
-        <!-- ======= Counts Section ======= -->
-        <section id="counts" class="counts">
-            <div class="container">
-
-                <div class="row">
-
-                    <div class="col-lg-3 col-md-6">
-                        <div class="count-box">
-                            <i class="fas fa-user-md"></i>
-                            <span data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="1"
-                                class="purecounter"></span>
-                            <p>Doctors</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
-                        <div class="count-box">
-                            <i class="far fa-hospital"></i>
-                            <span data-purecounter-start="0" data-purecounter-end="18" data-purecounter-duration="1"
-                                class="purecounter"></span>
-                            <p>Departments</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-                        <div class="count-box">
-                            <i class="fas fa-flask"></i>
-                            <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1"
-                                class="purecounter"></span>
-                            <p>Research Labs</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-                        <div class="count-box">
-                            <i class="fas fa-award"></i>
-                            <span data-purecounter-start="0" data-purecounter-end="150" data-purecounter-duration="1"
-                                class="purecounter"></span>
-                            <p>Awards</p>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </section><!-- End Counts Section -->
-
-        <!-- ======= Services Section ======= -->
-        <section id="services" class="services">
-            <div class="container">
-
-                <div class="section-title">
-                    <h2>Services</h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
-                        sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-                        ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-                        <div class="icon-box">
-                            <div class="icon"><i class="fas fa-heartbeat"></i></div>
-                            <h4><a href="">Lorem Ipsum</a></h4>
-                            <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-                        <div class="icon-box">
-                            <div class="icon"><i class="fas fa-pills"></i></div>
-                            <h4><a href="">Sed ut perspiciatis</a></h4>
-                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
-                        <div class="icon-box">
-                            <div class="icon"><i class="fas fa-hospital-user"></i></div>
-                            <h4><a href="">Magni Dolores</a></h4>
-                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-                        <div class="icon-box">
-                            <div class="icon"><i class="fas fa-dna"></i></div>
-                            <h4><a href="">Nemo Enim</a></h4>
-                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-                        <div class="icon-box">
-                            <div class="icon"><i class="fas fa-wheelchair"></i></div>
-                            <h4><a href="">Dele cardo</a></h4>
-                            <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-                        <div class="icon-box">
-                            <div class="icon"><i class="fas fa-notes-medical"></i></div>
-                            <h4><a href="">Divera don</a></h4>
-                            <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </section><!-- End Services Section -->
-
-        <!-- ======= Appointment Section ======= -->
-        <section id="appointment" class="appointment section-bg">
-            <div class="container">
-
-                <div class="section-title">
-                    <h2>Make an Appointment</h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
-                        sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-                        ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-                </div>
-
-                <form action="forms/appointment.php" method="post" role="form" class="php-email-form">
-                    <div class="row">
-                        <div class="col-md-4 form-group">
-                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
-                                data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-                            <div class="validate"></div>
-                        </div>
-                        <div class="col-md-4 form-group mt-3 mt-md-0">
-                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
-                                data-rule="email" data-msg="Please enter a valid email">
-                            <div class="validate"></div>
-                        </div>
-                        <div class="col-md-4 form-group mt-3 mt-md-0">
-                            <input type="tel" class="form-control" name="phone" id="phone" placeholder="Your Phone"
-                                data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-                            <div class="validate"></div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4 form-group mt-3">
-                            <input type="datetime" name="date" class="form-control datepicker" id="date"
-                                placeholder="Appointment Date" data-rule="minlen:4"
-                                data-msg="Please enter at least 4 chars">
-                            <div class="validate"></div>
-                        </div>
-                        <div class="col-md-4 form-group mt-3">
-                            <select name="department" id="department" class="form-select">
-                                <option value="">Select Department</option>
-                                <option value="Department 1">Department 1</option>
-                                <option value="Department 2">Department 2</option>
-                                <option value="Department 3">Department 3</option>
-                            </select>
-                            <div class="validate"></div>
-                        </div>
-                        <div class="col-md-4 form-group mt-3">
-                            <select name="doctor" id="doctor" class="form-select">
-                                <option value="">Select Doctor</option>
-                                <option value="Doctor 1">Doctor 1</option>
-                                <option value="Doctor 2">Doctor 2</option>
-                                <option value="Doctor 3">Doctor 3</option>
-                            </select>
-                            <div class="validate"></div>
-                        </div>
-                    </div>
-
-                    <div class="form-group mt-3">
-                        <textarea class="form-control" name="message" rows="5"
-                            placeholder="Message (Optional)"></textarea>
-                        <div class="validate"></div>
-                    </div>
-                    <div class="mb-3">
-                        <div class="loading">Loading</div>
-                        <div class="error-message"></div>
-                        <div class="sent-message">Your appointment request has been sent successfully. Thank you!</div>
-                    </div>
-                    <div class="text-center"><button type="submit">Make an Appointment</button></div>
-                </form>
-
-            </div>
-        </section><!-- End Appointment Section -->
-
-        <!-- ======= Departments Section ======= -->
-        <section id="departments" class="departments">
-            <div class="container">
-
-                <div class="section-title">
-                    <h2>Departments</h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
-                        sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-                        ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-                </div>
-
-                <div class="row gy-4">
-                    <div class="col-lg-3">
-                        <ul class="nav nav-tabs flex-column">
-                            <li class="nav-item">
-                                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Cardiology</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Neurology</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Hepatology</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Pediatrics</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Eye Care</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-9">
-                        <div class="tab-content">
-                            <div class="tab-pane active show" id="tab-1">
-                                <div class="row gy-4">
-                                    <div class="col-lg-8 details order-2 order-lg-1">
-                                        <h3>Cardiology</h3>
-                                        <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente
-                                            dila parde sonata raqer a videna mareta paulona marka</p>
-                                        <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint.
-                                            Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est
-                                            repellat minima eveniet eius et quis magni nihil. Consequatur dolorem
-                                            quaerat quos qui similique accusamus nostrum rem vero</p>
-                                    </div>
-                                    <div class="col-lg-4 text-center order-1 order-lg-2">
-                                        <img src="assets/img/departments-1.jpg" alt="" class="img-fluid">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane" id="tab-2">
-                                <div class="row gy-4">
-                                    <div class="col-lg-8 details order-2 order-lg-1">
-                                        <h3>Et blanditiis nemo veritatis excepturi</h3>
-                                        <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente
-                                            dila parde sonata raqer a videna mareta paulona marka</p>
-                                        <p>Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et
-                                            reiciendis sunt sunt est. Non aliquid repellendus itaque accusamus eius et
-                                            velit ipsa voluptates. Optio nesciunt eaque beatae accusamus lerode pakto
-                                            madirna desera vafle de nideran pal</p>
-                                    </div>
-                                    <div class="col-lg-4 text-center order-1 order-lg-2">
-                                        <img src="assets/img/departments-2.jpg" alt="" class="img-fluid">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane" id="tab-3">
-                                <div class="row gy-4">
-                                    <div class="col-lg-8 details order-2 order-lg-1">
-                                        <h3>Impedit facilis occaecati odio neque aperiam sit</h3>
-                                        <p class="fst-italic">Eos voluptatibus quo. Odio similique illum id quidem non
-                                            enim fuga. Qui natus non sunt dicta dolor et. In asperiores velit quaerat
-                                            perferendis aut</p>
-                                        <p>Iure officiis odit rerum. Harum sequi eum illum corrupti culpa veritatis
-                                            quisquam. Neque necessitatibus illo rerum eum ut. Commodi ipsam minima
-                                            molestiae sed laboriosam a iste odio. Earum odit nesciunt fugiat sit ullam.
-                                            Soluta et harum voluptatem optio quae</p>
-                                    </div>
-                                    <div class="col-lg-4 text-center order-1 order-lg-2">
-                                        <img src="assets/img/departments-3.jpg" alt="" class="img-fluid">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane" id="tab-4">
-                                <div class="row gy-4">
-                                    <div class="col-lg-8 details order-2 order-lg-1">
-                                        <h3>Fuga dolores inventore laboriosam ut est accusamus laboriosam dolore</h3>
-                                        <p class="fst-italic">Totam aperiam accusamus. Repellat consequuntur iure
-                                            voluptas iure porro quis delectus</p>
-                                        <p>Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam
-                                            necessitatibus aliquam fugiat debitis quis velit. Eum ex maxime error in
-                                            consequatur corporis atque. Eligendi asperiores sed qui veritatis aperiam
-                                            quia a laborum inventore</p>
-                                    </div>
-                                    <div class="col-lg-4 text-center order-1 order-lg-2">
-                                        <img src="assets/img/departments-4.jpg" alt="" class="img-fluid">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane" id="tab-5">
-                                <div class="row gy-4">
-                                    <div class="col-lg-8 details order-2 order-lg-1">
-                                        <h3>Est eveniet ipsam sindera pad rone matrelat sando reda</h3>
-                                        <p class="fst-italic">Omnis blanditiis saepe eos autem qui sunt debitis porro
-                                            quia.</p>
-                                        <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis
-                                            recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui
-                                            quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel</p>
-                                    </div>
-                                    <div class="col-lg-4 text-center order-1 order-lg-2">
-                                        <img src="assets/img/departments-5.jpg" alt="" class="img-fluid">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section><!-- End Departments Section -->
-
-        <!-- ======= Doctors Section ======= -->
-        <section id="doctors" class="doctors">
-            <div class="container">
-
-                <div class="section-title">
-                    <h2>Doctors</h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
-                        sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-                        ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-                </div>
-
-                <div class="row">
-
-                    <div class="col-lg-6">
-                        <div class="member d-flex align-items-start">
-                            <div class="pic"><img src="assets/img/doctors/doctors-1.jpg" class="img-fluid" alt=""></div>
-                            <div class="member-info">
-                                <h4>Walter White</h4>
-                                <span>Chief Medical Officer</span>
-                                <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
-                                <div class="social">
-                                    <a href=""><i class="ri-twitter-fill"></i></a>
-                                    <a href=""><i class="ri-facebook-fill"></i></a>
-                                    <a href=""><i class="ri-instagram-fill"></i></a>
-                                    <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 mt-4 mt-lg-0">
-                        <div class="member d-flex align-items-start">
-                            <div class="pic"><img src="assets/img/doctors/doctors-2.jpg" class="img-fluid" alt=""></div>
-                            <div class="member-info">
-                                <h4>Sarah Jhonson</h4>
-                                <span>Anesthesiologist</span>
-                                <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
-                                <div class="social">
-                                    <a href=""><i class="ri-twitter-fill"></i></a>
-                                    <a href=""><i class="ri-facebook-fill"></i></a>
-                                    <a href=""><i class="ri-instagram-fill"></i></a>
-                                    <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 mt-4">
-                        <div class="member d-flex align-items-start">
-                            <div class="pic"><img src="assets/img/doctors/doctors-3.jpg" class="img-fluid" alt=""></div>
-                            <div class="member-info">
-                                <h4>William Anderson</h4>
-                                <span>Cardiology</span>
-                                <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
-                                <div class="social">
-                                    <a href=""><i class="ri-twitter-fill"></i></a>
-                                    <a href=""><i class="ri-facebook-fill"></i></a>
-                                    <a href=""><i class="ri-instagram-fill"></i></a>
-                                    <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 mt-4">
-                        <div class="member d-flex align-items-start">
-                            <div class="pic"><img src="assets/img/doctors/doctors-4.jpg" class="img-fluid" alt=""></div>
-                            <div class="member-info">
-                                <h4>Amanda Jepson</h4>
-                                <span>Neurosurgeon</span>
-                                <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
-                                <div class="social">
-                                    <a href=""><i class="ri-twitter-fill"></i></a>
-                                    <a href=""><i class="ri-facebook-fill"></i></a>
-                                    <a href=""><i class="ri-instagram-fill"></i></a>
-                                    <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </section><!-- End Doctors Section -->
-
-        <!-- ======= Frequently Asked Questions Section ======= -->
-        <section id="faq" class="faq section-bg">
-            <div class="container">
-
-                <div class="section-title">
-                    <h2>Frequently Asked Questions</h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
-                        sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-                        ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-                </div>
-
-                <div class="faq-list">
-                    <ul>
-                        <li data-aos="fade-up">
-                            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse"
-                                data-bs-target="#faq-list-1">Non consectetur a erat nam at lectus urna duis? <i
-                                    class="bx bx-chevron-down icon-show"></i><i
-                                    class="bx bx-chevron-up icon-close"></i></a>
-                            <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
-                                <p>
-                                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet
-                                    non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor
-                                    purus non.
-                                </p>
-                            </div>
-                        </li>
-
-                        <li data-aos="fade-up" data-aos-delay="100">
-                            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
-                                data-bs-target="#faq-list-2" class="collapsed">Feugiat scelerisque varius morbi enim
-                                nunc? <i class="bx bx-chevron-down icon-show"></i><i
-                                    class="bx bx-chevron-up icon-close"></i></a>
-                            <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
-                                <p>
-                                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum
-                                    velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend
-                                    donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in
-                                    cursus turpis massa tincidunt dui.
-                                </p>
-                            </div>
-                        </li>
-
-                        <li data-aos="fade-up" data-aos-delay="200">
-                            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
-                                data-bs-target="#faq-list-3" class="collapsed">Dolor sit amet consectetur adipiscing
-                                elit? <i class="bx bx-chevron-down icon-show"></i><i
-                                    class="bx bx-chevron-up icon-close"></i></a>
-                            <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
-                                <p>
-                                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus
-                                    pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit.
-                                    Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis
-                                    tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
-                                </p>
-                            </div>
-                        </li>
-
-                        <li data-aos="fade-up" data-aos-delay="300">
-                            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
-                                data-bs-target="#faq-list-4" class="collapsed">Tempus quam pellentesque nec nam aliquam
-                                sem et tortor consequat? <i class="bx bx-chevron-down icon-show"></i><i
-                                    class="bx bx-chevron-up icon-close"></i></a>
-                            <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
-                                <p>
-                                    Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in
-                                    est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl
-                                    suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in.
-                                </p>
-                            </div>
-                        </li>
-
-                        <li data-aos="fade-up" data-aos-delay="400">
-                            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
-                                data-bs-target="#faq-list-5" class="collapsed">Tortor vitae purus faucibus ornare.
-                                Varius vel pharetra vel turpis nunc eget lorem dolor? <i
-                                    class="bx bx-chevron-down icon-show"></i><i
-                                    class="bx bx-chevron-up icon-close"></i></a>
-                            <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
-                                <p>
-                                    Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo
-                                    integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc
-                                    eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.
-                                </p>
-                            </div>
-                        </li>
-
-                    </ul>
-                </div>
-
-            </div>
-        </section><!-- End Frequently Asked Questions Section -->
-
-        <!-- ======= Testimonials Section ======= -->
-        <section id="testimonials" class="testimonials">
-            <div class="container">
-
-                <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-                    <div class="swiper-wrapper">
-
-                        <div class="swiper-slide">
-                            <div class="testimonial-wrap">
-                                <div class="testimonial-item">
-                                    <img src="assetss/img/testimonials/testimonials-1.jpg" class="testimonial-img"
-                                        alt="">
-                                    <h3>Saul Goodman</h3>
-                                    <h4>Ceo &amp; Founder</h4>
-                                    <p>
-                                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                        Proin iaculis purus consequat sem cure digni ssim donec porttitora entum
-                                        suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et.
-                                        Maecen aliquam, risus at semper.
-                                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                                    </p>
-                                </div>
-                            </div>
-                        </div><!-- End testimonial item -->
-
-                        <div class="swiper-slide">
-                            <div class="testimonial-wrap">
-                                <div class="testimonial-item">
-                                    <img src="assetss/img/testimonials/testimonials-2.jpg" class="testimonial-img"
-                                        alt="">
-                                    <h3>Sara Wilsson</h3>
-                                    <h4>Designer</h4>
-                                    <p>
-                                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                        Export tempor illum tamen malis malis eram quae irure esse labore quem cillum
-                                        quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat
-                                        irure amet legam anim culpa.
-                                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                                    </p>
-                                </div>
-                            </div>
-                        </div><!-- End testimonial item -->
-
-                        <div class="swiper-slide">
-                            <div class="testimonial-wrap">
-                                <div class="testimonial-item">
-                                    <img src="assetss/img/testimonials/testimonials-3.jpg" class="testimonial-img"
-                                        alt="">
-                                    <h3>Jena Karlis</h3>
-                                    <h4>Store Owner</h4>
-                                    <p>
-                                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                        Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem
-                                        veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis
-                                        sint minim.
-                                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                                    </p>
-                                </div>
-                            </div>
-                        </div><!-- End testimonial item -->
-
-                        <div class="swiper-slide">
-                            <div class="testimonial-wrap">
-                                <div class="testimonial-item">
-                                    <img src="assetss/img/testimonials/testimonials-4.jpg" class="testimonial-img"
-                                        alt="">
-                                    <h3>Matt Brandon</h3>
-                                    <h4>Freelancer</h4>
-                                    <p>
-                                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                        Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim
-                                        fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore
-                                        quem dolore labore illum veniam.
-                                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                                    </p>
-                                </div>
-                            </div>
-                        </div><!-- End testimonial item -->
-
-                        <div class="swiper-slide">
-                            <div class="testimonial-wrap">
-                                <div class="testimonial-item">
-                                    <img src="assetss/img/testimonials/testimonials-5.jpg" class="testimonial-img"
-                                        alt="">
-                                    <h3>John Larson</h3>
-                                    <h4>Entrepreneur</h4>
-                                    <p>
-                                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                        Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor
-                                        noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam
-                                        esse veniam culpa fore nisi cillum quid.
-                                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                                    </p>
-                                </div>
-                            </div>
-                        </div><!-- End testimonial item -->
-
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
-
-            </div>
-        </section><!-- End Testimonials Section -->
-
-        <!-- ======= Gallery Section ======= -->
-        <section id="gallery" class="gallery">
-            <div class="container">
-
-                <div class="section-title">
-                    <h2>Gallery</h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
-                        sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-                        ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-                </div>
-            </div>
-
-            <div class="container-fluid">
-                <div class="row g-0">
-
-                    <div class="col-lg-3 col-md-4">
-                        <div class="gallery-item">
-                            <a href="assetss/img/gallery/gallery-1.jpg" class="galelry-lightbox">
-                                <img src="assetss/img/gallery/gallery-1.jpg" alt="" class="img-fluid">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4">
-                        <div class="gallery-item">
-                            <a href="assetss/img/gallery/gallery-2.jpg" class="galelry-lightbox">
-                                <img src="assetss/img/gallery/gallery-2.jpg" alt="" class="img-fluid">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4">
-                        <div class="gallery-item">
-                            <a href="assetss/img/gallery/gallery-3.jpg" class="galelry-lightbox">
-                                <img src="assetss/img/gallery/gallery-3.jpg" alt="" class="img-fluid">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4">
-                        <div class="gallery-item">
-                            <a href="assetss/img/gallery/gallery-4.jpg" class="galelry-lightbox">
-                                <img src="assetss/img/gallery/gallery-4.jpg" alt="" class="img-fluid">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4">
-                        <div class="gallery-item">
-                            <a href="assetss/img/gallery/gallery-5.jpg" class="galelry-lightbox">
-                                <img src="assetss/img/gallery/gallery-5.jpg" alt="" class="img-fluid">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4">
-                        <div class="gallery-item">
-                            <a href="assetss/img/gallery/gallery-6.jpg" class="galelry-lightbox">
-                                <img src="assetss/img/gallery/gallery-6.jpg" alt="" class="img-fluid">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4">
-                        <div class="gallery-item">
-                            <a href="assetss/img/gallery/gallery-7.jpg" class="galelry-lightbox">
-                                <img src="assets/img/gallery/gallery-7.jpg" alt="" class="img-fluid">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4">
-                        <div class="gallery-item">
-                            <a href="assetss/img/gallery/gallery-8.jpg" class="galelry-lightbox">
-                                <img src="assetss/img/gallery/gallery-8.jpg" alt="" class="img-fluid">
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </section><!-- End Gallery Section -->
-
-        <!-- ======= Contact Section ======= -->
-        <section id="contact" class="contact">
-            <div class="container">
-
-                <div class="section-title">
-                    <h2>Contact</h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
-                        sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-                        ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-                </div>
-            </div>
-
-            <div>
-                <iframe style="border:0; width: 100%; height: 350px;"
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
-                    frameborder="0" allowfullscreen></iframe>
-            </div>
-
-            <div class="container">
-                <div class="row mt-5">
-
-                    <div class="col-lg-4">
-                        <div class="info">
-                            <div class="address">
-                                <i class="bi bi-geo-alt"></i>
-                                <h4>Location:</h4>
-                                <p>A108 Adam Street, New York, NY 535022</p>
-                            </div>
-
-                            <div class="email">
-                                <i class="bi bi-envelope"></i>
-                                <h4>Email:</h4>
-                                <p>info@example.com</p>
-                            </div>
-
-                            <div class="phone">
-                                <i class="bi bi-phone"></i>
-                                <h4>Call:</h4>
-                                <p>+1 5589 55488 55s</p>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="col-lg-8 mt-5 mt-lg-0">
-
-                        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                            <div class="row">
-                                <div class="col-md-6 form-group">
-                                    <input type="text" name="name" class="form-control" id="name"
-                                        placeholder="Your Name" required>
-                                </div>
-                                <div class="col-md-6 form-group mt-3 mt-md-0">
-                                    <input type="email" class="form-control" name="email" id="email"
-                                        placeholder="Your Email" required>
-                                </div>
-                            </div>
-                            <div class="form-group mt-3">
-                                <input type="text" class="form-control" name="subject" id="subject"
-                                    placeholder="Subject" required>
-                            </div>
-                            <div class="form-group mt-3">
-                                <textarea class="form-control" name="message" rows="5" placeholder="Message"
-                                    required></textarea>
-                            </div>
-                            <div class="my-3">
-                                <div class="loading">Loading</div>
-                                <div class="error-message"></div>
-                                <div class="sent-message">Your message has been sent. Thank you!</div>
-                            </div>
-                            <div class="text-center"><button type="submit">Send Message</button></div>
-                        </form>
-
-                    </div>
-
-                </div>
-
-            </div>
-        </section><!-- End Contact Section -->
-
-        </main><!-- End #main -->
-
-        <!-- ======= Footer ======= -->
-        <footer id="footer">
-
-            <div class="footer-top">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-lg-3 col-md-6 footer-contact">
-                            <h3>Medilab</h3>
-                            <p>
-                                A108 Adam Street <br>
-                                New York, NY 535022<br>
-                                United States <br><br>
-                                <strong>Phone:</strong> +1 5589 55488 55<br>
-                                <strong>Email:</strong> info@example.com<br>
-                            </p>
-                        </div>
-
-                        <div class="col-lg-2 col-md-6 footer-links">
-                            <h4>Useful Links</h4>
-                            <ul>
-                                <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-                                <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-                                <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-                                <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-                                <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                        <div class="widget">
+                            <ul class="list-unstyled social">
+                                <li><a href="#"><span class="icon-twitter"></span></a></li>
+                                <li><a href="#"><span class="icon-instagram"></span></a></li>
+                                <li><a href="#"><span class="icon-facebook"></span></a></li>
+                                <li><a href="#"><span class="icon-linkedin"></span></a></li>
+                                <li><a href="#"><span class="icon-dribbble"></span></a></li>
+                                <li><a href="#"><span class="icon-pinterest"></span></a></li>
+                                <li><a href="#"><span class="icon-apple"></span></a></li>
+                                <li><a href="#"><span class="icon-google"></span></a></li>
                             </ul>
                         </div>
-
-                        <div class="col-lg-3 col-md-6 footer-links">
-                            <h4>Our Services</h4>
-                            <ul>
-                                <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-                                <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-                                <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-                                <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-                                <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+                    </div>
+                    <div class="col-md-6 col-lg-2 pl-lg-5">
+                        <div class="widget">
+                            <h3 class="heading">Pages</h3>
+                            <ul class="links list-unstyled">
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Contact</a></li>
                             </ul>
                         </div>
-
-                        <div class="col-lg-4 col-md-6 footer-newsletter">
-                            <h4>Join Our Newsletter</h4>
-                            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-                            <form action="" method="post">
-                                <input type="email" name="email"><input type="submit" value="Subscribe">
-                            </form>
+                    </div>
+                    <div class="col-md-6 col-lg-2">
+                        <div class="widget">
+                            <h3 class="heading">Resources</h3>
+                            <ul class="links list-unstyled">
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
                         </div>
-
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="widget">
+                            <h3 class="heading">Contact</h3>
+                            <ul class="list-unstyled quick-info links">
+                                <li class="email"><a href="#">mail@example.com</a></li>
+                                <li class="phone"><a href="#">+1 222 212 3819</a></li>
+                                <li class="address"><a href="#">43 Raymouth Rd. Baltemoer, London 3910</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="container d-md-flex py-4">
 
-                <div class="me-md-auto text-center text-md-start">
-                    <div class="copyright">
-                        &copy; Copyright <strong><span>Medilab</span></strong>. All Rights Reserved
+
+        <div class="inner dark">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-8 mb-3 mb-md-0 mx-auto">
+                        <p>Copyright &copy;<script>
+                            document.write(new Date().getFullYear());
+                            </script>. All Rights Reserved. &mdash; Designed with love by <a href="https://untree.co"
+                                class="link-highlight">Untree.co</a>
+                            <!-- License information: https://untree.co/license/ -->Distributed By <a
+                                href="https://themewagon.com" target="_blank">ThemeWagon</a>
+                        </p>
                     </div>
-                    <div class="credits">
-                        <!-- All the links in the footer should remain intact. -->
-                        <!-- You can delete the links only if you purchased the pro version. -->
-                        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-                        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/ -->
-                        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-                    </div>
-                </div>
-                <div class="social-links text-center text-md-right pt-3 pt-md-0">
-                    <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                    <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                    <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                    <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                    <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+
                 </div>
             </div>
-        </footer><!-- End Footer -->
+        </div>
+    </div>
 
-        <div id="preloader"></div>
-        <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-                class="bi bi-arrow-up-short"></i></a>
+    <div id="overlayer"></div>
+    <div class="loader">
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
 
-        <!-- Vendor JS Files -->
-        <script src="assetss/vendor/purecounter/purecounter_vanilla.js"></script>
-        <script src="assetss/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="assetss/vendor/glightbox/js/glightbox.min.js"></script>
-        <script src="assetss/vendor/swiper/swiper-bundle.min.js"></script>
-        <script src="assetss/vendor/php-email-form/validate.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/daterangepicker.js"></script>
 
-        <!-- Template Main JS File -->
-        <script src="assetss/js/main.js"></script>
+    <script src="js/typed.js"></script>
+    <script>
+    $(function() {
+        var slides = $('.slides'),
+            images = slides.find('img');
+
+        images.each(function(i) {
+            $(this).attr('data-id', i + 1);
+        })
+
+        var typed = new Typed('.typed-words', {
+            strings: ["Priority.", " Speciality.", "Responsibility."],
+            typeSpeed: 80,
+            backSpeed: 80,
+            backDelay: 4000,
+            startDelay: 1000,
+            loop: true,
+            showCursor: true,
+            preStringTyped: (arrayPos, self) => {
+                arrayPos++;
+                console.log(arrayPos);
+                $('.slides img').removeClass('active');
+                $('.slides img[data-id="' + arrayPos + '"]').addClass('active');
+            }
+
+        });
+    })
+    </script>
+
+    <script src="js/custom.js"></script>
 
 </body>
 
