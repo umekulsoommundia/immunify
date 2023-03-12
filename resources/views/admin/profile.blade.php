@@ -62,36 +62,32 @@
 </ul>
 </div>
 </nav>
-
 <main class="content">
     <div class="container-fluid p-0">
-
         <div class="mb-3">
             <h1 class="h3 d-inline align-middle">Profile</h1>
-
         </div>
         <div class="row">
-            <div class="col-md-4 col-xl-3">
-                <div class="card mb-3">
+            <div class="col-md-4 col-lg-3 mb-3">
+                <div class="card">
                     <div class="card-header">
                         <h5 class="card-title mb-0">Profile Details</h5>
                     </div>
                     <div class="card-body text-center">
-                        <img src="./vesctor.png" alt="Christina Mason" class="img-fluid rounded-circle mb-2" width="128"
-                            height="128" />
+                        <img src="./vesctor.png" alt="Christina Mason"
+                            class="img-fluid rounded-circle mb-2 profile-image" />
                         <h5 class="card-title mb-0">U K</h5>
                         <div class="text-muted mb-2">Graphic Designer | Web Developer</div>
-
-
                     </div>
                     <hr class="my-0" />
                     <div class="card-body">
                         <h5 class="h6 card-title">Skills</h5>
-                        <a href="#" class="badge bg-primary me-1 my-1">HTML</a>
-                        <a href="#" class="badge bg-primary me-1 my-1">JavaScript</a>
-                        <a href="#" class="badge bg-primary me-1 my-1">PHP</a>
-                        <a href="#" class="badge bg-primary me-1 my-1">LARAVEL</a>
-
+                        <div class="d-flex justify-content-center flex-wrap">
+                            <a href="#" class="badge bg-primary me-1 my-1">HTML</a>
+                            <a href="#" class="badge bg-primary me-1 my-1">JavaScript</a>
+                            <a href="#" class="badge bg-primary me-1 my-1">PHP</a>
+                            <a href="#" class="badge bg-primary me-1 my-1">LARAVEL</a>
+                        </div>
                     </div>
                     <hr class="my-0" />
                     <div class="card-body">
@@ -99,18 +95,14 @@
                         <ul class="list-unstyled mb-0">
                             <li class="mb-1"><span data-feather="home" class="feather-sm me-1"></span> Lives in <a
                                     href="#">Karachi, Pakistan</a></li>
-
-                            <li class="mb-1"><span data-feather="briefcase" class="feather-sm me-1"></span> Works at
-                                <a href="#">Freelancing</a>
-                            </li>
-
+                            <li class="mb-1"><span data-feather="briefcase" class="feather-sm me-1"></span> Works at <a
+                                    href="#">Freelancing</a></li>
                         </ul>
                     </div>
                     <hr class="my-0" />
                     <div class="card-body">
                         <h5 class="h6 card-title">Social Media</h5>
                         <ul class="list-unstyled mb-0">
-
                             <li class="mb-1"><a href="#">Twitter</a></li>
                             <li class="mb-1"><a href="#">Facebook</a></li>
                             <li class="mb-1"><a href="#">Instagram</a></li>
@@ -119,63 +111,69 @@
                     </div>
                 </div>
             </div>
-
-
-            <div class="col-12 col-md-8 d-flex order-2 order-xxl-3">
-                <div class="card flex-fill w-100">
-                    <div class="card-header">
-
-                        <h5 class="card-title mb-0">Admin Profile</h5>
-                    </div>
-                    <div class="card-body d-flex">
-                        <div class="align-self-center w-100">
-
-                            <table class="table">
-                                <th>Profile Details</th>
-                                <tbody>
-
-                                    <tr>
-                                        <td>username</td>
-                                        <td class="text-end">Ume Kulsoom</td>
-
-
-                                    </tr>
-                                    <tr>
-                                        <td>email</td>
-                                        <td class="text-end">kulsoom2204e@aptechgdn.net</td>
-
-                                    </tr>
-                                    <tr>
-                                        <td>Phone</td>
-                                        <td class="text-end">021438322</td>
-
-                                    </tr>
-                                    <tr>
-                                        <td>project name</td>
-                                        <td class="text-end">Immunify</td>
-
-                                    </tr>
-                                    <tr>
-                                        <td>begining date</td>
-                                        <td class="text-end">12-1-23</td>
-
-                                    </tr>
-                                    <tr>
-                                        <td>ending date</td>
-                                        <td class="text-end">16-6-23</td>
-
-                                    </tr>
+            <div class="col-md-8 col-lg-9">
 
 
 
-                                </tbody>
-                            </table>
+                <div class="container">
+                    <div class="card flex-fill w-100">
+                        <div class="card-header">
+                            <h5 class="card-title mb-0">Admin Profile</h5>
+                        </div>
+                        <div class="card-body d-flex">
+                            <div class="align-self-center w-100">
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <th>Profile Details</th>
+                                        <tbody>
+                                            <tr>
+                                                <td class="fw-bold">Username</td>
+                                                <td class="text-end">Ume Kulsoom</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="fw-bold">Email</td>
+                                                <td class="text-end">
+                                                    @if(session('email'))
+                                               
+                                                        {{session('email')}}
+                                                
+                                                    @endif
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="fw-bold">Password</td>
+                                                <td class="text-end">
+                                                    @if(session('password'))
+                                                  
+                                                        {{session('password')}}
+                                                  
+                                                    @endif
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="fw-bold">Phone</td>
+                                                <td class="text-end">021438322</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="fw-bold">Project Name</td>
+                                                <td class="text-end">Immunify</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="fw-bold">Beginning Date</td>
+                                                <td class="text-end">12-1-23</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="fw-bold">Ending Date</td>
+                                                <td class="text-end">16-6-23</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-            </div>
 
 
-
-            @endsection
+                @endsection

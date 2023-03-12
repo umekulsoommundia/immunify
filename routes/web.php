@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\adminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -11,7 +12,7 @@ use Illuminate\Support\Facades\Route;
 | routes are loaded by the RouteServiceProvider and all of them will
 | be assigned to the "web" middleware group. Make something great!
 |
-*/
+
 
 Route::get('/', function () {
     return view('welcome');
@@ -61,9 +62,7 @@ Route::get('child', function () {
 Route::get('schedule', function () {
     return view('admin.schedule');
 });
-Route::get('signup', function () {
-    return view('admin.signup');
-});
+
 Route::get('signin', function () {
     return view('admin.signin');
 });
@@ -125,13 +124,59 @@ Route::get('parentVaccine', function () {
 Route::get('parentSchedule', function () {
     return view('parents.schedule');
 });
+Route::get('signup', function () {
+    return view('admin.signup');
+});
+*/
 
-Route::get('admin',[adminControl::class,'login']);
+Route::get('/signin',[adminController::class,'signin']);
 
-Route::post('loginPost',[adminControl::class,'loginPostfun']);
+Route::post('/signinPost',[adminController::class,'signinPostFunc']);
 
-Route::get('register',[adminControl::class,'register']);
+Route::get('/signup',[adminController::class,'signup']);
+
+route::post('/adminRegister',[adminController::class,'adminRegister']);
+
+route::get('/logout',[adminController::class,'logout']);
 
 
+route::get('delete/{id}',[adminController::class,'delete']);
 
-route::post('userRegister',[adminControl::class,'userRegister']);
+route::get('edit/{id}',[adminController::class,'edit']);
+
+route::post('update/{id}',[adminController::class,'update']);
+
+route::get('deleteHospital/{id}',[adminController::class,'delete']);
+
+Route::post('edit/edit', [adminController::class, 'update']);
+
+
+route::get('accept/{id}',[adminController::class,'accept']);
+
+
+Route::get('/hospitalSignup',[adminController::class,'hospitalSignup']);
+
+route::post('/hospitalSignupPost',[adminController::class,'hospitalSignupFunc']);
+
+
+Route::group(['middleware'=> 'adminGuard'],function(){
+
+Route::get('/overview',[adminController::class,'overview']);
+
+Route::get('/profile',[adminController::class,'profile']);
+
+Route::get('/schedule',[adminController::class,'schedule']);
+
+route::get('/addhospital',[adminController::class,'hospitalRequest']);
+
+
+Route::get('/hospital',[adminController::class,'hospitalAdded']);
+
+Route::get('/vaccines',[adminController::class,'vaccines']);
+
+Route::get('/parents',[adminController::class,'parents']);
+
+Route::get('/child',[adminController::class,'child']);
+
+
+});

@@ -93,130 +93,69 @@
 <main class="content">
     <div class="container-fluid p-0">
         <div class="row">
-            <div class="col-12 col-md-6 d-flex order-2 order-xxl-3">
-                <div class="card flex-fill w-100">
-                    <div class="card-header">
 
-                        <h5 style="color: #0A77B1;" class="card-title mb-0">Tasks</h5>
-                    </div>
-                    <div class="card-body d-flex">
-                        <div class="align-self-center  w-100">
-
-                            <table class="table align-middle">
+<!-- Tasks section -->
+<div class="col-12 col-lg-6 d-flex">
+    <div class="card flex-fill w-100">
+        <div class="card-header">
+            <h5 style="color: #0A77B1;" class="card-title mb-0">Tasks</h5>
+        </div>
+        <div class="card-body d-flex">
+            <div class="align-self-center w-100">
+                <div class="table-responsive">
+                    <table class="table align-middle">
+                        <thead>
+                            <tr>
                                 <th>Name</th>
                                 <th>Time</th>
                                 <th>Description</th>
                                 <th>#</th>
                                 <th>#</th>
-
-                                <tbody>
-
-                                    <tr>
-                                        <td>Sarah</td>
-                                        <td>3:00 pm</td>
-                                        <td >Indus</td>
-                                        <td><span style="background-color:#3A55A4;"
-                                                class="btn text-white ">done</span></td>
-                                        <td><span class="btn ">x</span></td>
-
-                                    </tr>
-                                    <tr>
-                                    <td>Sarah</td>
-                                        <td>3:00 pm</td>
-                                        <td >Indus</td>
-                                        <td><span style="background-color:#3A55A4;"
-                                                class="btn text-white ">done</span></td>
-                                        <td><span class="btn ">x</span></td>
-                                    </tr>
-                                    <tr>
-                                    <td>Sarah</td>
-                                        <td>3:00 pm</td>
-                                        <td >Indus</td>
-                                        <td><span style="background-color:#3A55A4;"
-                                                class="btn text-white ">done</span></td>
-                                        <td><span class="btn ">x</span></td>
-                                    </tr>
-                                    <tr>
-                                    <td>Sarah</td>
-                                        <td>3:00 pm</td>
-                                        <td >Indus</td>
-                                        <td><span style="background-color:#3A55A4;"
-                                                class="btn text-white ">done</span></td>
-                                        <td><span class="btn ">x</span></td>
-                                    </tr>
-                                    <tr>
-                                    <td>Sarah</td>
-                                        <td>3:00 pm</td>
-                                        <td >Indus</td>
-                                        <td><span style="background-color:#3A55A4;"
-                                                class="btn text-white ">done</span></td>
-                                        <td><span class="btn ">x</span></td>
-                                    </tr>
-                                    <tr>
-                                    <td>Sarah</td>
-                                        <td>3:00 pm</td>
-                                        <td >Indus</td>
-                                        <td><span style="background-color:#3A55A4;"
-                                                class="btn text-white ">done</span></td>
-                                        <td><span class="btn ">x</span></td>
-                                    </tr>
-                                    <tr>
-                                    <td>Sarah</td>
-                                        <td>3:00 pm</td>
-                                        <td >Indus</td>
-                                        <td><span style="background-color:#3A55A4;"
-                                                class="btn text-white ">done</span></td>
-                                        <td><span class="btn ">x</span></td>
-
-                                    </tr>
-                                    <tr>
-                                    <td>Sarah</td>
-                                        <td>3:00 pm</td>
-                                        <td >Indus</td>
-                                        <td><span style="background-color:#3A55A4;"
-                                                class="btn text-white ">done</span></td>
-                                        <td><span class="btn ">x</span></td>
-                                    </tr>
-                                    <tr>
-                                    <td>Sarah</td>
-                                        <td>3:00 pm</td>
-                                        <td >Indus</td>
-                                        <td><span style="background-color:#3A55A4;"
-                                                class="btn text-white ">done</span></td>
-                                        <td><span class="btn ">x</span></td>
-                                    </tr>
-                                    <tr>
-                                    <td>Sarah</td>
-                                        <td>3:00 pm</td>
-                                        <td >Indus</td>
-                                        <td><span style="background-color:#3A55A4;"
-                                                class="btn text-white ">done</span></td>
-                                        <td><span class="btn ">x</span></td>
-                                    </tr>
-                                    <tr>
-                                    <td>Sarah</td>
-                                        <td>3:00 pm</td>
-                                        <td >Indus</td>
-                                        <td><span style="background-color:#3A55A4;"
-                                                class="btn text-white ">done</span></td>
-                                        <td><span class="btn ">x</span></td>
-                                    </tr>
-                                    <tr>
-                                    <td>Sarah</td>
-                                        <td>3:00 pm</td>
-                                        <td >Indus</td>
-                                        <td><span style="background-color:#3A55A4;"
-                                                class="btn text-white ">done</span></td>
-                                        <td><span class="btn ">x</span></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Sarah</td>
+                                <td>3:00 pm</td>
+                                <td>Indus</td>
+                                <td><span style="background-color:#3A55A4;" class="btn text-white ">done</span></td>
+                                <td><span class="btn ">x</span></td>
+                            </tr>
+                            <tr>
+                                <td>Sarah</td>
+                                <td>3:00 pm</td>
+                                <td>Indus</td>
+                                <td><span style="background-color:#3A55A4;" class="btn text-white ">done</span></td>
+                                <td><span class="btn ">x</span></td>
+                            </tr>
+                            <tr>
+                                <td>Sarah</td>
+                                <td>3:00 pm</td>
+                                <td>Indus</td>
+                                <td><span style="background-color:#3A55A4;" class="btn text-white ">done</span></td>
+                                <td><span class="btn ">x</span></td>
+                            </tr>
+                            <tr>
+                                <td>Sarah</td>
+                                <td>3:00 pm</td>
+                                <td>Indus</td>
+                                <td><span style="background-color:#3A55A4;" class="btn text-white ">done</span></td>
+                                <td><span class="btn ">x</span></td>
+                            </tr>
+                            <tr>
+                                <td>Sarah</td>
+                                <td>3:00 pm</td>
+                                <td>Indus</td>
+                                <td><span style="background-color:#3A55A4;" class="btn text-white ">done</span></td>
+                                <td><span class="btn ">x</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
-
-
+        </div>
+    </div>
+</div>
 
 
 
@@ -234,25 +173,29 @@
                         <div class="align-self-center w-100">
 
 
-                        <form>
-										<div class="mb-3">
-											<label class="form-label">task date</label>
-											<input class="form-control form-control-lg" type="text" name="hospitalName" placeholder="Enter task" />
-										</div>
-										<div class="mb-3">
-											<label class="form-label">task time</label>
-											<input class="form-control form-control-lg" type="text" name="hospitalAddress" placeholder="Enter task time" />
-										</div>
-										<div class="mb-3">
-											<label class="form-label">more</label>
-											<input class="form-control form-control-lg" type="text" name="hospitalContact" placeholder="Enter description" />
-										</div>
-								
-										<div class="text-center mt-3">
-											<a href="index.html" style="background-color:#3A55A4;" class="btn btn-lg text-white ">Add Task</a>
-											<!-- <button type="submit" class="btn btn-lg btn-primary">Sign up</button> -->
-										</div>
-									</form>
+                            <form>
+                                <div class="mb-3">
+                                    <label class="form-label">task date</label>
+                                    <input class="form-control form-control-lg" type="text" name="hospitalName"
+                                        placeholder="Enter task" />
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">task time</label>
+                                    <input class="form-control form-control-lg" type="text" name="hospitalAddress"
+                                        placeholder="Enter task time" />
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">more</label>
+                                    <input class="form-control form-control-lg" type="text" name="hospitalContact"
+                                        placeholder="Enter description" />
+                                </div>
+
+                                <div class="text-center mt-3">
+                                    <a href="index.html" style="background-color:#3A55A4;"
+                                        class="btn btn-lg text-white ">Add Task</a>
+                                    <!-- <button type="submit" class="btn btn-lg btn-primary">Sign up</button> -->
+                                </div>
+                            </form>
 
 
                             <div class="col-12 col-md-12  d-flex order-1 order-xxl-1">

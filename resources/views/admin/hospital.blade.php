@@ -98,78 +98,55 @@
                             <tr>
                                 <th>Id</th>
                                 <th class="d-none d-xl-table-cell">Name</th>
-                                <th class="d-none d-xl-table-cell">Vaccine</th>
-                                <th>contact</th>
-                                <th class="d-none d-md-table-cell">Address</th>
-                                <th class="d-none d-md-table-cell">Timing</th>
+                                <th class="d-none d-xl-table-cell">Email</th>
+                                <th class="d-none d-md-table-cell">password</th>
+                                <th class="d-none d-md-table-cell">location</th>
+                                <th class="d-none d-md-table-cell">contact Number</th>
+                                <th class="d-none d-xl-table-cell">certificate</th>
+                                <th class="d-none d-xl-table-cell">city</th>
+                                <th class="d-none d-md-table-cell">image</th>
+
+
                             </tr>
                         </thead>
                         <tbody>
+
+
+                            @foreach($hospital as $h)
                             <tr>
-                                <td>#1</td>
-                                <td class="d-none d-xl-table-cell">Indus</td>
-                                <td class="d-none d-xl-table-cell">xyz</td>
-                                <td class="d-none d-xl-table-cell">312456566</td>
-                                <td><span class="">gulshan</span></td>
-                                <td class="d-none d-md-table-cell">3:00 - 9:00 PM</td>
+                                <td>{{$h->id}}</td>
+                                <td class="d-none d-xl-table-cell">{{$h->name}}</td>
+                                <td class="d-none d-xl-table-cell">{{$h->email}}</td>
+                                <td class="d-none d-xl-table-cell">{{$h->password}}</td>
+                                <td><span class="">{{$h->location}}</span></td>
+                                <td class="d-none d-md-table-cell">{{$h->contactNumber}}</td>
+                                <td class="d-none d-xl-table-cell"><img src="./certificate/{{$h->certificate}}"
+                                        height="32px" width="32px"></td>
+                                <td class="d-none d-xl-table-cell">{{$h->city}}</td>
+                                <td class="d-none d-xl-table-cell"><img src="./hospitalImages/{{$h->hospitalImage}}"
+                                        height="32px" width="32px"></td>
+
+                                <td class="record btnsearch"> <button class="btn btnsearch2 text-white"
+                                        style="background-color:#3A55A4;" type="submit"> <a
+                                            class="btnsearch2 text-white" href="edit/{{$h->id}}">update</a></button>
+                                </td>
+
+                                <td class="record btnsearch"> <button class="btn btnsearch2 text-white"
+                                        style="background-color:#D62600;" type="submit"> <a
+                                            class="btnsearch2 text-white" href="delete/{{$h->id}}">x</a></button>
+                                </td>
                             </tr>
-                            <tr>
-                            <td>#1</td>
-                                <td class="d-none d-xl-table-cell">Indus</td>
-                                <td class="d-none d-xl-table-cell">xyz</td>
-                                <td class="d-none d-xl-table-cell">312456566</td>
-                                <td><span class="">gulshan</span></td>
-                                <td class="d-none d-md-table-cell">3:00 - 9:00 PM</td>
-                            </tr>
-                            <tr>
-                            <td>#1</td>
-                                <td class="d-none d-xl-table-cell">Indus</td>
-                                <td class="d-none d-xl-table-cell">xyz</td>
-                                <td class="d-none d-xl-table-cell">312456566</td>
-                                <td><span class="">gulshan</span></td>
-                                <td class="d-none d-md-table-cell">3:00 - 9:00 PM</td>
-                            </tr>
-                            <tr>
-                            <td>#1</td>
-                                <td class="d-none d-xl-table-cell">Indus</td>
-                                <td class="d-none d-xl-table-cell">xyz</td>
-                                <td class="d-none d-xl-table-cell">312456566</td>
-                                <td><span class="">gulshan</span></td>
-                                <td class="d-none d-md-table-cell">3:00 - 9:00 PM</td>
-                            </tr>
-                            <tr>
-                            <td>#1</td>
-                                <td class="d-none d-xl-table-cell">Indus</td>
-                                <td class="d-none d-xl-table-cell">xyz</td>
-                                <td class="d-none d-xl-table-cell">312456566</td>
-                                <td><span class="">gulshan</span></td>
-                                <td class="d-none d-md-table-cell">3:00 - 9:00 PM</td>
-                            </tr>
-                            <tr>
-                            <td>#1</td>
-                                <td class="d-none d-xl-table-cell">Indus</td>
-                                <td class="d-none d-xl-table-cell">xyz</td>
-                                <td class="d-none d-xl-table-cell">312456566</td>
-                                <td><span class="">gulshan</span></td>
-                                <td class="d-none d-md-table-cell">3:00 - 9:00 PM</td>
-                            </tr>
-                            <tr>
-                            <td>#1</td>
-                                <td class="d-none d-xl-table-cell">Indus</td>
-                                <td class="d-none d-xl-table-cell">xyz</td>
-                                <td class="d-none d-xl-table-cell">312456566</td>
-                                <td><span class="">gulshan</span></td>
-                                <td class="d-none d-md-table-cell">3:00 - 9:00 PM</td>
-                            </tr>
-                            <tr>
-                            <td>#1</td>
-                                <td class="d-none d-xl-table-cell">Indus</td>
-                                <td class="d-none d-xl-table-cell">xyz</td>
-                                <td class="d-none d-xl-table-cell">312456566</td>
-                                <td><span class="">gulshan</span></td>
-                                <td class="d-none d-md-table-cell">3:00 - 9:00 PM</td>
-                            </tr>
+
+                            @endforeach
                         </tbody>
+
+
+
+                        @if(session('msg'))
+                        <script>
+                        alert(" {{session('msg')}}")
+                        </script>
+                        @endif
                     </table>
                 </div>
             </div>

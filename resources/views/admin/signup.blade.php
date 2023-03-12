@@ -16,9 +16,13 @@
     <link rel="canonical" href="https://demo-basic.adminkit.io/pages-sign-up.html" />
 
     <title>Sign Up</title>
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="css/app.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 </head>
 <style>
 * {
@@ -29,7 +33,42 @@
 }
 
 body {
-    background-color: #3A55A4;
+    background-color: #0A76B1;
+}
+
+.card-img-top {
+    height: 100%;
+    object-fit: cover;
+}
+
+/* center the content vertically and horizontally */
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* add some margin to the top and bottom of the form */
+form {
+    margin: 20px 0;
+}
+
+/* make the form inputs take up the entire width of the container */
+input {
+    width: 100%;
+}
+
+/* add some padding to the top and bottom of the container */
+section {
+    padding: 20px 0;
+}
+
+/* add some margin to the top and bottom of the container on small screens */
+@media (max-width: 768px) {
+    section {
+        margin: 20px 0;
+    }
 }
 </style>
 
@@ -43,52 +82,72 @@ body {
                     <div class="card" style="border-radius: 1rem;">
                         <div class="row g-0">
                             <div class="col-md-6 col-lg-5 d-none d-md-block">
-                                <img src="./pexels-anna-shvets-3786234.jpg" alt="login form" class="img-fluid"
+                                <img src="./pexels-anna-shvets-3786234.jpg" alt="login form" class="card-img-top"
                                     style="border-radius: 1rem 0 0 1rem;" />
                             </div>
                             <div class="col-md-6 col-lg-7 d-flex align-items-center">
                                 <div class="card-body p-4 p-lg-5 text-black">
                                     <div class="text-center mt-4">
-
                                         <h1 style="color:#203C71;  font-size:30px;" class="h2">Get Started, Immunify
                                             Team</h1>
-                                        <p class="lead">
-                                            Create Your Account
-                                        </p>
+                                        <p class="lead">Create Your Account</p>
                                     </div>
                                     <div class="text-center">
                                         <img src="./logoBluePng.png" alt="Charles Hall" class="img-fluid" width="132"
                                             height="132" />
                                     </div>
-                                    <form method="POST" enctype="multipart-formdata">
-
+                                    <form method="POST" action="/adminRegister" enctype="multipart-formdata">
+                                        @csrf
                                         <div class="mb-3">
                                             <label class="form-label">username</label>
                                             <input class="form-control form-control-lg" type="text" name="name"
                                                 placeholder="Enter your name" />
+                                                @error('name')
+                                            <div class="text-danger">{{ $message }}</div>
+                                            @enderror
                                         </div>
                                         <div class="mb-3">
                                             <label class="form-label">Email</label>
                                             <input class="form-control form-control-lg" type="email" name="email"
                                                 placeholder="Enter your email" />
+                                                @error('email')
+                                            <div class="text-danger">{{ $message }}</div>
+                                            @enderror
                                         </div>
                                         <div class="mb-3">
                                             <label class="form-label">Password</label>
                                             <input class="form-control form-control-lg" type="password" name="password"
                                                 placeholder="Enter password" />
+
+                                            @error('password')
+                                            <div class="text-danger">{{ $message }}</div>
+                                            @enderror
+
+
                                         </div>
                                         <div class="mb-3">
                                             <label class="form-label">Confirm Password</label>
-                                            <input class="form-control form-control-lg" type="password" name="password"
-                                                placeholder="Enter password" />
+                                            <input class="form-control form-control-lg" type="password"
+                                                name="confirmPassword" placeholder="Enter password" />
                                         </div>
+                                        @error('confirmPassword')
+                                            <div class="text-danger">{{ $message }}</div>
+                                            @enderror
+
+                                        @if(session('message'))
+                                        <div class="alert alert-success">
+                                            {{session('message')}}
+                                        </div>
+
+                                        @endif
+
+
                                         <div class="text-center mt-3">
-                                            <a href="index.html" style="background-color:#3A55A4;"
-                                                class="btn btn-lg text-white">Sign up</a>
-                                            <!-- <button type="submit" class="btn btn-lg btn-primary">Sign up</button> -->
+                                            <!-- <button type="submit"style="background-color:#3A55A4;" class="btn-lg text-white">Sign up<button> -->
+
+                                            <button type="submit" class="btn btn-lg btn-primary">Sign up</button>
                                         </div>
                                     </form>
-
 
                                 </div>
                             </div>

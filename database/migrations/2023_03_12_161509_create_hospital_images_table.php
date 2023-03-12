@@ -11,19 +11,20 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('vaccines', function (Blueprint $table) {
+        Schema::create('hospital_images', function (Blueprint $table) {
             $table->id();
-            $table->string("vaccineType");
-            $table->string("VaccineQuantity");
+            $table->string('hospitalImages');
+            $table->integer('hospitalId');
+            $table->foreign('hospitalId')->references('id')->on('hospitals');
             $table->timestamps();
         });
     }
-
+ 
     /**
      * Reverse the migrations.
      */
     public function down(): void
     {
-        Schema::dropIfExists('vaccines');
+        Schema::dropIfExists('hospital_images');
     }
 };

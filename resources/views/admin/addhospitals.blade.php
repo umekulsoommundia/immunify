@@ -6,12 +6,12 @@
     <a class="nav-icon dropdown-toggle" href="#" id="alertsDropdown" data-bs-toggle="dropdown">
         <div class="position-relative">
             <i class="align-middle" data-feather="bell"> f</i>
-            <span class="indicator">3</span>
+            <span class="indicator">4</span>
         </div>
     </a>
     <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end py-0" aria-labelledby="alertsDropdown">
         <div class="dropdown-menu-header">
-            3 New Notifications
+            4 New Notifications
         </div>
         <div class="list-group">
             <a href="#" class="list-group-item">
@@ -81,56 +81,81 @@
 </div>
 </nav>
 
-<main class="d-flex w-100">
-		<div class="container d-flex flex-column">
-			<div class="row vh-100">
-				<div class="col-sm-10 col-md-8 col-lg-6 mx-auto d-table h-100">
-					<div class="d-table-cell align-middle">
+<main class="content">
+    <div class="container-fluid p-0">
 
-						<div class="text-center">
-							<h1 class="h2">Immunify</h1>
-							<p class="lead">
-								Your Immunity Is Our Priority
-							</p>
-						</div>
 
-						<div class="card">
-							<div class="card-body">
-								<div class="m-sm-4">
-									<form>
-										<div class="mb-3">
-											<label class="form-label">Name</label>
-											<input class="form-control form-control-lg" type="text" name="hospitalName" placeholder="Enter hospital name" />
-										</div>
-										<div class="mb-3">
-											<label class="form-label">Address</label>
-											<input class="form-control form-control-lg" type="text" name="hospitalAddress" placeholder="Enter hospital address" />
-										</div>
-										<div class="mb-3">
-											<label class="form-label">Contact</label>
-											<input class="form-control form-control-lg" type="text" name="hospitalContact" placeholder="Enter hospital contact" />
-										</div>
-										<div class="mb-3">
-											<label class="form-label">Vaccine</label>
-											<input class="form-control form-control-lg" type="text" name="vaccineName" placeholder="Enter vaccine name" />
-										</div>
-                                        <div class="mb-3">
-											<label class="form-label">Timing</label>
-											<input class="form-control form-control-lg" type="text" name="hospitalTiming" placeholder="Enter hospital timing" />
-										</div>
-										<div class="text-center mt-3">
-											<a href="index.html" class="btn btn-lg btn-primary">Add</a>
-											<!-- <button type="submit" class="btn btn-lg btn-primary">Sign up</button> -->
-										</div>
-									</form>
-								</div>
-							</div>
-						</div>
 
-					</div>
-				</div>
-			</div>
-		</div>
-	</main>
+        <div class="row">
+            <div class="col-12 col-lg-12 d-flex">
+                <div class="card flex-fill">
+                    <div class="card-header">
 
+                        <h5 class="card-title mb-0">Hospitals Data</h5>
+                    </div>
+                    <table class="table table-hover my-0">
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th class="d-none d-xl-table-cell">Name</th>
+                                <th class="d-none d-xl-table-cell">Email</th>
+                                <th class="d-none d-md-table-cell">password</th>
+                                <th class="d-none d-md-table-cell">location</th>
+                                <th class="d-none d-md-table-cell">contact Number</th>
+                                <th class="d-none d-xl-table-cell">certificate</th>
+                                <th class="d-none d-xl-table-cell">city</th>
+                                <th class="d-none d-md-table-cell">image</th>
+
+
+                            </tr>
+                        </thead>
+                        <tbody>
+
+
+                            @foreach($hospital as $h)
+                            <tr>
+                                <td>{{$h->id}}</td>
+                                <td class="d-none d-xl-table-cell">{{$h->name}}</td>
+                                <td class="d-none d-xl-table-cell">{{$h->email}}</td>
+                                <td class="d-none d-xl-table-cell">{{$h->password}}</td>
+                                <td><span class="">{{$h->location}}</span></td>
+                                <td class="d-none d-md-table-cell">{{$h->contactNumber}}</td>
+                                <td class="d-none d-xl-table-cell"><img src="./certificate/{{$h->certificate}}"
+                                        height="32px" width="32px"></td>
+                                <td class="d-none d-xl-table-cell">{{$h->city}}</td>
+                                <td class="d-none d-xl-table-cell"><img src="./hospitalImages/{{$h->hospitalImage}}"
+                                        height="32px" width="32px"></td>
+
+                                <td class="record btnsearch"> <button class="btn btnsearch2 text-white"
+                                        style="background-color:#3A55A4;" type="submit"> <a
+                                            class="btnsearch2 text-white" href="edit/{{$h->id}}">update</a></button>
+                                </td>
+
+                                <td class="record btnsearch"> <button class="btn btnsearch2 text-white"
+                                        style="background-color:#D62600;" type="submit"> <a
+                                            class="btnsearch2 text-white" href="delete/{{$h->id}}">x</a></button>
+                                </td>
+                            </tr>
+
+                            @endforeach
+                        </tbody>
+
+
+
+                        @if(session('msg'))
+                        <script>
+                        alert(" {{session('msg')}}")
+                        </script>
+                        @endif
+                    </table>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+</main>
 @endsection

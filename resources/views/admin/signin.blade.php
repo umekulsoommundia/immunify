@@ -20,6 +20,13 @@
 
     <link href="css/app.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="css/app.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 </head>
 <style>
 * {
@@ -32,11 +39,47 @@
 body {
     background-color: #0976B1;
 }
+
+.card-img-top {
+    height: 100%;
+    object-fit: cover;
+}
+
+/* center the content vertically and horizontally */
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* add some margin to the top and bottom of the form */
+form {
+    margin: 20px 0;
+}
+
+/* make the form inputs take up the entire width of the container */
+input {
+    width: 100%;
+}
+
+/* add some padding to the top and bottom of the container */
+section {
+    padding: 20px 0;
+}
+
+/* add some margin to the top and bottom of the container on small screens */
+@media (max-width: 768px) {
+    section {
+        margin: 20px 0;
+    }
+}
 </style>
 
 
 
 <body>
+
     <section class="vh-100" style="background-color:#0A76B1;">
         <div class="container py-5 h-100">
             <div class="row d-flex justify-content-center align-items-center h-100">
@@ -44,13 +87,12 @@ body {
                     <div class="card" style="border-radius: 1rem;">
                         <div class="row g-0">
                             <div class="col-md-6 col-lg-5 d-none d-md-block">
-                                <img src="./pexels-anna-shvets-3786234.jpg" alt="login form" class="img-fluid"
+                                <img src="./pexels-anna-shvets-3786234.jpg" alt="login form" class="card-img-top"
                                     style="border-radius: 1rem 0 0 1rem;" />
                             </div>
                             <div class="col-md-6 col-lg-7 d-flex align-items-center">
                                 <div class="card-body p-4 p-lg-5 text-black">
                                     <div class="text-center mt-4">
-
                                         <h1 style="color:#203C71;  font-size:30px;" class="h2">Welcome Back, Immunify
                                             Team</h1>
                                         <p class="lead">
@@ -61,9 +103,9 @@ body {
                                         <img src="./logoBluePng.png" alt="Charles Hall" class="img-fluid" width="132"
                                             height="132" />
                                     </div>
-                                    <form>
-
-
+                                 
+                                    <form method="POST" action="/signinPost" enctype="multipart-formdata">
+                                        @csrf
                                         <div class="mb-3">
                                             <label style="color: #0A77B1;" class="form-label">Email</label>
                                             <input class="form-control form-control-lg" type="email" name="email"
@@ -71,23 +113,28 @@ body {
                                         </div>
                                         <div class="mb-3">
                                             <label style="color: #0A77B1;" class="form-label">Password</label>
-                                            <input class="form-control form-control-lg" type="password" name="password"
+                                            <<input class="form-control form-control-lg" type="password" name="password"
                                                 placeholder="Enter password" />
                                         </div>
+                                        @if(session('message'))
+                                        <div class="alert alert-success">
+                                            {{session('message')}}
+                                        </div>
 
+                                        @endif
+                                        @if(session('error'))
+                                        <div class="alert alert-danger">
+                                            {{session('error')}}
+                                        </div>
+
+                                        @endif
                                         <a class="small text-muted" href="#!">Forgot password?</a>
                                         <p class="mb-5 pb-lg-2" style="color: #0A77B1;">Don't have an account? <a
                                                 href="signup" style="color:#203C71;">Register here</a></p>
                                         <div class="text-center mt-3">
-                                            <a href="index.html" style="background-color:#3A55A4;"
-                                                class="btn btn-lg text-white">Sign In</a>
-
-
-
-                                            <!-- <button type="submit" class="btn btn-lg btn-primary">Sign up</button> -->
+                                        <button type="submit" class="btn btn-lg btn-primary">Sign In</button>
                                         </div>
                                     </form>
-
 
                                 </div>
                             </div>
@@ -99,5 +146,6 @@ body {
     </section>
 
 </body>
+
 
 </html>

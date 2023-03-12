@@ -75,7 +75,7 @@
                                 data-feather="settings"></i> Settings</a>
                      
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Log out</a>
+                        <a class="dropdown-item" href="/logout">Log out</a>
                     </div>
                 </li>
             </ul>
@@ -197,69 +197,74 @@
                     </div>
                 </div>
             </div>
-
             <div class="row">
-                <div class="col-12 col-md-6 d-flex order-2 order-xxl-3">
-                    <div class="card flex-fill w-100">
-                        <div class="card-header">
+  <div class="col-12 col-md-6 order-md-2">
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-title mb-0" style="color: #0A77B1;">Requests</h5>
+      </div>
+      <div class="card-body">
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Patients On due</th>
+                <th class="text-end">Time</th>
+                <th class="text-end">Hospital</th>
+                <th class="text-end">Date</th>
+                <th></th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Sarah</td>
+                <td class="text-end">3:00 pm</td>
+                <td class="text-end">Indus</td>
+                <td class="text-end">13-10-22</td>
+                <td><span class="btn btn-primary">Accept</span></td>
+                <td><span class="btn btn-danger">x</span></td>
+              </tr>
+              <tr>
+                <td>Sarah</td>
+                <td class="text-end">3:00 pm</td>
+                <td class="text-end">Indus</td>
+                <td class="text-end">13-10-22</td>
+                <td><span class="btn btn-primary">Accept</span></td>
+                <td><span class="btn btn-danger">x</span></td>
+              </tr>
+              <tr>
+                <td>Sarah</td>
+                <td class="text-end">3:00 pm</td>
+                <td class="text-end">Indus</td>
+                <td class="text-end">13-10-22</td>
+                <td><span class="btn btn-primary">Accept</span></td>
+                <td><span class="btn btn-danger">x</span></td>
+              </tr>
+              <tr>
+                <td>Sarah</td>
+                <td class="text-end">3:00 pm</td>
+                <td class="text-end">Indus</td>
+                <td class="text-end">13-10-22</td>
+                <td><span class="btn btn-primary">Accept</span></td>
+                <td><span class="btn btn-danger">x</span></td>
+              </tr>
+              <tr>
+                <td>Sheryar</td>
+                <td class="text-end">3:00 pm</td>
+                <td class="text-end">Indus</td>
+                <td class="text-end">13-10-22</td>
+                <td><span class="btn btn-primary">Accept</span></td>
+                <td><span class="btn btn-danger">x</span></td>
+              </tr>
+              <tr>
+                <td>Khalil</td>
+                <td class="text-end">3:00 pm</td>
+                <td class="text-end">Indus</td>
+                <td class="text-end">13-10-22</td>
+                <td><span class="btn btn-primary">Accept</span></td>
+                <td><span class="btn btn-danger">x</span></
 
-                            <h5 style="color: #0A77B1;"  class="card-title mb-0">Requests</h5>
-                        </div>
-                        <div class="card-body d-flex">
-                            <div class="align-self-center w-100">
-
-                                <table class="table">
-                                    <th>Patients On due</th>
-                                    <tbody>
-
-                                        <tr>
-                                            <td>Sarah</td>
-                                            <td class="text-end">3:00 pm</td>
-                                            <td class="text-end">Indus</td>
-                                            <td class="text-end">13-10-22</td>
-                                            <td><span style="background-color:#3A55A4;" class="btn text-white ">Accept</span></td>
-                                            <td><span class="btn ">x</span></td>
-                                          
-                                        </tr>
-                                        <tr>
-                                            <td>Sarah</td>
-                                            <td class="text-end">3:00 pm</td>
-                                            <td class="text-end">Indus</td>
-                                            <td class="text-end">13-10-22</td>
-                                            <td><span style="background-color:#3A55A4;" class="btn text-white ">Accept</span></td>
-                                            <td><span class="btn ">x</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Sarah</td>
-                                            <td class="text-end">3:00 pm</td>
-                                            <td class="text-end">Indus</td>
-                                            <td class="text-end">13-10-22</td>
-                                            <td><span  style="background-color:#3A55A4;" class="btn text-white ">Accept</span></td>
-                                            <td><span class="btn ">x</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Sarah</td>
-                                            <td class="text-end">3:00 pm</td>
-                                            <td class="text-end">Indus</td>
-                                            <td class="text-end">13-10-22</td>
-                                            <td><span  style="background-color:#3A55A4;" class="btn text-white ">Accept</span></td>
-                                            <td><span class="btn ">x</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Sheryar</td>
-                                            <td class="text-end">3:00 pm</td>
-                                            <td class="text-end">Indus</td>
-                                            <td class="text-end">13-10-22</td>
-                                            <td><span  style="background-color:#3A55A4;" class="btn text-white ">Accept</span></td>
-                                            <td><span class="btn">x</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Khalil</td>
-                                            <td class="text-end">3:00 pm</td>
-                                            <td class="text-end">Indus</td>
-                                            <td class="text-end">13-10-22</td>
-                                            <td><span  style="background-color:#3A55A4;" class="btn text-white ">Accept</span></td>
-                                            <td><span class="btn ">x</span></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -288,88 +293,85 @@
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-12 col-lg-12 d-flex">
-                    <div class="card flex-fill">
-                        <div class="card-header">
-
-                            <h5 style=" color:#0A77B1;" class="card-title mb-0">Schedule Appointments</h5>
-                        </div>
-                        <table class="table table-hover my-0">
-                            <thead>
-                                <tr>
-                                    <th>Child Name</th>
-                                    <th class="d-none d-xl-table-cell">Age</th>
-                                    <th class="d-none d-xl-table-cell">Time</th>
-                                    <th>Status</th>
-                                    <th class="d-none d-md-table-cell">Hospitals</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Hurrain</td>
-                                    <td class="d-none d-xl-table-cell">4</td>
-                                    <td class="d-none d-xl-table-cell">3:00 PM</td>
-                                    <td><span class="badge bg-success">Done</span></td>
-                                    <td class="d-none d-md-table-cell">Indus</td>
-                                </tr>
-                                <tr>
-                                    <td>Ayesha</td>
-                                    <td class="d-none d-xl-table-cell">3</td>
-                                    <td class="d-none d-xl-table-cell">3:00 PM</td>
-                                    <td><span class="badge bg-danger">Cancelled</span></td>
-                                    <td class="d-none d-md-table-cell">Indus</td>
-                                </tr>
-                                <tr>
-                                    <td>Usama</td>
-                                    <td class="d-none d-xl-table-cell">3</td>
-                                    <td class="d-none d-xl-table-cell">3:00 PM</td>
-                                    <td><span class="badge bg-success">Done</span></td>
-                                    <td class="d-none d-md-table-cell">Indus</td>
-                                </tr>
-                                <tr>
-                                    <td>Umer</td>
-                                    <td class="d-none d-xl-table-cell">4</td>
-                                    <td class="d-none d-xl-table-cell">3:00 PM</td>
-                                    <td><span class="badge bg-warning">In progress</span></td>
-                                    <td class="d-none d-md-table-cell">Indus</td>
-                                </tr>
-                                <tr>
-                                    <td>Sidra</td>
-                                    <td class="d-none d-xl-table-cell">2</td>
-                                    <td class="d-none d-xl-table-cell">3:00 PM</td>
-                                    <td><span class="badge bg-success">Done</span></td>
-                                    <td class="d-none d-md-table-cell">Indus</td>
-                                </tr>
-                                <tr>
-                                    <td>Hadi</td>
-                                    <td class="d-none d-xl-table-cell">4</td>
-                                    <td class="d-none d-xl-table-cell">3:00 PM</td>
-                                    <td><span class="badge bg-success">Done</span></td>
-                                    <td class="d-none d-md-table-cell">Indus</td>
-                                </tr>
-                                <tr>
-                                    <td>Sarah</td>
-                                    <td class="d-none d-xl-table-cell">2</td>
-                                    <td class="d-none d-xl-table-cell">3:00 PM</td>
-                                    <td><span class="badge bg-success">Done</span></td>
-                                    <td class="d-none d-md-table-cell">Indus</td>
-                                </tr>
-                                <tr>
-                                    <td>Saman</td>
-                                    <td class="d-none d-xl-table-cell">4</td>
-                                    <td class="d-none d-xl-table-cell">3:00 PM</td>
-                                    <td><span class="badge bg-warning">In progress</span></td>
-                                    <td class="d-none d-md-table-cell">Indus</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
-
-
-            </div>
+            <div class="table-responsive">
+  <table class="table table-hover my-0">
+    <thead>
+      <tr>
+        <th>Child Name</th>
+        <th class="d-none d-xl-table-cell">Age</th>
+        <th class="d-none d-xl-table-cell">Time</th>
+        <th>Status</th>
+        <th class="d-none d-md-table-cell">Hospitals</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Hurrain</td>
+        <td class="d-none d-xl-table-cell">4</td>
+        <td class="d-none d-xl-table-cell">3:00 PM</td>
+        <td><span class="badge bg-success">Done</span></td>
+        <td class="d-none d-md-table-cell">Indus</td>
+      </tr>
+      <tr>
+      <tr>
+        <td>Hurrain</td>
+        <td class="d-none d-xl-table-cell">4</td>
+        <td class="d-none d-xl-table-cell">3:00 PM</td>
+        <td><span class="badge bg-success">Done</span></td>
+        <td class="d-none d-md-table-cell">Indus</td>
+      </tr>
+      <tr>
+        <td>Hurrain</td>
+        <td class="d-none d-xl-table-cell">4</td>
+        <td class="d-none d-xl-table-cell">3:00 PM</td>
+        <td><span class="badge bg-success">Done</span></td>
+        <td class="d-none d-md-table-cell">Indus</td>
+      </tr>
+      <tr>
+        <td>Hurrain</td>
+        <td class="d-none d-xl-table-cell">4</td>
+        <td class="d-none d-xl-table-cell">3:00 PM</td>
+        <td><span class="badge bg-success">Done</span></td>
+        <td class="d-none d-md-table-cell">Indus</td>
+      </tr>
+      <tr>
+        <td>Hurrain</td>
+        <td class="d-none d-xl-table-cell">4</td>
+        <td class="d-none d-xl-table-cell">3:00 PM</td>
+        <td><span class="badge bg-success">Done</span></td>
+        <td class="d-none d-md-table-cell">Indus</td>
+      </tr>
+      <tr>
+        <td>Hurrain</td>
+        <td class="d-none d-xl-table-cell">4</td>
+        <td class="d-none d-xl-table-cell">3:00 PM</td>
+        <td><span class="badge bg-success">Done</span></td>
+        <td class="d-none d-md-table-cell">Indus</td>
+      </tr>
+      <tr>
+        <td>Hurrain</td>
+        <td class="d-none d-xl-table-cell">4</td>
+        <td class="d-none d-xl-table-cell">3:00 PM</td>
+        <td><span class="badge bg-success">Done</span></td>
+        <td class="d-none d-md-table-cell">Indus</td>
+      </tr>
+        <td>Hurrain</td>
+        <td class="d-none d-xl-table-cell">4</td>
+        <td class="d-none d-xl-table-cell">3:00 PM</td>
+        <td><span class="badge bg-success">Done</span></td>
+        <td class="d-none d-md-table-cell">Indus</td>
+      </tr>
+      <tr>
+        <td>Hurrain</td>
+        <td class="d-none d-xl-table-cell">4</td>
+        <td class="d-none d-xl-table-cell">3:00 PM</td>
+        <td><span class="badge bg-success">Done</span></td>
+        <td class="d-none d-md-table-cell">Indus</td>
+      </tr>
+      <!-- rest of the table rows -->
+    </tbody>
+  </table>
+</div>
 
 </div>
 </main>

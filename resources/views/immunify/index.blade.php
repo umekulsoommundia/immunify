@@ -35,6 +35,25 @@
     * {
         font-family: 'Lato', sans-serif;
     }
+     /* Adjust the padding and font-size for smaller screens */
+     @media (max-width: 768px) {
+        .intro-wrap {
+            padding: 0 20px;
+        }
+        h1 {
+            font-size: 50px;
+        }
+    }
+
+    /* Stack the form inputs vertically for smaller screens */
+    @media (max-width: 576px) {
+        .form .row {
+            flex-wrap: wrap;
+        }
+        .form .row > * {
+            width: 100%;
+        }
+    }
     </style>
 </head>
 
@@ -92,139 +111,109 @@
         </div>
     </nav>
 
-
     <div class="hero" style="background-color:#FFFFFF;">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-7">
-                    <div class="intro-wrap">
-                        <h1 class="mb-5" style="color:#203C71;"><span class="d-block">Your Immunity Is </span> Our <span
-                                class="typed-words" style="font-weight:35px; font-size:70px;"></span></h1>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-7">
+                <div class="intro-wrap">
+                    <h1 class="mb-5" style="color:#203C71;"><span class="d-block">Your Immunity Is </span> Our <span
+                            class="typed-words"></span></h1>
 
-                        <div class="row">
-                            <div class="col-12">
-                                <form class="form">
-                                    <div class="row mb-2">
-                                        <div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-3">
-                                            <select name="" id="" class="form-control custom-select">
-                                                <option value="">Location</option>
-                                                <option value="">Karachi</option>
-                                                <option value="">Islamabad</option>
-                                                <option value="">Lahore</option>
-                                                <option value="">Quetta</option>
-
-                                            </select>
-                                        </div>
-                                        <div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-5">
-                                            <input type="text" class="form-control" name="daterange">
-                                        </div>
-
-                                        <div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-4">
-                                            <select name="" id="" class="form-control custom-select">
-                                                <option value="">Vaccine Type</option>
-                                                <option value="">Karachi</option>
-                                                <option value="">Islamabad</option>
-                                                <option value="">Lahore</option>
-                                                <option value="">Quetta</option>
-
-                                            </select>
-
-                                        </div>
-
-                                    </div>
-                                    <br>
-                                    <div class="row align-items-center">
-                                        <div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-4">
-                                            <input type="submit" class=" align-items-center btn btn-primary btn-block"
-                                                style="background-color:#203C71;" value="Submit">
-                                        </div>
-
-                                    </div>
-                                </form>
+                    <form class="form">
+                        <div class="row mb-2">
+                            <div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-3">
+                                <select name="" id="" class="form-control custom-select">
+                                    <option value="">Location</option>
+                                    <option value="">Karachi</option>
+                                    <option value="">Islamabad</option>
+                                    <option value="">Lahore</option>
+                                    <option value="">Quetta</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-5">
+                                <input type="text" class="form-control" name="daterange">
+                            </div>
+                            <div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-4">
+                                <select name="" id="" class="form-control custom-select">
+                                    <option value="">Vaccine Type</option>
+                                    <option value="">Karachi</option>
+                                    <option value="">Islamabad</option>
+                                    <option value="">Lahore</option>
+                                    <option value="">Quetta</option>
+                                </select>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-5">
-                    <div class="slides">
-                        <img src="./header1.jpg" alt="Image" class="img-fluid active">
-                        <img src="./header2.jpg" alt="Image" class="img-fluid">
-                        <img src="./header3.jpg" alt="Image" class="img-fluid">
-                        <img src="./header1.jpg" alt="Image" class="img-fluid">
+                        <div class="row align-items-center">
+                            <div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-4">
+                                <input type="submit" class="align-items-center btn btn-primary btn-block"
+                                    style="background-color:#203C71;" value="Submit">
+                            </div>
+                        </div>
+                    </form>
 
-                    </div>
                 </div>
             </div>
+
+            <div class="col-lg-5">
+                <div class="slides">
+                    <img src="./header1.jpg" alt="Image" class="img-fluid active">
+                    <img src="./header2.jpg" alt="Image" class="img-fluid">
+                    <img src="./header3.jpg" alt="Image" class="img-fluid">
+                    <img src="./header1.jpg" alt="Image" class="img-fluid">
+                </div>
+            </div>
+
         </div>
     </div>
+</div>
 
-
-    <div class="untree_co-section">
-        <div class="container">
-            <div class="row mb-5 justify-content-center">
-                <div class="col-lg-6 text-center">
-                    <h2 class="section-title text-center mb-3"
-                        style=" font-family: 'Lato', sans-serif;  font-size:54px; color:#203C71;">Why Should I Vaccine?
-                    </h2>
-                    <!-- <p style=" font-family: 'Lato', sans-serif; font-size:18px; color: #0A77B1;">Vaccination is a safe and effective way to protect children from serious and sometimes deadly diseases. It works by stimulating the immune system to produce antibodies against specific viruses or bacteria, so that if your child is exposed to the disease in the future, their immune system can quickly recognize and fight it off.</p> -->
-                </div>
-            </div>
-            <div class="row align-items-stretch">
-                <div class="col-lg-4 order-lg-1">
-                    <div class="h-100">
-                        <div class="frame h-100">
-                            <div class="feature-img-bg h-100" style="background-image: url('./h2.jpg');"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-6 col-sm-6 col-lg-4 feature-1-wrap d-md-flex flex-md-column order-lg-1">
-
-                    <div class="feature-1 d-md-flex">
-                        <div class="align-self-center">
-                            <!-- <span class="flaticon-house display-4 text-primary"></span> -->
-                            <h3 style="color:#203C71;">Protect against diseases</h3>
-                            <p style="color: #0A77B1;" class="mb-0">Vaccines protect children from a range of diseases,
-                                such as measles, polio, whooping cough, and more.</p>
-                        </div>
-                    </div>
-
-                    <div class="feature-1 ">
-                        <div class="align-self-center">
-                            <!-- <span class="flaticon-restaurant display-4 text-primary"></span> -->
-                            <h3 style="color:#203C71;">Prevent outbreaks:</h3>
-                            <p style="color: #0A77B1;" class="mb-0">When enough people in a community are vaccinated
-                                against a disease, it becomes much less likely to spread. </p>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="col-6 col-sm-6 col-lg-4 feature-1-wrap d-md-flex flex-md-column order-lg-3">
-
-                    <div class="feature-1 d-md-flex">
-                        <div class="align-self-center">
-                            <!-- <span class="flaticon-mail display-4 text-primary"></span> -->
-                            <h3 style="color:#203C71;">Safe and effective</h3>
-                            <p style="color: #0A77B1;" class="mb-0">The risks of getting a vaccine are far less than the
-                                risks of getting the diseases they protect against</p>
-                        </div>
-                    </div>
-
-                    <div class="feature-1 d-md-flex">
-                        <div class="align-self-center">
-                            <!-- <span class="flaticon-phone-call display-4 text-primary"></span> -->
-                            <h3 style="color:#203C71;">Saves time and money</h3>
-                            <p style="color: #0A77B1;" class="mb-0">Preventing disease through vaccination saves time
-                                and money by avoiding the need for medical treatment, hospitalization</p>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
+<div class="untree_co-section">
+  <div class="container">
+    <div class="row mb-5 justify-content-center">
+      <div class="col-lg-6 text-center">
+        <h2 class="section-title text-center mb-3" style="font-family: 'Lato', sans-serif; font-size: 54px; color: #203C71;">Why Should I Vaccine?</h2>
+      </div>
     </div>
+    <div class="row align-items-stretch">
+      <div class="col-lg-4 order-lg-1">
+        <div class="h-100">
+          <div class="frame h-100">
+            <div class="feature-img-bg h-100" style="background-image: url('./h2.jpg');"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 feature-1-wrap d-md-flex flex-md-column order-lg-1">
+        <div class="feature-1 d-md-flex">
+          <div class="align-self-center">
+            <h3 style="color: #203C71;">Protect against diseases</h3>
+            <p style="color: #0A77B1;" class="mb-0">Vaccines protect children from a range of diseases, such as measles, polio, whooping cough, and more.</p>
+          </div>
+        </div>
+        <div class="feature-1 ">
+          <div class="align-self-center">
+            <h3 style="color: #203C71;">Prevent outbreaks:</h3>
+            <p style="color: #0A77B1;" class="mb-0">When enough people in a community are vaccinated against a disease, it becomes much less likely to spread. </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 feature-1-wrap d-md-flex flex-md-column order-lg-3">
+        <div class="feature-1 d-md-flex">
+          <div class="align-self-center">
+            <h3 style="color: #203C71;">Safe and effective</h3>
+            <p style="color: #0A77B1;" class="mb-0">The risks of getting a vaccine are far less than the risks of getting the diseases they protect against</p>
+          </div>
+        </div>
+        <div class="feature-1 d-md-flex">
+          <div class="align-self-center">
+            <h3 style="color: #203C71;">Saves time and money</h3>
+            <p style="color: #0A77B1;" class="mb-0">Preventing disease through vaccination saves time and money by avoiding the need for medical treatment, hospitalization</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
     <div class="untree_co-section count-numbers py-5">
         <div class="container">
@@ -266,72 +255,57 @@
     </div>
 
     <div class="untree_co-section">
-        <div class="container">
-            <div class="row justify-content-between align-items-center">
+    <div class="container">
+        <div class="row justify-content-between align-items-center">
 
-                <div class="col-lg-6">
-
-                    <img src="./h2.jpg" alt="Image" class="img-fluid rounded-20">
-                    </figure>
-                </div>
-
-
-                <div class="col-lg-4">
-                    <div class="custom-block" data-aos="fade-up" data-aos-delay="100">
-                        <h2 class="section-title"
-                            style=" font-family: 'Lato', sans-serif;  font-size:34px; color:#203C71;">Book Appointment
-                        </h2>
-                        <form class="contact-form bg-white">
-
-
-                            <div class="form-group">
-                                <label class="text-black" for="email"
-                                    style=" font-family: 'Lato', sans-serif; font-size:18px; color:#0A77B1;">Name</label>
-                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
-
-                            </div>
-
-                            <div class="form-group">
-                                <label class="text-black" for="email"
-                                    style=" font-family: 'Lato', sans-serif; font-size:18px; color:#0A77B1;">Hospital
-                                    Name</label>
-                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
-
-                            </div>
-                            <div class="form-group">
-                                <label class="text-black" for="password"
-                                    style=" font-family: 'Lato', sans-serif; font-size:18px; color:#0A77B1;">Vaccine
-                                    Name</label>
-                                <input type="password" class="form-control" id="password">
-                            </div>
-
-                            <div class="form-group">
-                                <label class="text-black" for="select"
-                                    style=" font-family: 'Lato', sans-serif; font-size:18px; color:#0A77B1;">Select</label>
-
-                                <select name="" id="select" class="custom-select">
-                                    <option value="">xyz vaccine</option>
-                                    <option value="">abc vaccine</option>
-                                </select>
-
-                            </div>
-                            <div class="form-group">
-
-                            </div>
-                            <button type="submit" class="btn btn-primary">Book</button>
-                        </form>
-                    </div>
-
-            
-                </div>
-
-
+            <div class="col-lg-6">
+                <img src="./h2.jpg" alt="Image" class="img-fluid rounded-20">
             </div>
 
+            <div class="col-lg-4 mt-5 mt-lg-0">
+                <div class="custom-block" data-aos="fade-up" data-aos-delay="100">
+                    <h2 class="section-title mb-4"
+                        style="font-family: 'Lato', sans-serif; font-size: 34px; color: #203C71;">Book Appointment
+                    </h2>
+                    <form class="contact-form bg-white">
+
+                        <div class="form-group">
+                            <label class="text-black" for="name"
+                                style="font-family: 'Lato', sans-serif; font-size: 18px; color: #0A77B1;">Name</label>
+                            <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="text-black" for="hospital"
+                                style="font-family: 'Lato', sans-serif; font-size: 18px; color: #0A77B1;">Hospital
+                                Name</label>
+                            <input type="text" class="form-control" id="hospital" aria-describedby="emailHelp">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="text-black" for="vaccine"
+                                style="font-family: 'Lato', sans-serif; font-size: 18px; color: #0A77B1;">Vaccine
+                                Name</label>
+                            <input type="text" class="form-control" id="vaccine">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="text-black" for="select"
+                                style="font-family: 'Lato', sans-serif; font-size: 18px; color: #0A77B1;">Select</label>
+                            <select name="" id="select" class="custom-select">
+                                <option value="">xyz vaccine</option>
+                                <option value="">abc vaccine</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Book</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
-    </div>
-    </div>
+</div>
+
 
 
     <div class="untree_co-section">
@@ -458,21 +432,19 @@
         </div>
     </div>
 
-
-    <div class="hero hero-inner" style="background-color:#0a77b1;" >
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6 mx-auto text-center">
-          <div class="intro-wrap">
-            <h1 class="mb-0">About Us</h1>
-            <p class="text-white">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-          </div>
+    <div class="hero hero-inner" style="background-color:#0a77b1;">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 mx-auto text-center">
+        <div class="intro-wrap">
+          <h1 class="mb-0">About Us</h1>
+          <p class="text-white">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
         </div>
       </div>
     </div>
   </div>
+</div>
 
-  
   
   <div class="untree_co-section" >
     <div class="container">
@@ -498,77 +470,100 @@ Our website provides information about the types of vaccines available, their sa
         </div>
       </div>
     </div>
+  </div><div class="untree_co-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7">
+        <div class="owl-single dots-absolute owl-carousel">
+          <img src="images/slider-1.jpg" alt="Free HTML Template by Untree.co" class="img-fluid rounded-20">
+          <img src="images/slider-2.jpg" alt="Free HTML Template by Untree.co" class="img-fluid rounded-20">
+          <img src="images/slider-3.jpg" alt="Free HTML Template by Untree.co" class="img-fluid rounded-20">
+          <img src="images/slider-4.jpg" alt="Free HTML Template by Untree.co" class="img-fluid rounded-20">
+          <img src="images/slider-5.jpg" alt="Free HTML Template by Untree.co" class="img-fluid rounded-20">
+        </div>
+      </div>
+      <div class="col-lg-5 pl-lg-5 mt-5 mt-lg-0">
+        <h2 class="section-title mb-4">About Immunify</h2>
+        <p class="mb-4">Our mission is to provide reliable and accurate information about vaccines and promote the importance of vaccination for all age groups. We believe that every individual deserves access to the tools and knowledge necessary to make informed decisions about their health, and vaccines are a critical component of that.</p>
+        <p class="mb-4">Our team of experts includes healthcare professionals, scientists, and communicators who are passionate about public health and dedicated to sharing the latest research and recommendations regarding vaccines. We strive to make our content accessible to everyone, including parents, caregivers, educators, and healthcare providers.</p>
+        <p class="mb-4">Our website provides information about the types of vaccines available, their safety and effectiveness</p>
+      </div>
+    </div>
   </div>
-  <div class="hero hero-inner" style="background-color:#0a77b1;">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6 mx-auto text-center">
-          <div class="intro-wrap">
-            <h1 class="mb-0">Contact Us</h1>
-            <p class="text-white">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-          </div>
+</div>
+
+
+
+<div class="hero hero-inner" style="background-color:#0a77b1;">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 mx-auto text-center">
+        <div class="intro-wrap">
+          <h1 class="mb-3">Contact Us</h1>
+          <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
         </div>
       </div>
     </div>
   </div>
+</div>
 
   
-
-    <div class="untree_co-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 mb-5 mb-lg-0">
-          <form class="contact-form" data-aos="fade-up" data-aos-delay="200">
-            <div class="row">
-              <div class="col-6">
-                <div class="form-group">
-                  <label class="text-black" for="fname">First name</label>
-                  <input type="text" class="form-control" id="fname">
-                </div>
-              </div>
-              <div class="col-6">
-                <div class="form-group">
-                  <label class="text-black" for="lname">Last name</label>
-                  <input type="text" class="form-control" id="lname">
-                </div>
+<div class="untree_co-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 mb-5 mb-lg-0">
+        <form class="contact-form" data-aos="fade-up" data-aos-delay="200">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="text-black" for="fname">First name</label>
+                <input type="text" class="form-control" id="fname">
               </div>
             </div>
-            <div class="form-group">
-              <label class="text-black" for="email">Email address</label>
-              <input type="email" class="form-control" id="email">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="text-black" for="lname">Last name</label>
+                <input type="text" class="form-control" id="lname">
+              </div>
             </div>
+          </div>
+          <div class="form-group">
+            <label class="text-black" for="email">Email address</label>
+            <input type="email" class="form-control" id="email">
+          </div>
 
-            <div class="form-group">
-              <label class="text-black" for="message">Message</label>
-              <textarea name="" class="form-control" id="message" cols="30" rows="5"></textarea>
-            </div>
+          <div class="form-group">
+            <label class="text-black" for="message">Message</label>
+            <textarea name="" class="form-control" id="message" cols="30" rows="5"></textarea>
+          </div>
 
-            <button type="submit" class="btn btn-primary">Send Message</button>
-          </form>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+      <div class="col-lg-5 ml-auto">
+        <div class="quick-contact-item d-flex align-items-center mb-4">
+          <span class="flaticon-house"></span>
+          <address class="text">
+            155 Market St #101, Paterson, NJ 07505, United States
+          </address>
         </div>
-        <div class="col-lg-5 ml-auto">
-          <div class="quick-contact-item d-flex align-items-center mb-4">
-            <span class="flaticon-house"></span>
-            <address class="text">
-              155 Market St #101, Paterson, NJ 07505, United States
-            </address>
-          </div>
-          <div class="quick-contact-item d-flex align-items-center mb-4">
-            <span class="flaticon-phone-call"></span>
-            <address class="text">
-              +1 202 2020 200
-            </address>
-          </div>
-          <div class="quick-contact-item d-flex align-items-center mb-4">
-            <span class="flaticon-mail"></span>
-            <address class="text">
-              @info@mydomain.com
-            </address>
-          </div>
+        <div class="quick-contact-item d-flex align-items-center mb-4">
+          <span class="flaticon-phone-call"></span>
+          <address class="text">
+            +1 202 2020 200
+          </address>
+        </div>
+        <div class="quick-contact-item d-flex align-items-center mb-4">
+          <span class="flaticon-mail"></span>
+          <address class="text">
+            @info@mydomain.com
+          </address>
         </div>
       </div>
     </div>
   </div>
+</div>
+
 
 
 
