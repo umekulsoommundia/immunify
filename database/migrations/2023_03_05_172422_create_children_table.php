@@ -13,6 +13,12 @@ return new class extends Migration
     {
         Schema::create('children', function (Blueprint $table) {
             $table->id();
+            $table->string("childName");
+            $table->string("age");
+            $table->string("weight");
+            $table->string("medicalIssue");
+            $table->string("birth");
+            $table->string("address");
             $table->integer("parentId");
             $table->foreign("parentId")->on("id")->references("parents");
             $table->integer("vaccineId");

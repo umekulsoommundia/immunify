@@ -13,14 +13,12 @@ return new class extends Migration
     {
         Schema::create('parents', function (Blueprint $table) {
             $table->id();
-            $table->string("childName");
-            $table->string("age");
-            $table->string("weight");
-            $table->string("medicalIssue");
-            $table->string("birth");
-            $table->string("address");
-            $table->integer("parentId");
-            $table->foreign("parentId")->on("id")->references("parents");
+            $table->string("name");
+            $table->string("email");
+            $table->string("password");
+            $table->string("contactNumber");
+            $table->string("city");
+            $table->string("parentImage");
             $table->timestamps();
         });
     }

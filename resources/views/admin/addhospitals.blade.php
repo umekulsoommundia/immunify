@@ -112,7 +112,7 @@
                         <tbody>
 
 
-                            @foreach($hospital as $h)
+                            @foreach($hospitalReq as $h)
                             <tr>
                                 <td>{{$h->id}}</td>
                                 <td class="d-none d-xl-table-cell">{{$h->name}}</td>
@@ -128,7 +128,7 @@
 
                                 <td class="record btnsearch"> <button class="btn btnsearch2 text-white"
                                         style="background-color:#3A55A4;" type="submit"> <a
-                                            class="btnsearch2 text-white" href="edit/{{$h->id}}">update</a></button>
+                                            class="btnsearch2 text-white" href="accept/{{$h->id}}">accept</a></button>
                                 </td>
 
                                 <td class="record btnsearch"> <button class="btn btnsearch2 text-white"

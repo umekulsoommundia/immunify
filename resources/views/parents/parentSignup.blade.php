@@ -82,7 +82,7 @@ section {
                     <div class="card" style="border-radius: 1rem;">
                         <div class="row g-0">
                             <div class="col-md-6 col-lg-5 d-none d-md-block">
-                                <img src="pexels-anna-shvets-3786234.jpg" alt="login form" class="card-img-top"
+                                <img src="./pexels-anna-shvets-3786234.jpg" alt="login form" class="card-img-top"
                                     style="border-radius: 1rem 0 0 1rem;" />
                             </div>
                             <div class="col-md-6 col-lg-7 d-flex align-items-center">
@@ -93,18 +93,18 @@ section {
                                         <p class="lead">You will be notified if Your request get accepted</p>
                                     </div>
                                     <div class="text-center">
-                                        <img src="{{asset('public\logoBluePng.png')}}" alt="logo" class="img-fluid" width="132"
+                                        <img src="./logoBluePng.png" alt="Charles Hall" class="img-fluid" width="132"
                                             height="132" />
                                     </div>
-                                    <form method="POST" action="/hospitalSignupPost" enctype="multipart/form-data">
+                                    <form method="POST" action="/parentSignupPost" enctype="multipart/form-data">
                                         @csrf
 
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <div class="mb-3">
-                                                    <label class="form-label">Hospital Name</label>
-                                                    <input class="form-control form-control-lg" type="text"
-                                                        name="name" placeholder="Enter your hospital name" />
+                                                    <label class="form-label"> Name</label>
+                                                    <input class="form-control form-control-lg" type="text" name="name"
+                                                        placeholder="Enter your hospital name" />
                                                     @error('name')
                                                     <div class="text-danger">{{ $message }}</div>
                                                     @enderror
@@ -125,7 +125,7 @@ section {
                                                     <div class="text-danger">{{ $message }}</div>
                                                     @enderror
                                                 </div>
-                                           
+
                                                 <div class="mb-3">
                                                     <label class="form-label">Contact No</label>
                                                     <input class="form-control form-control-lg" type="text"
@@ -134,14 +134,7 @@ section {
                                                     <div class="text-danger">{{ $message }}</div>
                                                     @enderror
                                                 </div>
-                                                <div class="mb-3">
-                                                    <label class="form-label">Certificate </label>
-                                                    <input class="form-control form-control-lg" type="file"
-                                                        name="certificate" placeholder="" />
-                                                    @error('certificate')
-                                                    <div class="text-danger">{{ $message }}</div>
-                                                    @enderror
-                                                </div>
+
 
 
                                             </div>
@@ -177,27 +170,12 @@ section {
                                                     <div class="text-danger">{{ $message }}</div>
                                                     @enderror
                                                 </div>
-                                            
 
                                                 <div class="mb-3">
-                                                    <label class="form-label">Hospital Timing</label>
-                                                    <select class="form-control form-control-lg" name="Timing">
-                                                        <option value="">Select Hospital Timing</option>
-                                                        <option value="12:00 am to 9:00 am">12:00 am to 9:00 am</option>
-                                                        <option value="9:00 am to 6:00 pm">9:00 am to 6:00 pm</option>
-                                                        <option value="6:00 pm to 3:00 am">6:00 pm to 3:00 am</option>
-                                                    </select>
-                                                    @error('Timing')
-                                                    <div class="text-danger">{{ $message }}</div>
-                                                    @enderror
-                                                </div>
-                                              
-
-                                                <div class="mb-3">
-                                                    <label class="form-label">Hospital Images</label>
-                                                    <input class="form-control form-control-lg" type="file" 
-                                                        name="hospitalImage" placeholder="Enter hospital Images" />
-                                                    @error('hospitalImage')
+                                                    <label class="form-label"> Parent Profile</label>
+                                                    <input class="form-control form-control-lg" type="file"
+                                                        name="parentImage" placeholder="Enter hospital Images" />
+                                                    @error('parentImage')
                                                     <div class="text-danger">{{ $message }}</div>
                                                     @enderror
                                                 </div>

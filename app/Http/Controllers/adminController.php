@@ -215,11 +215,12 @@ function hospitalRequest(){
     {
         $hospital = addedHospital::find($id);
 
-        return view('admin.updateHospital',compact('hospital'));
+        return view('hospital.updateHospital',compact('hospital'));
     }
+    
     function update(Request $request,$id)
     {
-        $hospital = addedHospital::find($id);
+        $h = addedHospital::find($id);
         $h->name = $request->name;
         $h->email = $request->email;
         $h->password = $request->password;
@@ -236,6 +237,5 @@ function hospitalRequest(){
 
         return redirect('admin.hospital')->with("msg","Hospital updated");
     }
-
 
 }

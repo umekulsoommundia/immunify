@@ -82,7 +82,7 @@ section {
                     <div class="card" style="border-radius: 1rem;">
                         <div class="row g-0">
                             <div class="col-md-6 col-lg-5 d-none d-md-block">
-                                <img src="pexels-anna-shvets-3786234.jpg" alt="login form" class="card-img-top"
+                                <img src="./pexels-anna-shvets-3786234.jpg" alt="login form" class="card-img-top"
                                     style="border-radius: 1rem 0 0 1rem;" />
                             </div>
                             <div class="col-md-6 col-lg-7 d-flex align-items-center">
@@ -93,7 +93,7 @@ section {
                                         <p class="lead">You will be notified if Your request get accepted</p>
                                     </div>
                                     <div class="text-center">
-                                        <img src="{{asset('public\logoBluePng.png')}}" alt="logo" class="img-fluid" width="132"
+                                        <img src="./logoBluePng.png" alt="Charles Hall" class="img-fluid" width="132"
                                             height="132" />
                                     </div>
                                     <form method="POST" action="/hospitalSignupPost" enctype="multipart/form-data">

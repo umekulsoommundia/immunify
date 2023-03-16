@@ -77,7 +77,7 @@
                         </div>
                     </div>
                 </li>
-                <a href="index.html" style=" color:#3A55A4 "
+                <a href="/hospitalLogout" style=" color:#3A55A4 "
                                             class="btn btn-lg m-t5">
                                             logout</a>
             </ul>
