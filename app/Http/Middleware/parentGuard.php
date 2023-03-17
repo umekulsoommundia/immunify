@@ -15,6 +15,16 @@ class parentGuard
      */
     public function handle(Request $request, Closure $next): Response
     {
+
+        
+        if($request->session()->has('email'))
+        {
+
+        }
+        else{
+            $request->session()->flash('error',"login first");
+            return redirect('signin');
+        }
         return $next($request);
     }
 }

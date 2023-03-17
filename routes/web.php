@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\adminController;
 use App\Http\Controllers\hospitalController;
 use App\Http\Controllers\parentController;
+use App\Http\Controllers\vaccineController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -50,9 +51,9 @@ Route::get('addHospital', function () {
     return view('admin.addhospitals');
 });
 
-Route::get('vaccines', function () {
-    return view('admin.vaccines');
-});
+// Route::get('vaccines', function () {
+//     return view('admin.vaccines');
+// });
 
 Route::get('parents', function () {
     return view('admin.parents');
@@ -76,8 +77,16 @@ Route::get('extra', function () {
 });
 
 
+Route::get('/addVaccine', function () {
+    return view('hospital.addVaccine');
+});
 
 
+
+
+
+
+Route::POST('/addVaccineFunc',[hospitalController::class,'addVaccineFunc']);
 
 Route::get('signup', function () {
     return view('admin.signup');
@@ -109,6 +118,9 @@ route::get('delete/{id}',[adminController::class,'delete']);
 route::get('edit/{id}',[adminController::class,'edit']);
 
 route::post('update/{id}',[adminController::class,'update']);
+
+
+
 
 route::get('deleteHospital/{id}',[adminController::class,'delete']);
 
@@ -143,9 +155,19 @@ Route::group(['middleware'=> 'hospitalGuard'],function(){
     Route::get('/hospitalRequests', function () {
         return view('hospital.requests');
     });
-    Route::get('/hospitalVaccines', function () {
-        return view('hospital.vaccines');
-    });
+   
+    Route::GET('/hospitalVaccines',[hospitalController::class,'vaccinesFetch']);
+
+   
+
+    route::get('/vaccinedelete/{id}',[vaccineController::class,'delete']);
+
+    route::get('/vaccineedit/{id}',[vaccineController::class,'edit']);
+    
+    route::POST('/vaccineupdate/{id}',[vaccineController::class,'update']);
+
+    route::POST('/hospitalVaccines',[vaccineController::class,'hospitalVaccinesPOST']);
+    
     Route::get('/hospitalSchedule', function () {
         return view('hospital.schedule');
     });
@@ -155,8 +177,8 @@ Route::group(['middleware'=> 'hospitalGuard'],function(){
     });
 
     });
-
-
+    route::get('/Hospitaldelete/{id}',[adminController::class,'addedHospitalDelete']);
+  
 
 Route::group(['middleware'=> 'adminGuard'],function(){
 Route::get('/overview',[adminController::class,'overview']);
@@ -164,7 +186,8 @@ Route::get('/profile',[adminController::class,'profile']);
 Route::get('/schedule',[adminController::class,'schedule']);
 route::get('/addhospital',[adminController::class,'hospitalRequest']);
 Route::get('/hospital',[adminController::class,'hospitalAdded']);
-Route::get('/vaccines',[adminController::class,'vaccines']);
+Route::POST('/hospital',[adminController::class,'hospitalAddedPOST']);
+Route::GET('/Vaccines',[adminController::class,'vaccinesFetchAdmin']);
 Route::get('/parents',[adminController::class,'parents']);
 Route::get('/child',[adminController::class,'child']);
 });
@@ -173,6 +196,9 @@ Route::get('/child',[adminController::class,'child']);
 Route::get('/parentSignup',[parentController::class,'parentSignup']);
 
 route::post('/parentSignupPost',[parentController::class,'parentSignupFunc']);
+
+
+route::GET('/parentSignupGET',[parentController::class,'parentSignupFuncGET']);
 
 Route::get('/parentSignin',[parentController::class,'parentSignin']);
 
@@ -195,8 +221,7 @@ Route::group(['middleware'=> 'parentGuard'],function(){
     Route::get('parentAppointment', function () {
         return view('parents.appointment');
     });
-    Route::get('parentHospitals', function () {
-        return view('parents.hospital');
+    route::get('/parentHospitals',[parentController::class,'parentHospital']);
     });
     Route::get('parentMedicalreport', function () {
         return view('parents.medicalreport');
@@ -208,4 +233,6 @@ Route::group(['middleware'=> 'parentGuard'],function(){
         return view('parents.schedule');
     });
     
-    });
+
+    Route::GET('/bookingVaccine',[adminController::class,'bookingVaccine']);
+    Route::POST('/bookingVaccine',[adminController::class,'bookingVaccinePost']);

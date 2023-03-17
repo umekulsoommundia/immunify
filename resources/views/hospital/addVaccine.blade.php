@@ -117,7 +117,7 @@
 
                                 <div class=" text-end">
 
-                                    <a href="/addVaccine" style=" mt-0 color:#3A55A4;margin-left:9px;"
+                                    <a href="patientsmore" style=" mt-0 color:#3A55A4;margin-left:9px;"
                                         class="btn btn-lg m-t5">
 
 
@@ -131,35 +131,41 @@
                     </div>
 
                 </div>
-                <table class="table table-hover my-0">
-                    <thead>
-                        <tr>
-                            <th>Id</th>
-                            <th class="d-none d-xl-table-cell">Name</th>
-                            <th class="d-none d-xl-table-cell">Quantity</th>
+                <form method="POST" action="/addVaccineFunc" enctype="multipart-formdata">
+                                        @csrf
+                                        <div class="mb-3">
+                                            <label class="form-label">Vaccine Type</label>
+                                            <input class="form-control form-control-lg" type="text" name="vaccineType"
+                                                placeholder="Enter your name" />
+                                                @error('vaccineType')
+                                            <div class="text-danger">{{ $message }}</div>
+                                            @enderror
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label">Quantity</label>
+                                            <input class="form-control form-control-lg" type="text" name="VaccineQuantity"
+                                                placeholder="Enter your email" />
+                                                @error('VaccineQuantity')
+                                            <div class="text-danger">{{ $message }}</div>
+                                            @enderror
+                                        </div>
+                                 
+                               
 
-                        </tr>
-                    </thead>
-                    <tbody>
-                    @foreach($vaccination as $v)
-                            <tr>
-                                <td>{{$v->id}}</td>
-                                <td class="d-none d-xl-table-cell">{{$v->vaccineType}}</td>
-                                <td class="d-none d-xl-table-cell">{{$v->VaccineQuantity}}</td>
-                                <td class="record btnsearch"> <button class="btn btnsearch2 text-white"
-                                        style="background-color:#D62600;" type="submit"> <a
-                                            class="btnsearch2 text-white" href="vaccineedit/{{$v->id}}">update</a></button>
-                                </td>
+                                        @if(session('message'))
+                                        <div class="alert alert-success">
+                                            {{session('message')}}
+                                        </div>
 
-                                <td class="record btnsearch"> <button class="btn btnsearch2 text-white"
-                                        style="background-color:#D62600;" type="submit"> <a
-                                            class="btnsearch2 text-white" href="vaccinedelete/{{$v->id}}">x</a></button>
-                                </td>
-                            </tr>
+                                        @endif
 
-                            @endforeach
-                    </tbody>
-                </table>
+
+                                        <div class="text-center mt-3">
+                                            <!-- <button type="submit"style="background-color:#3A55A4;" class="btn-lg text-white">Sign up<button> -->
+
+                                            <button type="submit" class="btn btn-lg btn-primary">Sign up</button>
+                                        </div>
+                                    </form>
             </div>
         </div>
 

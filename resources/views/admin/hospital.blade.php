@@ -133,7 +133,7 @@
 
                                 <td class="record btnsearch"> <button class="btn btnsearch2 text-white"
                                         style="background-color:#D62600;" type="submit"> <a
-                                            class="btnsearch2 text-white" href="delete/{{$h->id}}">x</a></button>
+                                            class="btnsearch2 text-white" href="/Hospitaldelete/{{$h->id}}">x</a></button>
                                 </td>
                             </tr>
 

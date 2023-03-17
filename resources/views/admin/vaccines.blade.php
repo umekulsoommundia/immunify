@@ -2,9 +2,9 @@
 @section("main")
 
 <style>
- 
 
-  </style>
+
+</style>
 <li class="nav-item dropdown">
     <a class="nav-icon dropdown-toggle" href="#" id="alertsDropdown" data-bs-toggle="dropdown">
         <div class="position-relative">
@@ -85,62 +85,43 @@
 </nav>
 
 <main class="content">
-  <div class="container-fluid p-0">
-    <div class="row">
-      <div class="col-12">
-        <div class="card">
-          <div class="card-header">
-            <h5 class="card-title mb-0">Vaccines Data</h5>
-          </div>
-          <div class="table-responsive">
-          <table class="table table-hover table-responsive my-0">
+    <div class="container-fluid p-0">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title mb-0">Vaccines Data</h5>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-hover my-0">
+                            <thead>
+                                <tr>
+                                    <th>Id</th>
+                                    <th class="d-none d-xl-table-cell">Name</th>
+                                    <th class="d-none d-xl-table-cell">Quantity</th>
+                                    <th class="d-none d-xl-table-cell">hospital</th>
 
-              <thead>
-                <tr>
-                  <th>Id</th>
-                  <th class="d-none d-md-table-cell">Name</th>
-                  <th class="d-none d-md-table-cell">Quantity</th>
-                  <th>Hospital</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>#1</td>
-                  <td class="d-none d-md-table-cell">Indus</td>
-                  <td class="d-none d-md-table-cell">xyz</td>
-                  <td class="d-none d-md-table-cell">312456566</td>
-                </tr>
-                <tr>
-                  <td>#2</td>
-                  <td class="d-none d-md-table-cell">Indus</td>
-                  <td class="d-none d-md-table-cell">xyz</td>
-                  <td class="d-none d-md-table-cell">312456566</td>
-                </tr>
-                <tr>
-                  <td>#3</td>
-                  <td class="d-none d-md-table-cell">Indus</td>
-                  <td class="d-none d-md-table-cell">xyz</td>
-                  <td class="d-none d-md-table-cell">312456566</td>
-                </tr>
-                <tr>
-                  <td>#4</td>
-                  <td class="d-none d-md-table-cell">Indus</td>
-                  <td class="d-none d-md-table-cell">xyz</td>
-                  <td class="d-none d-md-table-cell">312456566</td>
-                </tr>
-                <tr>
-                  <td>#5</td>
-                  <td class="d-none d-md-table-cell">Indus</td>
-                  <td class="d-none d-md-table-cell">xyz</td>
-                  <td class="d-none d-md-table-cell">312456566</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach($vaccination as $v)
+                                <tr>
+                                    <td>{{$v->id}}</td>
+                                    <td class="d-none d-xl-table-cell">{{$v->vaccineType}}</td>
+                                    <td class="d-none d-xl-table-cell">{{$v->VaccineQuantity}}</td>
+                                    <td class="d-none d-xl-table-cell">hospitalName</td>
+                                    <!-- <td class="d-none d-xl-table-cell"> //{{$v->VaccineQuantity}}</td> -->
+                                   
+                                </tr>
+
+                                @endforeach
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </main>
 
 @endsection

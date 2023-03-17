@@ -151,7 +151,7 @@ section {
          
 
                     <li class="sidebar-item">
-                        <a class="sidebar-link" href="vaccines" style="background-color:#0a77b1;">
+                        <a class="sidebar-link" href="/Vaccines" style="background-color:#0a77b1;">
                             <i class="align-middle" data-feather="database"></i> <span
                                 class="align-middle">Vaccines</span>
                         </a>

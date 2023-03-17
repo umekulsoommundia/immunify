@@ -104,189 +104,29 @@
     </tr>
     <table>
 
-
+    @foreach($hospital as $h)
 
         <div class="col-6 col-lg-4">
             <div class="app-card app-card-stat shadow-sm h-100">
                 <div class="app-card-body p-3 p-lg-4">
-                    <img height="220px" width="220px" src="hospital7.jpg">
-                    <h4 class="stats-type mb-1 mt-3" style=" font-weight:21px; color:#203C71;">xyz
-                        hospital</h4>
-                    <div class="text-muted">clinic and pharmacy</div>
+                    <img height="220px" width="220px" src="./hospitalImages/{{$h->hospitalImage}}">
+                    <h4 class="stats-type mb-1 mt-3" style=" font-weight:21px; color:#203C71;">{{$h->name}}</h4>
+                    <div class="text-muted">{{$h->location}}</div>
 
                     <div class="mt-3">
-                        <a href="index.html" style="color:#3A55A4;" class="btn btn-lg  m-t5">
-                            view more</a>
+                        <a href="/bookingVaccine" style="color:#3A55A4;" class="btn btn-lg  m-t5">Book Now</a>
                         <!-- <button type="submit" class="btn btn
                         -lg btn-primary">Sign up</button> -->
                     </div>
                 </div>
                 <!--//app-card-body-->
-                <a class="app-card-link-mask" href="#"></a>
+                <a class="app-card-link-mask" href="/bookingVaccine"></a>
             </div>
             <!--//app-card-->
         </div>
         <!--//col-->
-
-        <div class="col-6 col-lg-4">
-            <div class="app-card app-card-stat shadow-sm h-100">
-                <div class="app-card-body p-3 p-lg-4">
-                    <img height="220px" width="220px" src="hospital6.jpg">
-                    <h4 class="stats-type mb-1  mt-3" style=" font-weight:21px;color:#203C71;"> xyz
-                        hospital</h4>
-                    <div class="text-muted">clinic and pharmacy</div>
-
-                    <div class="mt-3">
-                        <a href="index.html" style="color:#3A55A4;" class="btn btn-lg m-t5">
-                            view more</a>
-                        <!-- <button type="submit" class="btn btn-lg btn-primary">Sign up</button> -->
-                    </div>
-                </div>
-                <!--//app-card-body-->
-                <a class="app-card-link-mask" href="#"></a>
-            </div>
-            <!--//app-card-->
-        </div>
-        <!--//col-->
-        <div class="col-6 col-lg-4">
-            <div class="app-card app-card-stat shadow-sm h-100">
-                <div class="app-card-body p-3 p-lg-4">
-                    <img height="220px" width="220px" src="hospital5.jpg">
-                    <h4 class="stats-type mb-1  mt-3" style=" font-weight:21px; color:#203C71;"> xyz
-                        hospital</h4>
-                    <div class="text-muted">clinic and pharmacy</div>
-
-                    <div class="mt-3">
-                        <a href="index.html" style="color:#3A55A4;" class="btn btn-lg  m-t5">
-                            view more</a>
-                        <!-- <button type="submit" class="btn btn-lg btn-primary">Sign up</button> -->
-                    </div>
-                </div>
-                <!--//app-card-body-->
-                <a class="app-card-link-mask" href="#"></a>
-
-            </div>
-            <!--//app-card-->
-        </div>
-        <!--//col-->
-        <div class="col-6 col-lg-4">
-            <div class="app-card app-card-stat shadow-sm h-100">
-                <div class="app-card-body p-3 p-lg-4">
-                    <img height="220px" width="220px" src="hospital7.jpg">
-                    <h4 class="stats-type mb-1 mt-3" style=" font-weight:21px; color:#203C71;">xyz
-                        hospital</h4>
-                    <div class="text-muted">clinic and pharmacy</div>
-
-                    <div class="mt-3">
-                        <a href="index.html" style="color:#3A55A4;" class="btn btn-lg  m-t5">
-                            view more</a>
-                        <!-- <button type="submit" class="btn btn
-                        -lg btn-primary">Sign up</button> -->
-                    </div>
-                </div>
-                <!--//app-card-body-->
-                <a class="app-card-link-mask" href="#"></a>
-            </div>
-            <!--//app-card-->
-        </div>
-        <!--//col-->
-
-        <div class="col-6 col-lg-4">
-            <div class="app-card app-card-stat shadow-sm h-100">
-                <div class="app-card-body p-3 p-lg-4">
-                    <img height="220px" width="220px" src="hospital6.jpg">
-                    <h4 class="stats-type mb-1  mt-3" style=" font-weight:21px;color:#203C71;"> xyz
-                        hospital</h4>
-                    <div class="text-muted">clinic and pharmacy</div>
-
-                    <div class="mt-3">
-                        <a href="index.html" style="color:#3A55A4;" class="btn btn-lg m-t5">
-                            view more</a>
-                        <!-- <button type="submit" class="btn btn-lg btn-primary">Sign up</button> -->
-                    </div>
-                </div>
-                <!--//app-card-body-->
-                <a class="app-card-link-mask" href="#"></a>
-            </div>
-            <!--//app-card-->
-        </div>
-        <!--//col-->
-        <div class="col-6 col-lg-4">
-            <div class="app-card app-card-stat shadow-sm h-100">
-                <div class="app-card-body p-3 p-lg-4">
-                    <img height="220px" width="220px" src="hospital5.jpg">
-                    <h4 class="stats-type mb-1  mt-3" style=" font-weight:21px; color:#203C71;"> xyz
-                        hospital</h4>
-                    <div class="text-muted">clinic and pharmacy</div>
-
-                    <div class="mt-3">
-                        <a href="index.html" style="color:#3A55A4;" class="btn btn-lg  m-t5">
-                            view more</a>
-                        <!-- <button type="submit" class="btn btn-lg btn-primary">Sign up</button> -->
-                    </div>
-                </div>
-                <!--//app-card-body-->
-                <a class="app-card-link-mask" href="#"></a>
-
-            </div>
-            <!--//app-card-->
-        </div>
-        <div class="col-6 col-lg-4">
-            <div class="app-card app-card-stat shadow-sm h-100">
-                <div class="app-card-body p-3 p-lg-4">
-                    <img height="220px" width="220px" src="hospital7.jpg">
-                    <h4 class="stats-type mb-1 mt-3" style=" font-weight:21px; color:#203C71;">xyz
-                        hospital</h4>
-                    <div class="text-muted">clinic and pharmacy</div>
-
-                    <div class="mt-3">
-                        <a href="index.html" style="color:#3A55A4;" class="btn btn-lg  m-t5">
-                            view more</a>
-                        <!-- <button type="submit" class="btn btn
-                        -lg btn-primary">Sign up</button> -->
-                    </div>
-                </div>
-                <!--//app-card-body-->
-                <a class="app-card-link-mask" href="#"></a>
-            </div>
-            <!--//app-card-->
-        </div>
-        <!--//col-->
-
-        <div class="col-6 col-lg-4">
-            <div class="app-card app-card-stat shadow-sm h-100">
-                <div class="app-card-body p-3 p-lg-4">
-                    <img height="220px" width="220px" src="hospital6.jpg">
-                    <h4 class="stats-type mb-1  mt-3" style=" font-weight:21px;color:#203C71;"> xyz
-                        hospital</h4>
-                    <div class="text-muted">clinic and pharmacy</div>
-
-                    <div class="mt-3">
-                        <a href="index.html" style="color:#3A55A4;" class="btn btn-lg m-t5">
-                            view more</a>
-                        <!-- <button type="submit" class="btn btn-lg btn-primary">Sign up</button> -->
-                    </div>
-                </div>
-                <!--//app-card-body-->
-                <a class="app-card-link-mask" href="#"></a>
-            </div>
-            <!--//app-card-->
-        </div>
-        <!--//col-->
-        <div class="col-6 col-lg-4">
-            <div class="app-card app-card-stat shadow-sm h-100">
-                <div class="app-card-body p-3 p-lg-4">
-                    <img height="220px" width="220px" src="hospital5.jpg">
-                    <h4 class="stats-type mb-1  mt-3" style=" font-weight:21px; color:#203C71;"> xyz
-                        hospital</h4>
-                    <div class="text-muted">clinic and pharmacy</div>
-
-                    <div class="mt-3">
-                        <a href="index.html" style="color:#3A55A4;" class="btn btn-lg  m-t5">
-                            view more</a>
-                        <!-- <button type="submit" class="btn btn-lg btn-primary">Sign up</button> -->
-                    </div>
-                </div>
+        @endforeach
+       
                 <!--//app-card-body-->
                 <a class="app-card-link-mask" href="#"></a>
 

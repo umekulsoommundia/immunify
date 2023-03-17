@@ -1,91 +1,127 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends("admin.layout")
+@section("main")
+<form class="form-inline">
+                        <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                    </form>
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Responsive Admin &amp; Dashboard Template based on Bootstrap 5">
-    <meta name="author" content="AdminKit">
-    <meta name="keywords"
-        content="adminkit, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="shortcut icon" href="../img/icons/icon-48x48.png" />
-
-    <link rel="canonical" href="https://demo-basic.adminkit.io/pages-sign-up.html" />
-
-    <title>Sign Up</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="../css/app.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-    </script>
-</head>
-<style>
-* {
-
-
-    font-family: 'Lato', sans-serif;
-
-}
-
-body {
-    background-color: #0A76B1;
-}
-
-.card-img-top {
-    height: 100%;
-    object-fit: cover;
-}
-
-/* center the content vertically and horizontally */
-.card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-/* add some margin to the top and bottom of the form */
-form {
-    margin: 20px 0;
-}
-
-/* make the form inputs take up the entire width of the container */
-input {
-    width: 100%;
-}
-
-/* add some padding to the top and bottom of the container */
-section {
-    padding: 20px 0;
-}
-
-/* add some margin to the top and bottom of the container on small screens */
-@media (max-width: 768px) {
-    section {
-        margin: 20px 0;
-    }
-}
-</style>
-
-
-
-<body>
-    <section class="vh-100" style="background-color:#0A76B1;">
-        <div class="container py-5 h-100">
-            <div class="row d-flex justify-content-center align-items-center h-100">
-                <div class="col col-xl-12">
-                    <div class="card" style="border-radius: 1rem;">
-                        <div class="row g-0">
-                            <div class="col-md-6 col-lg-5 d-none d-md-block">
-                                <img src="../pexels-anna-shvets-3786234.jpg" alt="login form" class="card-img-top"
-                                    style="border-radius: 1rem 0 0 1rem;" />
+                    <!-- Topbar Search -->
+                    <form
+                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                        <div class="input-group">
+                        <button class="btn btn-primary"  type="button">
+                        <div  data-feather="search">
+</div>
+                                </button>
+                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
+                                aria-label="Search" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                
                             </div>
-                            <div class="col-md-6 col-lg-7 d-flex align-items-center">
+                        </div>
+                    </form>
+
+<li class="nav-item dropdown">
+    <a class="nav-icon dropdown-toggle" href="#" id="alertsDropdown" data-bs-toggle="dropdown">
+        <div class="position-relative">
+            <i class="align-middle" data-feather="bell"> f</i>
+            <span class="indicator">4</span>
+        </div>
+    </a>
+    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end py-0" aria-labelledby="alertsDropdown">
+        <div class="dropdown-menu-header">
+            4 New Notifications
+        </div>
+        <div class="list-group">
+            <a href="#" class="list-group-item">
+                <div class="row g-0 align-items-center">
+                    <div class="col-2">
+                        <i class="text-danger" data-feather="alert-circle"></i>
+                    </div>
+                    <div class="col-10">
+                        <div class="text-dark">cancelled appointment</div>
+                        <div class="text-muted small mt-1">Sarah Cancelled appointment 11-12-1 </div>
+                        <div class="text-muted small mt-1">30m ago</div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="list-group-item">
+                <div class="row g-0 align-items-center">
+                    <div class="col-2">
+                        <i class="text-primary" data-feather="home"></i>
+                    </div>
+                    <div class="col-10">
+                        <div class="text-dark">Login from sarah</div>
+                        <div class="text-muted small mt-1">5h ago</div>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="list-group-item">
+                <div class="row g-0 align-items-center">
+                    <div class="col-2">
+                        <i class="text-success" data-feather="user-plus"></i>
+                    </div>
+                    <div class="col-10">
+                        <div class="text-dark">New Request</div>
+                        <div class="text-muted small mt-1">Sarah sent an appointment request.
+                        </div>
+                        <div class="text-muted small mt-1">14h ago</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="dropdown-menu-footer">
+            <a href="notification" class="text-muted">Show all notifications</a>
+        </div>
+    </div>
+</li>
+
+<li class="nav-item dropdown">
+    <a class="nav-icon dropdown-toggle d-inline-block d-sm-none" href="#" data-bs-toggle="dropdown">
+        <i class="align-middle" data-feather="settings"></i>
+    </a>
+
+    <a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#" data-bs-toggle="dropdown">
+        <img src="img/avatars/avatar.jpg" class="avatar img-fluid rounded me-1" alt="Charles Hall" />
+        <span class="text-dark">Admin</span>
+    </a>
+    <div class="dropdown-menu dropdown-menu-end">
+        <a class="dropdown-item" href="profile"><i class="align-middle me-1" data-feather="user"></i> Profile</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="index.html"><i class="align-middle me-1" data-feather="settings"></i>
+            Settings</a>
+
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Log out</a>
+    </div>
+</li>
+</ul>
+</div>
+</nav>
+
+<main class="content">
+    <div class="container-fluid p-0">
+
+
+
+        <div class="row">
+            <div class="col-8 col-lg-12 d-flex">
+                <div class="card flex-fill">
+                    <div class="card-header">
+
+                        <table>
+                            <tr>
+                                <h4 style="color: #0A77B1;" class=" mb-0">book vaccine</h4>
+
+                            </tr>
+                            <table>
+                    </div>
+
+                </div>
+
+                   <div class="col-md-6 col-lg-12 d-flex align-items-center">
                                 <div class="card-body p-4 p-lg-5 text-black">
                                     <div class="text-center mt-4">
                                         <h1 style="color:#203C71;  font-size:30px;" class="h2">Join us ,Let's Immunify
@@ -93,25 +129,25 @@ section {
                                         <p class="lead">You will be notified if Your request get accepted</p>
                                     </div>
                                     <div class="text-center">
-                                        <img src="../logoBluePng.png" alt="Charles Hall" class="img-fluid" width="132"
+                                        <img src="../logoBluePng.png" alt="logo" class="img-fluid" width="132"
                                             height="132" />
                                     </div>
-                                    <form method="POST" action="/update/{{$h->id}}" enctype="multipart/form-data">
+                                    <form method="POST" action="/hospitalSignupPost" enctype="multipart/form-data">
                                         @csrf
-                                 
+
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <div class="mb-3">
-                                                    <label class="form-label">Hospital Name</label>
-                                                    <input class="form-control form-control-lg" type="text" value="{{$h->name}}"
-                                                    name="name" placeholder="Enter your hospital name" />
+                                                    <label class="form-label">Child Name</label>
+                                                    <input class="form-control form-control-lg" type="text"
+                                                        name="name" placeholder="Enter your hospital name" />
                                                     @error('name')
                                                     <div class="text-danger">{{ $message }}</div>
                                                     @enderror
                                                 </div>
                                                 <div class="mb-3">
-                                                    <label class="form-label">Password</label>
-                                                    <input class="form-control form-control-lg" type="password"  value="{{$h->password}}"
+                                                    <label class="form-label">Date Of Birth</label>
+                                                    <input class="form-control form-control-lg" type="text"
                                                         name="password" placeholder="Enter your password" />
                                                     @error('password')
                                                     <div class="text-danger">{{ $message }}</div>
@@ -119,7 +155,7 @@ section {
                                                 </div>
                                                 <div class="mb-3">
                                                     <label class="form-label">Location</label>
-                                                    <input class="form-control form-control-lg" type="text"  value="{{$h->location}}"
+                                                    <input class="form-control form-control-lg" type="text"
                                                         name="location" placeholder="Enter your location" />
                                                     @error('location')
                                                     <div class="text-danger">{{ $message }}</div>
@@ -129,14 +165,14 @@ section {
                                                 <div class="mb-3">
                                                     <label class="form-label">Contact No</label>
                                                     <input class="form-control form-control-lg" type="text"
-                                                    value="{{$h->contactNumber}}" name="contactNumber" placeholder="Enter contact number" />
+                                                        name="contactNumber" placeholder="Enter contact number" />
                                                     @error('contactNumber')
                                                     <div class="text-danger">{{ $message }}</div>
                                                     @enderror
                                                 </div>
                                                 <div class="mb-3">
-                                                    <label class="form-label">Certificate </label>
-                                                    <input class="form-control form-control-lg" type="file"      value="{{$h->certificate}}" 
+                                                    <label class="form-label">Vaccine </label>
+                                                    <input class="form-control form-control-lg" type="file"
                                                         name="certificate" placeholder="" />
                                                     @error('certificate')
                                                     <div class="text-danger">{{ $message }}</div>
@@ -149,7 +185,7 @@ section {
                                             <div class="col-md-6">
                                                 <div class="mb-3">
                                                     <label class="form-label">Email</label>
-                                                    <input class="form-control form-control-lg" type="email" value="{{$h->email}}" 
+                                                    <input class="form-control form-control-lg" type="email"
                                                         name="email" placeholder="Enter your Email" />
                                                     @error('email')
                                                     <div class="text-danger">{{ $message }}</div>
@@ -157,7 +193,7 @@ section {
                                                 </div>
                                                 <div class="mb-3">
                                                     <label class="form-label">Confirm Password</label>
-                                                    <input class="form-control form-control-lg" type="password"  value="{{$h->email}}" 
+                                                    <input class="form-control form-control-lg" type="password"
                                                         name="confirmPassword" placeholder="confirm password" />
                                                     @error('confirmPassword')
                                                     <div class="text-danger">{{ $message }}</div>
@@ -165,7 +201,7 @@ section {
                                                 </div>
                                                 <div class="mb-3">
                                                     <label class="form-label">City</label>
-                                                    <select class="form-control form-control-lg" name="city" value="{{$h->city}}" >
+                                                    <select class="form-control form-control-lg" name="city">
                                                         <option value="">Select City</option>
                                                         <option value="karachi">Karachi</option>
                                                         <option value="lahore">Lahore</option>
@@ -181,7 +217,7 @@ section {
 
                                                 <div class="mb-3">
                                                     <label class="form-label">Hospital Timing</label>
-                                                    <select class="form-control form-control-lg" name="Timing" value="{{$h->Timing}}" >
+                                                    <select class="form-control form-control-lg" name="Timing">
                                                         <option value="">Select Hospital Timing</option>
                                                         <option value="12:00 am to 9:00 am">12:00 am to 9:00 am</option>
                                                         <option value="9:00 am to 6:00 pm">9:00 am to 6:00 pm</option>
@@ -195,8 +231,8 @@ section {
 
                                                 <div class="mb-3">
                                                     <label class="form-label">Hospital Images</label>
-                                                    <input class="form-control form-control-lg" type="file"  value="{{$h->hospitalImage}}"
-                                                name="hospitalImage" placeholder="Enter hospital Images" />
+                                                    <input class="form-control form-control-lg" type="file" 
+                                                        name="hospitalImage" placeholder="Enter hospital Images" />
                                                     @error('hospitalImage')
                                                     <div class="text-danger">{{ $message }}</div>
                                                     @enderror
@@ -216,18 +252,19 @@ section {
                                         <div class="text-center mt-3">
                                             <button type="submit" class="btn btn-lg btn-primary">Register</button>
                                         </div>
-                                 
+
                                     </form>
 
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
-    </section>
 
-</body>
 
-</html>
+
+    </div>
+
+
+    </div>
+</main>
+@endsection

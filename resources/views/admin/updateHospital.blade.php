@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,17 +10,17 @@
     <meta name="keywords"
         content="adminkit, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="shortcut icon" href="img/icons/icon-48x48.png" />
+    <link rel="preconnect" href="../https://fonts.gstatic.com">
+    <link rel="shortcut icon" href="../img/icons/icon-48x48.png" />
 
-    <link rel="canonical" href="https://demo-basic.adminkit.io/pages-sign-up.html" />
+    <link rel="canonical" href="../https://demo-basic.adminkit.io/pages-sign-up.html" />
 
     <title>Sign Up</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    <link href="../https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="css/app.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    <link href="../css/app.css" rel="stylesheet">
+    <link href="../https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="../https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
 </head>
@@ -84,7 +82,7 @@ section {
                     <div class="card" style="border-radius: 1rem;">
                         <div class="row g-0">
                             <div class="col-md-6 col-lg-5 d-none d-md-block">
-                                <img src="./pexels-anna-shvets-3786234.jpg" alt="login form" class="card-img-top"
+                                <img src="../pexels-anna-shvets-3786234.jpg" alt="login form" class="card-img-top"
                                     style="border-radius: 1rem 0 0 1rem;" />
                             </div>
                             <div class="col-md-6 col-lg-7 d-flex align-items-center">
@@ -95,26 +93,31 @@ section {
                                         <p class="lead">You will be notified if Your request get accepted</p>
                                     </div>
                                     <div class="text-center">
-                                        <img src="./logoBluePng.png" alt="Charles Hall" class="img-fluid" width="132"
+                                        <img src="../logoBluePng.png" alt="Charles Hall" class="img-fluid" width="132"
                                             height="132" />
                                     </div>
+
+
                                     <form method="POST" action="/hospitalSignupPost" enctype="multipart/form-data">
                                         @csrf
-
+                          
+                                 
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <div class="mb-3">
                                                     <label class="form-label">Hospital Name</label>
                                                     <input class="form-control form-control-lg" type="text"
-                                                        name="name" placeholder="Enter your hospital name" />
+                                                        value="{{$h->name}}" name="name"
+                                                        placeholder="Enter your hospital name" />
                                                     @error('name')
                                                     <div class="text-danger">{{ $message }}</div>
                                                     @enderror
                                                 </div>
-                                                <div class="mb-3">
+                                                <div class=" mb-3">
                                                     <label class="form-label">Password</label>
                                                     <input class="form-control form-control-lg" type="password"
-                                                        name="password" placeholder="Enter your password" />
+                                                        value="{{$h->password}}" name="password"
+                                                        placeholder="Enter your password" />
                                                     @error('password')
                                                     <div class="text-danger">{{ $message }}</div>
                                                     @enderror
@@ -122,16 +125,18 @@ section {
                                                 <div class="mb-3">
                                                     <label class="form-label">Location</label>
                                                     <input class="form-control form-control-lg" type="text"
-                                                        name="location" placeholder="Enter your location" />
+                                                        value="{{$h->location}}" name="location"
+                                                        placeholder="Enter your location" />
                                                     @error('location')
                                                     <div class="text-danger">{{ $message }}</div>
                                                     @enderror
                                                 </div>
-                                           
+
                                                 <div class="mb-3">
                                                     <label class="form-label">Contact No</label>
                                                     <input class="form-control form-control-lg" type="text"
-                                                        name="contactNumber" placeholder="Enter contact number" />
+                                                        value="{{$h->contactNumber}}" name="contactNumber"
+                                                        placeholder="Enter contact number" />
                                                     @error('contactNumber')
                                                     <div class="text-danger">{{ $message }}</div>
                                                     @enderror
@@ -139,7 +144,7 @@ section {
                                                 <div class="mb-3">
                                                     <label class="form-label">Certificate </label>
                                                     <input class="form-control form-control-lg" type="file"
-                                                        name="certificate" placeholder="" />
+                                                        value="{{$h->certificate}}" name="certificate" placeholder="" />
                                                     @error('certificate')
                                                     <div class="text-danger">{{ $message }}</div>
                                                     @enderror
@@ -152,7 +157,8 @@ section {
                                                 <div class="mb-3">
                                                     <label class="form-label">Email</label>
                                                     <input class="form-control form-control-lg" type="email"
-                                                        name="email" placeholder="Enter your Email" />
+                                                        value="{{$h->email}}" name="email"
+                                                        placeholder="Enter your Email" />
                                                     @error('email')
                                                     <div class="text-danger">{{ $message }}</div>
                                                     @enderror
@@ -160,7 +166,8 @@ section {
                                                 <div class="mb-3">
                                                     <label class="form-label">Confirm Password</label>
                                                     <input class="form-control form-control-lg" type="password"
-                                                        name="confirmPassword" placeholder="confirm password" />
+                                                        value="{{$h->confirmPassword}}" name="confirmPassword"
+                                                        placeholder="confirm password" />
                                                     @error('confirmPassword')
                                                     <div class="text-danger">{{ $message }}</div>
                                                     @enderror
@@ -179,11 +186,12 @@ section {
                                                     <div class="text-danger">{{ $message }}</div>
                                                     @enderror
                                                 </div>
-                                            
+
 
                                                 <div class="mb-3">
                                                     <label class="form-label">Hospital Timing</label>
-                                                    <select class="form-control form-control-lg" name="Timing">
+                                                    <select class="form-control form-control-lg" name="Timing"
+                                                        value="{{$h->Timing}}">
                                                         <option value="">Select Hospital Timing</option>
                                                         <option value="12:00 am to 9:00 am">12:00 am to 9:00 am</option>
                                                         <option value="9:00 am to 6:00 pm">9:00 am to 6:00 pm</option>
@@ -193,12 +201,13 @@ section {
                                                     <div class="text-danger">{{ $message }}</div>
                                                     @enderror
                                                 </div>
-                                              
+
 
                                                 <div class="mb-3">
                                                     <label class="form-label">Hospital Images</label>
-                                                    <input class="form-control form-control-lg" type="file" 
-                                                        name="hospitalImage" placeholder="Enter hospital Images" />
+                                                    <input class="form-control form-control-lg" type="file"
+                                                        value="{{$h->hospitalImage}}" name="hospitalImage"
+                                                        placeholder="Enter hospital Images" />
                                                     @error('hospitalImage')
                                                     <div class="text-danger">{{ $message }}</div>
                                                     @enderror
@@ -218,7 +227,7 @@ section {
                                         <div class="text-center mt-3">
                                             <button type="submit" class="btn btn-lg btn-primary">Register</button>
                                         </div>
-
+                               
                                     </form>
 
                                 </div>
@@ -337,8 +346,8 @@ section {
                                         <img src="./logoBluePng.png" alt="Charles Hall" class="img-fluid" width="132"
                                             height="132" />
                                     </div>
-                                    
-                         
+
+
                                     <form method="POST" action="/hospitalSignupPost" enctype="multipart/form-data">
                                         @csrf
 
@@ -346,41 +355,46 @@ section {
                                             <div class="col-md-6">
                                                 <div class="mb-3">
                                                     <label class="form-label">Hospital Name</label>
-                                                    <input class="form-control form-control-lg" type="text" value="{{$hospital->name}}"
-                                                        name="name" placeholder="Enter your hospital name" />
+                                                    <input class="form-control form-control-lg" type="text"
+                                                        value="{{$hospital->name}}" name="name"
+                                                        placeholder="Enter your hospital name" />
                                                     @error('name')
                                                     <div class="text-danger">{{ $message }}</div>
                                                     @enderror
                                                 </div>
                                                 <div class="mb-3">
                                                     <label class="form-label">Password</label>
-                                                    <input class="form-control form-control-lg" type="password" value="{{$hospital->password}}"
-                                                        name="password" placeholder="Enter your password" />
+                                                    <input class="form-control form-control-lg" type="password"
+                                                        value="{{$hospital->password}}" name="password"
+                                                        placeholder="Enter your password" />
                                                     @error('password')
                                                     <div class="text-danger">{{ $message }}</div>
                                                     @enderror
                                                 </div>
                                                 <div class="mb-3">
                                                     <label class="form-label">Location</label>
-                                                    <input class="form-control form-control-lg" type="text" value="{{$hospital->location}}"
-                                                        name="location" placeholder="Enter your location" />
+                                                    <input class="form-control form-control-lg" type="text"
+                                                        value="{{$hospital->location}}" name="location"
+                                                        placeholder="Enter your location" />
                                                     @error('location')
                                                     <div class="text-danger">{{ $message }}</div>
                                                     @enderror
                                                 </div>
-                                           
+
                                                 <div class="mb-3">
                                                     <label class="form-label">Contact No</label>
-                                                    <input class="form-control form-control-lg" type="text" value="{{$hospital->contactNumber}}"
-                                                        name="contactNumber" placeholder="Enter contact number" />
+                                                    <input class="form-control form-control-lg" type="text"
+                                                        value="{{$hospital->contactNumber}}" name="contactNumber"
+                                                        placeholder="Enter contact number" />
                                                     @error('contactNumber')
                                                     <div class="text-danger">{{ $message }}</div>
                                                     @enderror
                                                 </div>
                                                 <div class="mb-3">
                                                     <label class="form-label">Certificate </label>
-                                                    <input class="form-control form-control-lg" type="file" value="{{$hospital->certificate}}"
-                                                        name="certificate" placeholder="" />
+                                                    <input class="form-control form-control-lg" type="file"
+                                                        value="{{$hospital->certificate}}" name="certificate"
+                                                        placeholder="" />
                                                     @error('certificate')
                                                     <div class="text-danger">{{ $message }}</div>
                                                     @enderror
@@ -392,23 +406,26 @@ section {
                                             <div class="col-md-6">
                                                 <div class="mb-3">
                                                     <label class="form-label">Email</label>
-                                                    <input class="form-control form-control-lg" type="email"  value="{{$hospital->email}}"
-                                                        name="email" placeholder="Enter your Email" />
+                                                    <input class="form-control form-control-lg" type="email"
+                                                        value="{{$hospital->email}}" name="email"
+                                                        placeholder="Enter your Email" />
                                                     @error('email')
                                                     <div class="text-danger">{{ $message }}</div>
                                                     @enderror
                                                 </div>
                                                 <div class="mb-3">
                                                     <label class="form-label">Confirm Password</label>
-                                                    <input class="form-control form-control-lg" type="password" value="{{$hospital->confirmPassword}}"
-                                                        name="confirmPassword" placeholder="confirm password" />
+                                                    <input class="form-control form-control-lg" type="password"
+                                                        value="{{$hospital->confirmPassword}}" name="confirmPassword"
+                                                        placeholder="confirm password" />
                                                     @error('confirmPassword')
                                                     <div class="text-danger">{{ $message }}</div>
                                                     @enderror
                                                 </div>
                                                 <div class="mb-3">
-                                                    <label class="form-label">City</label> 
-                                                    <select class="form-control form-control-lg" name="city"  value="{{$hospital->confirmPassword}}" >
+                                                    <label class="form-label">City</label>
+                                                    <select class="form-control form-control-lg" name="city"
+                                                        value="{{$hospital->confirmPassword}}">
                                                         <option value="">Select City</option>
                                                         <option value="karachi">Karachi</option>
                                                         <option value="lahore">Lahore</option>
@@ -420,11 +437,12 @@ section {
                                                     <div class="text-danger">{{ $message }}</div>
                                                     @enderror
                                                 </div>
-                                            
+
 
                                                 <div class="mb-3">
                                                     <label class="form-label">Hospital Timing</label>
-                                                    <select class="form-control form-control-lg" name="Timing"  value="{{$hospital->Timing}}">
+                                                    <select class="form-control form-control-lg" name="Timing"
+                                                        value="{{$hospital->Timing}}">
                                                         <option value="">Select Hospital Timing</option>
                                                         <option value="12:00 am to 9:00 am">12:00 am to 9:00 am</option>
                                                         <option value="9:00 am to 6:00 pm">9:00 am to 6:00 pm</option>
@@ -434,12 +452,13 @@ section {
                                                     <div class="text-danger">{{ $message }}</div>
                                                     @enderror
                                                 </div>
-                                              
+
 
                                                 <div class="mb-3">
                                                     <label class="form-label">Hospital Images</label>
-                                                    <input class="form-control form-control-lg" type="file"  value="{{$hospital->hospitalImage}}"
-                                                        name="hospitalImage" placeholder="Enter hospital Images" />
+                                                    <input class="form-control form-control-lg" type="file"
+                                                        value="{{$hospital->hospitalImage}}" name="hospitalImage"
+                                                        placeholder="Enter hospital Images" />
                                                     @error('hospitalImage')
                                                     <div class="text-danger">{{ $message }}</div>
                                                     @enderror
@@ -454,13 +473,13 @@ section {
                                         <div class="alert alert-success">
                                             {{session('msg')}}
                                         </div>
-                        
+
                                         @endif
 
                                         <div class="text-center mt-3">
                                             <button type="submit" class="btn btn-lg btn-primary">update</button>
                                         </div>
-                               
+
 
                                     </form>
 

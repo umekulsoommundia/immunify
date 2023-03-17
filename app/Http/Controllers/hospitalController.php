@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\hospital;
 use App\Models\hospitalImages;
+use App\Models\vaccine;
 use App\Models\addedHospital;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\facades\hash;
@@ -18,6 +19,7 @@ class hospitalController extends Controller
         return view ('hospital.hospitalSignin');
     }
 
+  
 
 
     function hospitalSigninPostFunc(request $request){
@@ -48,5 +50,32 @@ class hospitalController extends Controller
         
         return view("admin.signin");
     }
+
+
+    function addVaccineFunc(request $request){
+       
+        $request->validate([
+          'vaccineType' => 'required',
+          'VaccineQuantity' => 'required',
+   
+   ]);
+   $v = new vaccine();
+   $v->vaccineType = $request->vaccineType;
+   $v->VaccineQuantity = $request->VaccineQuantity;
+
+
+        $v->save();
+     
+
+        return redirect()->back()->with("message","vaccine added");
+     
+   
+       }
+
+       function vaccinesFetch(){
+        $vaccination = vaccine::all();
+         return view('hospital.vaccines',compact('vaccination'));
+        }
+ 
 
 }

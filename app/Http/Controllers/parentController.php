@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\parent;
+use App\Models\parents;
+use App\Models\addedHospital;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\facades\hash;
 use Illuminate\Support\Facades\DB;
@@ -66,7 +67,7 @@ function parentSignupFunc(request $request){
     //     'Timing' => 'required',
     //     'hospitalImages' => 'required',
     // ]);
-    $p = new parent();
+    $p = new parents();
     $p->name = $request->name;
     $p->email = $request->email;
     $p->password = $request->password;
@@ -95,7 +96,17 @@ function parentSignupFunc(request $request){
     
   
   
-    return redirect()->back()->with("message","Request Sent");
+    return redirect('parentSignupGET')->with("message","User Registered");
 }
+
+function parentSignupFuncGET(){
+    return view ("parents.parentSignup");
+  }
+
+
+
+function parentHospital(){
+    $hospital = addedHospital::all();
+     return view('parents.hospital',compact('hospital'));}
 
 }

@@ -7,6 +7,7 @@ use App\Models\admin;
 use App\Models\hospital;
 use App\Models\hospitalImages;
 use App\Models\addedHospital;
+use App\Models\vaccine;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\facades\hash;
 use Illuminate\Support\Facades\DB;
@@ -184,6 +185,10 @@ function hospitalRequest(){
       return redirect()->back()->with("msg","Hospital cancelled");
   }
 
+
+
+
+
   function accept($id,request $request)
   {
       $h = hospital::find($id);
@@ -211,11 +216,27 @@ function hospitalRequest(){
 
 
 
+
+     function hospitalAddedPOST()
+     {
+         return view("hospital.vaccine");
+     }
+   
+
+
+
+
+
      function edit($id)
     {
-        $hospital = addedHospital::find($id);
+        $h = addedHospital::find($id);
 
-        return view('hospital.updateHospital',compact('hospital'));
+
+        if (!$h) {
+          abort(404, 'Hospital not found');
+      }
+  
+      return view('hospital.updateHospital',compact('h'));
     }
     
     function update(Request $request,$id)
@@ -233,9 +254,35 @@ function hospitalRequest(){
         $imageFile= $request->file("hospitalImage");
         $image= time().".".$imageFile->getClientOriginalName();
         $imageFile->move("hospitalImages",$image);
-        $h->save();
-
-        return redirect('admin.hospital')->with("msg","Hospital updated");
+        $h->update();
+        return redirect('hospital')->with("msg", "Hospital updated ");
+       
     }
+
+
+    function addedHospitalDelete(Request $request,$id)
+    {
+        $h = addedHospital::find($id);
+        $h->delete();
+        return redirect()->back()->with("msg","Hospital deleted");
+
+       
+    }
+
+    function vaccinesFetchAdmin(){
+      $vaccination = vaccine::all();
+       return view('admin.vaccines',compact('vaccination'));
+      }
+
+      function bookingVaccine()
+      {
+          return view("admin.bookingVaccine");
+      }
+      function bookingVaccinePOST()
+      {
+          return view("admin.bookingVaccine");
+      }
+  
+
 
 }

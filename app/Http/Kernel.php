@@ -49,6 +49,9 @@ class Kernel extends HttpKernel
         ],
         'hospitalGuard' => [
             \App\Http\Middleware\hospitalGuard::class,
+        ],
+        'parentGuard' => [
+            \App\Http\Middleware\parentGuard::class,
         ]
     ];
 
