@@ -132,7 +132,7 @@
                                         <img src="../logoBluePng.png" alt="logo" class="img-fluid" width="132"
                                             height="132" />
                                     </div>
-                                    <form method="POST" action="/hospitalSignupPost" enctype="multipart/form-data">
+                                    <form method="POST" action="/bookingVaccinePOST" enctype="multipart/form-data">
                                         @csrf
 
                                         <div class="row">
@@ -140,81 +140,28 @@
                                                 <div class="mb-3">
                                                     <label class="form-label">Child Name</label>
                                                     <input class="form-control form-control-lg" type="text"
-                                                        name="name" placeholder="Enter your hospital name" />
-                                                    @error('name')
+                                                        name="fname" placeholder="Enter your hospital name" />
+                                                    @error('fname')
                                                     <div class="text-danger">{{ $message }}</div>
                                                     @enderror
                                                 </div>
                                                 <div class="mb-3">
                                                     <label class="form-label">Date Of Birth</label>
                                                     <input class="form-control form-control-lg" type="text"
-                                                        name="password" placeholder="Enter your password" />
-                                                    @error('password')
+                                                        name="dob" placeholder="Enter your password" />
+                                                    @error('dob')
                                                     <div class="text-danger">{{ $message }}</div>
                                                     @enderror
                                                 </div>
                                                 <div class="mb-3">
-                                                    <label class="form-label">Location</label>
+                                                    <label class="form-label">age</label>
                                                     <input class="form-control form-control-lg" type="text"
-                                                        name="location" placeholder="Enter your location" />
-                                                    @error('location')
+                                                        name="age" placeholder="Enter your location" />
+                                                    @error('age')
                                                     <div class="text-danger">{{ $message }}</div>
                                                     @enderror
                                                 </div>
                                            
-                                                <div class="mb-3">
-                                                    <label class="form-label">Contact No</label>
-                                                    <input class="form-control form-control-lg" type="text"
-                                                        name="contactNumber" placeholder="Enter contact number" />
-                                                    @error('contactNumber')
-                                                    <div class="text-danger">{{ $message }}</div>
-                                                    @enderror
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label class="form-label">Vaccine </label>
-                                                    <input class="form-control form-control-lg" type="file"
-                                                        name="certificate" placeholder="" />
-                                                    @error('certificate')
-                                                    <div class="text-danger">{{ $message }}</div>
-                                                    @enderror
-                                                </div>
-
-
-                                            </div>
-
-                                            <div class="col-md-6">
-                                                <div class="mb-3">
-                                                    <label class="form-label">Email</label>
-                                                    <input class="form-control form-control-lg" type="email"
-                                                        name="email" placeholder="Enter your Email" />
-                                                    @error('email')
-                                                    <div class="text-danger">{{ $message }}</div>
-                                                    @enderror
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label class="form-label">Confirm Password</label>
-                                                    <input class="form-control form-control-lg" type="password"
-                                                        name="confirmPassword" placeholder="confirm password" />
-                                                    @error('confirmPassword')
-                                                    <div class="text-danger">{{ $message }}</div>
-                                                    @enderror
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label class="form-label">City</label>
-                                                    <select class="form-control form-control-lg" name="city">
-                                                        <option value="">Select City</option>
-                                                        <option value="karachi">Karachi</option>
-                                                        <option value="lahore">Lahore</option>
-                                                        <option value="islamabad">Islamabad</option>
-                                                        <option value="multan">Multan</option>
-                                                        <option value="quetta">Quetta</option>
-                                                    </select>
-                                                    @error('city')
-                                                    <div class="text-danger">{{ $message }}</div>
-                                                    @enderror
-                                                </div>
-                                            
-
                                                 <div class="mb-3">
                                                     <label class="form-label">Hospital Timing</label>
                                                     <select class="form-control form-control-lg" name="Timing">
@@ -227,13 +174,70 @@
                                                     <div class="text-danger">{{ $message }}</div>
                                                     @enderror
                                                 </div>
+
+                                                <div class="mb-3">
+                                                    <label class="form-label">vaccine Type</label>
+                                                    <select class="form-control form-control-lg" name="vaccineType">
+                                                        <option value="">Select Hospital Timing</option>
+                                                        <option value="polio">12:00 am to 9:00 am</option>
+                                                        <option value="hepatis">9:00 am to 6:00 pm</option>
+                                                    
+                                                    </select>
+                                                    @error('vaccineType')
+                                                    <div class="text-danger">{{ $message }}</div>
+                                                    @enderror
+                                                </div>
+
+
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <div class="mb-3">
+                                                    <label class="form-label">last name</label>
+                                                    <input class="form-control form-control-lg" type="text"
+                                                        name="lname" placeholder="Enter your Email" />
+                                                    @error('lname')
+                                                    <div class="text-danger">{{ $message }}</div>
+                                                    @enderror
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label class="form-label">if any medical issue</label>
+                                                    <input class="form-control form-control-lg" type="text"
+                                                        name="medicalIssue" placeholder="confirm password" />
+                                                    @error('medicalIssue')
+                                                    <div class="text-danger">{{ $message }}</div>
+                                                    @enderror
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label class="form-label">weight</label>
+                                                    <input class="form-control form-control-lg" type="text"
+                                                        name="weight" placeholder="confirm password" />
+                                                    @error('weight')
+                                                    <div class="text-danger">{{ $message }}</div>
+                                                    @enderror
+                                                </div>
+                                            
+                                            
+
+                                                <div class="mb-3">
+                                                    <label class="form-label">Date</label>
+                                                    <select class="form-control form-control-lg" name="date">
+                                                        <option value="">Select Hospital Timing</option>
+                                                        <option value="12:00 am to 9:00 am">12:00 am to 9:00 am</option>
+                                                        <option value="9:00 am to 6:00 pm">9:00 am to 6:00 pm</option>
+                                                        <option value="6:00 pm to 3:00 am">6:00 pm to 3:00 am</option>
+                                                    </select>
+                                                    @error('date')
+                                                    <div class="text-danger">{{ $message }}</div>
+                                                    @enderror
+                                                </div>
                                               
 
                                                 <div class="mb-3">
-                                                    <label class="form-label">Hospital Images</label>
+                                                    <label class="form-label">Child Images</label>
                                                     <input class="form-control form-control-lg" type="file" 
-                                                        name="hospitalImage" placeholder="Enter hospital Images" />
-                                                    @error('hospitalImage')
+                                                        name="childImage" placeholder="Enter hospital Images" />
+                                                    @error('childImage')
                                                     <div class="text-danger">{{ $message }}</div>
                                                     @enderror
                                                 </div>

@@ -234,5 +234,20 @@ Route::group(['middleware'=> 'parentGuard'],function(){
     });
     
 
+   
+
+    //booking
+
     Route::GET('/bookingVaccine',[adminController::class,'bookingVaccine']);
     Route::POST('/bookingVaccine',[adminController::class,'bookingVaccinePost']);
+
+route::post('/bookingVaccinePOST',[parentController::class,'bookingVaccinePOSTFunc']);
+
+route::get('parentRequestdelete/{id}',[parentController::class,'parentRequestdelete']);
+route::get('bookingedit/{id}',[parentController::class,'bookingedit']);
+route::post('bookingupdate/{id}',[parentController::class,'bookingupdate']);
+route::get('bookingdelete/{id}',[parentController::class,'bookingdelete']);
+route::get('parentRequestaccept/{id}',[parentController::class,'parentRequestaccept']);
+
+//booking end
+

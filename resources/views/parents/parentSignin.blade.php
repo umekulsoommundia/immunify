@@ -130,7 +130,7 @@ section {
                                         @endif
                                         <a class="small text-muted" href="#!">Forgot password?</a>
                                         <p class="mb-5 pb-lg-2" style="color: #0A77B1;">Don't have an account? <a
-                                                href="/hospitalSignup" style="color:#203C71;">Register here</a></p>
+                                                href="/parentSignup" style="color:#203C71;">Register here</a></p>
                                         <div class="text-center mt-3">
                                         <button type="submit" class="btn btn-lg btn-primary">Sign In</button>
                                         </div>

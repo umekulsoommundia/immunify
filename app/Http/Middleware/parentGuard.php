@@ -23,7 +23,7 @@ class parentGuard
         }
         else{
             $request->session()->flash('error',"login first");
-            return redirect('signin');
+            return redirect('parentSignin');
         }
         return $next($request);
     }
