@@ -109,7 +109,7 @@
                                     <td>{{$v->id}}</td>
                                     <td class="d-none d-xl-table-cell">{{$v->vaccineType}}</td>
                                     <td class="d-none d-xl-table-cell">{{$v->VaccineQuantity}}</td>
-                                    <td class="d-none d-xl-table-cell">hospitalName</td>
+                                    <td class="d-none d-xl-table-cell">{{$v->name}}</td>
                                     <!-- <td class="d-none d-xl-table-cell"> //{{$v->VaccineQuantity}}</td> -->
                                    
                                 </tr>

@@ -15,10 +15,15 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Source+Serif+Pro:wght@400;700&display=swap"
         rel="stylesheet">
-
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=K2D:wght@100&family=Oswald:wght@200&family=Outfit:wght@100;200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=K2D:wght@100&family=Oswald:wght@200&family=Outfit:wght@100;200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="fonts/icomoon/style.css">
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
@@ -73,31 +78,17 @@
         <div class="container">
             <div class="site-navigation">
                 <a href="index.html" class="logo m-0"> <img src="./logoBluePng.png" height="80px" width="80px"> <span
-                        class="text-primary">.</span></a>
+                        class="text-primary"></span></a>
 
                 <ul class="js-clone-nav d-none d-lg-inline-block text-left site-menu float-right">
-                    <li class="active"><a href="index.html" style="color:#0976B1;">Home</a></li>
+                    <li class="active"><a href="index.html" style="color:#0976B1; font-size:16px">Home</a></li>
                     <li class="has-children">
-                        <a href="#" style="color:#0976B1;">Dropdown</a>
-                        <ul class="dropdown">
-                            <li><a href="elements.html" style="color:#0976B1;">Elements</a></li>
-                            <li><a href="#">Menu One </a></li>
-                            <li class="has-children">
-                                <a href="#">Menu Two</a>
-                                <ul class="dropdown">
-                                    <li><a href="#">Sub Menu One</a></li>
-                                    <li><a href="#">Sub Menu Two</a></li>
-                                    <li><a href="#">Sub Menu Three</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Menu Three</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="services.html" style="color:#0976B1;">Why</a></li>
-                    <li><a href="about.html" style="color:#0976B1;">About</a></li>
-                    <li><a href="contact.html" style="color:#3B54A5;">Contact Us</a></li>
-                    <li><a href="contact.html"> <button type="button" class="btn btn-info"
-                                style="background-color:#0976B1;">Log In</button></a></li>
+                       
+                    <li id="smalll"><a href="services.html" style="color:#0976B1; font-size:16px">Why us</a></li>
+                    <li><a href="about.html" style="color:#0976B1; font-size:16px">About</a></li>
+                    <li><a href="contact.html" style="color:#3B54A5; font-size:16px">Contact Us</a></li>
+                    <li><a href="/loginform"> <button  type="button" class="btn btn-info"
+                                style="background-color:#0976B1; font-size:16px">Log In</button></a></li>
 
                 </ul>
 
@@ -118,28 +109,44 @@
                 <div class="intro-wrap">
                     <h1 class="mb-5" style="color:#203C71;"><span class="d-block">Your Immunity Is </span> Our <span
                             class="typed-words"></span></h1>
-
-                    <form class="form">
+<!-- form start -->
+                    <form class="form" method ="post" action ="{{route('get.data')}}">
+                        @csrf
                         <div class="row mb-2">
                             <div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-3">
-                                <select name="" id="" class="form-control custom-select">
+                                <select name="location" id="" class="form-control custom-select">
                                     <option value="">Location</option>
-                                    <option value="">Karachi</option>
-                                    <option value="">Islamabad</option>
-                                    <option value="">Lahore</option>
-                                    <option value="">Quetta</option>
+                                    <option value="karachi">Karachi</option>
+                                    <option value="islamabad">Islamabad</option>
+                                    <option value="lahore">Lahore</option>
+                                    <option value="queeta">Quetta</option>
                                 </select>
                             </div>
-                            <div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-5">
-                                <input type="text" class="form-control" name="daterange">
-                            </div>
+                          
+
+                            <div class="mb-3">
+                                               
+                                                    <select class="form-control form-control-lg" name="daterange">
+                                                        <option value="">Select Appointment Date</option>
+                                                        <option value="20 March 2023">20 March 2023</option>
+                                                        <option value="20 March 2023">20 March 2023</option>
+                                                        <option value="20 March 2023">20 March 2023</option>
+                                                        <option value="20 March 2023">20 March 2023</option>
+                                                        <option value="20 March 2023">20 March 2023</option>
+                                                        <option value="20 March 2023">20 March 2023</option>
+                                                        <option value="20 March 2023">20 March 2023</option>
+                                                        <option value="20 March 2023">20 March 2023</option>
+
+                                                    </select>
+                                             
+                                                </div>
                             <div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-4">
-                                <select name="" id="" class="form-control custom-select">
+                                <select name="vtype" id="" class="form-control custom-select">
                                     <option value="">Vaccine Type</option>
-                                    <option value="">Karachi</option>
-                                    <option value="">Islamabad</option>
-                                    <option value="">Lahore</option>
-                                    <option value="">Quetta</option>
+                                    <option value="karachi">Karachi</option>
+                                    <option value="Islamabad">Islamabad</option>
+                                    <option value="Lahore">Lahore</option>
+                                    <option value="Queeta">Quetta</option>
                                 </select>
                             </div>
                         </div>
@@ -150,7 +157,7 @@
                             </div>
                         </div>
                     </form>
-
+<!-- form 3nd -->
                 </div>
             </div>
 
@@ -254,57 +261,7 @@
         </div>
     </div>
 
-    <div class="untree_co-section">
-    <div class="container">
-        <div class="row justify-content-between align-items-center">
 
-            <div class="col-lg-6">
-                <img src="./h2.jpg" alt="Image" class="img-fluid rounded-20">
-            </div>
-
-            <div class="col-lg-4 mt-5 mt-lg-0">
-                <div class="custom-block" data-aos="fade-up" data-aos-delay="100">
-                    <h2 class="section-title mb-4"
-                        style="font-family: 'Lato', sans-serif; font-size: 34px; color: #203C71;">Book Appointment
-                    </h2>
-                    <form class="contact-form bg-white">
-
-                        <div class="form-group">
-                            <label class="text-black" for="name"
-                                style="font-family: 'Lato', sans-serif; font-size: 18px; color: #0A77B1;">Name</label>
-                            <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
-                        </div>
-
-                        <div class="form-group">
-                            <label class="text-black" for="hospital"
-                                style="font-family: 'Lato', sans-serif; font-size: 18px; color: #0A77B1;">Hospital
-                                Name</label>
-                            <input type="text" class="form-control" id="hospital" aria-describedby="emailHelp">
-                        </div>
-
-                        <div class="form-group">
-                            <label class="text-black" for="vaccine"
-                                style="font-family: 'Lato', sans-serif; font-size: 18px; color: #0A77B1;">Vaccine
-                                Name</label>
-                            <input type="text" class="form-control" id="vaccine">
-                        </div>
-
-                        <div class="form-group">
-                            <label class="text-black" for="select"
-                                style="font-family: 'Lato', sans-serif; font-size: 18px; color: #0A77B1;">Select</label>
-                            <select name="" id="select" class="custom-select">
-                                <option value="">xyz vaccine</option>
-                                <option value="">abc vaccine</option>
-                            </select>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary">Book</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
 
 
@@ -312,7 +269,7 @@
         <div class="container">
             <div class="row text-center justify-content-center mb-5">
                 <div class="col-lg-7">
-                    <h2 class="section-title text-center">Hospitals</h2>
+                    <h2 class="section-title text-center" style ="color: #203C71;">Hospitals</h2>
                 </div>
             </div>
 
@@ -324,58 +281,50 @@
                             <h3>xyz</h3>
                             <span class="location">karachi</span>
                         </div>
-                        <img src="./hospital1.jpg" alt="Image" class="img-fluid">
+                        <img src="./hosp1.jpg" alt="Example Image">
+
                     </a>
                 </div>
 
                 <div class="item">
-                    <a class="media-thumb" href="images/hero-slider-2.jpg" data-fancybox="gallery">
+                    <a class="media-thumb" href="signup.php" data-fancybox="gallery">
                         <div class="media-text">
                             <h3>Oia</h3>
                             <span class="location">Greece</span>
                         </div>
-                        <img src="./hospital.jpg" alt="Image" class="img-fluid">
+                        <img src="./hosp2.jpg" alt="Image" class="img-fluid">
                     </a>
                 </div>
 
                 <div class="item">
-                    <a class="media-thumb" href="images/hero-slider-3.jpg" data-fancybox="gallery">
+                    <a class="media-thumb" href="signup.php" data-fancybox="gallery">
                         <div class="media-text">
                             <h3>Perhentian Islands</h3>
                             <span class="location">Malaysia</span>
                         </div>
-                        <img src="./hospital4.jpg" alt="Image" class="img-fluid">
+                        <img src="./hosp4.jpg" alt="Image" class="img-fluid">
                     </a>
                 </div>
 
 
+     
                 <div class="item">
-                    <a class="media-thumb" href="images/hero-slider-4.jpg" data-fancybox="gallery">
-                        <div class="media-text">
-                            <h3>Rialto Bridge</h3>
-                            <span class="location">Italy</span>
-                        </div>
-                        <img src="./hospital5.jpg" alt="Image" class="img-fluid">
-                    </a>
-                </div>
-
-                <div class="item">
-                    <a class="media-thumb" href="images/hero-slider-5.jpg" data-fancybox="gallery">
+                    <a class="media-thumb" href="signup.php" data-fancybox="gallery">
                         <div class="media-text">
                             <h3>San Francisco, United States</h3>
                             <span class="location">United States</span>
                         </div>
-                        <img src="./hospital9.jpg" alt="Image" class="img-fluid">
+                        <img src="./hosp7.jpg" alt="Image" class="img-fluid">
                     </a>
                 </div>
 
                 <div class="item">
-                    <a class="media-thumb" href="images/hero-slider-1.jpg" data-fancybox="gallery">
+                    <a class="media-thumb" href="signup.php">
                         <div class="media-text">
                             <h3>Lake Thun</h3>
                             <span class="location">Switzerland</span>
                         </div>
-                        <img src="./hospital8.jpg" alt="Image" class="img-fluid">
+                        <img src="./hosp8.jpg" alt="Image" class="img-fluid">
                     </a>
                 </div>
 
@@ -389,7 +338,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-7 text-center">
-                    <h2 class="section-title text-center mb-5">Testimonials</h2>
+                    <h2 class="section-title text-center mb-5" style ="color: #203C71;">Testimonials</h2>
 
                     <div class="owl-single owl-carousel no-nav">
                         <div class="testimonial mx-auto">
@@ -398,8 +347,8 @@
                             </figure>
                             <h3 class="name">Adam Aderson</h3>
                             <blockquote>
-                                <p>&ldquo;There live the blind texts. Separated they live in Bookmarksgrove right at the
-                                    coast of the Semantics, a large language ocean.&rdquo;</p>
+                                <p>&ldquo;ur team of experts includes healthcare professionals, scientists, and communicators who are passionate about public health and dedicated to sharing the latest research and recommendations regarding vaccines. We strive to make our content accessible to everyone, including parents, caregivers, educators, and healthcare providers.
+&rdquo;</p>
                             </blockquote>
                         </div>
 
@@ -409,8 +358,7 @@
                             </figure>
                             <h3 class="name">Lukas Devlin</h3>
                             <blockquote>
-                                <p>&ldquo;There live the blind texts. Separated they live in Bookmarksgrove right at the
-                                    coast of the Semantics, a large language ocean.&rdquo;</p>
+                                <p>&ldquo;Our mission is to provide reliable and accurate information about vaccines and promote the importance of vaccination&rdquo;</p>
                             </blockquote>
                         </div>
 
@@ -420,8 +368,7 @@
                             </figure>
                             <h3 class="name">Kayla Bryant</h3>
                             <blockquote>
-                                <p>&ldquo;There live the blind texts. Separated they live in Bookmarksgrove right at the
-                                    coast of the Semantics, a large language ocean.&rdquo;</p>
+                                <p>&ldquo;Our mission is to provide reliable and accurate information about vaccines and promote the importance of vaccination&rdquo;</p>
                             </blockquote>
                         </div>
 
@@ -437,7 +384,7 @@
     <div class="row align-items-center">
       <div class="col-lg-6 mx-auto text-center">
         <div class="intro-wrap">
-          <h1 class="mb-0">About Us</h1>
+          <h1 class="mb-0" >About Us</h1>
           <p class="text-white">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
         </div>
       </div>
@@ -446,25 +393,6 @@
 </div>
 
   
-  <div class="untree_co-section" >
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-7">
-          <div class="owl-single dots-absolute owl-carousel">
-            <img src="images/slider-1.jpg" alt="Free HTML Template by Untree.co" class="img-fluid rounded-20">
-            <img src="images/slider-2.jpg" alt="Free HTML Template by Untree.co" class="img-fluid rounded-20">
-            <img src="images/slider-3.jpg" alt="Free HTML Template by Untree.co" class="img-fluid rounded-20">
-            <img src="images/slider-4.jpg" alt="Free HTML Template by Untree.co" class="img-fluid rounded-20">
-            <img src="images/slider-5.jpg" alt="Free HTML Template by Untree.co" class="img-fluid rounded-20">
-          </div>
-        </div>
-        <div class="col-lg-5 pl-lg-5 ml-auto">
-          <h2 class="section-title mb-4">About Immunify</h2>
-          <p>Our mission is to provide reliable and accurate information about vaccines and promote the importance of vaccination for all age groups. We believe that every individual deserves access to the tools and knowledge necessary to make informed decisions about their health, and vaccines are a critical component of that.<br><br>
-
-Our team of experts includes healthcare professionals, scientists, and communicators who are passionate about public health and dedicated to sharing the latest research and recommendations regarding vaccines. We strive to make our content accessible to everyone, including parents, caregivers, educators, and healthcare providers.
-
-Our website provides information about the types of vaccines available, their safety and effectiveness</p>
          
           </ul>
         </div>
@@ -475,15 +403,15 @@ Our website provides information about the types of vaccines available, their sa
     <div class="row">
       <div class="col-lg-7">
         <div class="owl-single dots-absolute owl-carousel">
-          <img src="images/slider-1.jpg" alt="Free HTML Template by Untree.co" class="img-fluid rounded-20">
-          <img src="images/slider-2.jpg" alt="Free HTML Template by Untree.co" class="img-fluid rounded-20">
-          <img src="images/slider-3.jpg" alt="Free HTML Template by Untree.co" class="img-fluid rounded-20">
-          <img src="images/slider-4.jpg" alt="Free HTML Template by Untree.co" class="img-fluid rounded-20">
-          <img src="images/slider-5.jpg" alt="Free HTML Template by Untree.co" class="img-fluid rounded-20">
+          <img src="./c111.jpg" alt="Free HTML Template by Untree.co" class="img-fluid rounded-20">
+          <img src="./c22.jpg" alt="Free HTML Template by Untree.co" class="img-fluid rounded-20">
+          <img src="./c33.jpg" alt="Free HTML Template by Untree.co" class="img-fluid rounded-20">
+          <img src="./c44.jpg" alt="Free HTML Template by Untree.co" class="img-fluid rounded-20">
+          
         </div>
       </div>
       <div class="col-lg-5 pl-lg-5 mt-5 mt-lg-0">
-        <h2 class="section-title mb-4">About Immunify</h2>
+        <h2 class="section-title mb-4" style ="color: #203C71;">About Immunify</h2>
         <p class="mb-4">Our mission is to provide reliable and accurate information about vaccines and promote the importance of vaccination for all age groups. We believe that every individual deserves access to the tools and knowledge necessary to make informed decisions about their health, and vaccines are a critical component of that.</p>
         <p class="mb-4">Our team of experts includes healthcare professionals, scientists, and communicators who are passionate about public health and dedicated to sharing the latest research and recommendations regarding vaccines. We strive to make our content accessible to everyone, including parents, caregivers, educators, and healthcare providers.</p>
         <p class="mb-4">Our website provides information about the types of vaccines available, their safety and effectiveness</p>
@@ -500,7 +428,7 @@ Our website provides information about the types of vaccines available, their sa
       <div class="col-md-6 mx-auto text-center">
         <div class="intro-wrap">
           <h1 class="mb-3">Contact Us</h1>
-          <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+          <p class="mb-5" style= color:white>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
         </div>
       </div>
     </div>
@@ -512,33 +440,37 @@ Our website provides information about the types of vaccines available, their sa
   <div class="container">
     <div class="row">
       <div class="col-lg-6 mb-5 mb-lg-0">
-        <form class="contact-form" data-aos="fade-up" data-aos-delay="200">
+       
           <div class="row">
             <div class="col-md-6">
+                <form method="POST" action="{{route('contactsubmitform')}}">
+                @csrf
               <div class="form-group">
-                <label class="text-black" for="fname">First name</label>
-                <input type="text" class="form-control" id="fname">
+                
+                <label class="text-black" for="fname" >First name</label>
+                <input type="text" required class="form-control" name="ffname" id="fname">
               </div>
             </div>
             <div class="col-md-6">
               <div class="form-group">
-                <label class="text-black" for="lname">Last name</label>
-                <input type="text" class="form-control" id="lname">
+                <label class="text-black"  for="name">Last name</label>
+                <input required type="text" class="form-control" name="lname" id="lname">
               </div>
             </div>
           </div>
-          <div class="form-group">
-            <label class="text-black" for="email">Email address</label>
-            <input type="email" class="form-control" id="email">
+          <div class="form-group" type ="post" form-action>
+            <label class="text-black"  for="email">Email address</label>
+            <input required type="text" name="cemail" class="form-control" id="email">
           </div>
 
           <div class="form-group">
             <label class="text-black" for="message">Message</label>
-            <textarea name="" class="form-control" id="message" cols="30" rows="5"></textarea>
+            <textarea  required class="form-control" name="cmessage" id="message" cols="30" rows="5"></textarea>
           </div>
-
-          <button type="submit" class="btn btn-primary">Send Message</button>
-        </form>
+          <button type="submit" name= "
+          " class="btn btn-primary">Send Message</button>
+          </form>
+       
       </div>
       <div class="col-lg-5 ml-auto">
         <div class="quick-contact-item d-flex align-items-center mb-4">

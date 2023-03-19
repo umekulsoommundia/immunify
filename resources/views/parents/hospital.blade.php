@@ -114,13 +114,13 @@
                     <div class="text-muted">{{$h->location}}</div>
 
                     <div class="mt-3">
-                        <a href="/bookingVaccine" style="color:#3A55A4;" class="btn btn-lg  m-t5">Book Now</a>
+                        <a href="/bookingVaccine/{{$h->id}}" style="color:#3A55A4;" class="btn btn-lg  m-t5">Book Now</a>
                         <!-- <button type="submit" class="btn btn
                         -lg btn-primary">Sign up</button> -->
                     </div>
                 </div>
                 <!--//app-card-body-->
-                <a class="app-card-link-mask" href="/bookingVaccine"></a>
+                <a class="app-card-link-mask" href="/bookingVaccine/{{$h->id}}"></a>
             </div>
             <!--//app-card-->
         </div>

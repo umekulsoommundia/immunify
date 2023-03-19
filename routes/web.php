@@ -149,9 +149,10 @@ Route::group(['middleware'=> 'hospitalGuard'],function(){
     Route::get('/hospitalAppointments', function () {
         return view('hospital.appointments');
     });
-    Route::get('/hospitalPatients', function () {
-        return view('hospital.patients');
-    });
+
+    route::get('/hospitalPatients',[hospitalController::class,'patientsFetch']);
+
+
     Route::get('/hospitalRequests', function () {
         return view('hospital.requests');
     });
@@ -176,7 +177,7 @@ Route::group(['middleware'=> 'hospitalGuard'],function(){
         return view('hospital.patientsmore');
     });
 
-    });
+   });
     route::get('/Hospitaldelete/{id}',[adminController::class,'addedHospitalDelete']);
   
 
@@ -188,7 +189,7 @@ route::get('/addhospital',[adminController::class,'hospitalRequest']);
 Route::get('/hospital',[adminController::class,'hospitalAdded']);
 Route::POST('/hospital',[adminController::class,'hospitalAddedPOST']);
 Route::GET('/Vaccines',[adminController::class,'vaccinesFetchAdmin']);
-Route::get('/parents',[adminController::class,'parents']);
+Route::get('/parents',[parentController::class,'adminParent']);
 Route::get('/child',[adminController::class,'child']);
 });
 
@@ -222,7 +223,7 @@ Route::group(['middleware'=> 'parentGuard'],function(){
         return view('parents.appointment');
     });
     route::get('/parentHospitals',[parentController::class,'parentHospital']);
-    });
+  
     Route::get('parentMedicalreport', function () {
         return view('parents.medicalreport');
     });
@@ -232,14 +233,14 @@ Route::group(['middleware'=> 'parentGuard'],function(){
     Route::get('parentSchedule', function () {
         return view('parents.schedule');
     });
-    
+});
 
    
 
     //booking
 
     Route::GET('/bookingVaccine',[adminController::class,'bookingVaccine']);
-    Route::POST('/bookingVaccine',[adminController::class,'bookingVaccinePost']);
+    Route::GET('/bookingVaccine/{id}',[adminController::class,'bookingVaccinePOST']);
 
 route::post('/bookingVaccinePOST',[parentController::class,'bookingVaccinePOSTFunc']);
 
@@ -249,5 +250,17 @@ route::post('bookingupdate/{id}',[parentController::class,'bookingupdate']);
 route::get('bookingdelete/{id}',[parentController::class,'bookingdelete']);
 route::get('parentRequestaccept/{id}',[parentController::class,'parentRequestaccept']);
 
+Route::GET('/appointmentRequest',[parentController::class,'parentRequest']);
+Route::GET('/bookingAdded',[parentController::class,'bookingAdded']);
+
+
+Route::GET('/vaccinatedH',[parentController::class,'vaccinatedH']);
+Route::GET('/vaccinated',[parentController::class,'vaccinated']);
+
+
 //booking end
 
+
+Route::post('/contactsubmitform',[adminController::class,'cfunc'])->name('contactsubmitform');
+
+route::post('getdata',[adminController::class, 'getdata'])->name('get.data');

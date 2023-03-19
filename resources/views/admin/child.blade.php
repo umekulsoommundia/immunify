@@ -108,86 +108,24 @@
                             </tr>
                         </thead>
                         <tbody>
+                          
+                        @foreach($child as $c)
                             <tr>
-                                <td>#1</td>
-                                <td class="d-none d-xl-table-cell">Indus</td>
-                                <td class="d-none d-xl-table-cell">xyz</td>
-                                <td class="d-none d-xl-table-cell">312456566</td>
-                                <td><span class="">gulshan</span></td>
-                                <td class="d-none d-md-table-cell">3:00 - 9:00 PM</td>
-                                <td class="d-none d-md-table-cell">3:00 - 9:00 PM</td>
-                                <td class="d-none d-md-table-cell">3:00 - 9:00 PM</td>
+
+
+                                <td>{{$c->id}}</td>
+                                <td class="d-none d-xl-table-cell">{{$c->name}}</td>
+                                <td class="d-none d-xl-table-cell">{{$c->email}}</td>
+                                <td class="d-none d-xl-table-cell">{{$c->password}}</td>
+                                <td><span class="">{{$c->contactNumber}}</span></td>
+                                <td class="d-none d-md-table-cell">{{$c->city}}</td>
+                                <td class="d-none d-md-table-cell"><img src="./parentImages/{{$p->parentImage}}"
+                                        height="32px" width="32px"></td>
                             </tr>
-                            <tr>
-                            <td>#1</td>
-                                <td class="d-none d-xl-table-cell">Indus</td>
-                                <td class="d-none d-xl-table-cell">xyz</td>
-                                <td class="d-none d-xl-table-cell">312456566</td>
-                                <td><span class="">gulshan</span></td>
-                                <td class="d-none d-md-table-cell">3:00 - 9:00 PM</td>
-                                <td class="d-none d-md-table-cell">3:00 - 9:00 PM</td>
-                                <td class="d-none d-md-table-cell">3:00 - 9:00 PM</td>
-                            </tr>
-                            <tr>
-                            <td>#1</td>
-                                <td class="d-none d-xl-table-cell">Indus</td>
-                                <td class="d-none d-xl-table-cell">xyz</td>
-                                <td class="d-none d-xl-table-cell">312456566</td>
-                                <td><span class="">gulshan</span></td>
-                                <td class="d-none d-md-table-cell">3:00 - 9:00 PM</td>
-                                <td class="d-none d-md-table-cell">3:00 - 9:00 PM</td>
-                                <td class="d-none d-md-table-cell">3:00 - 9:00 PM</td>
-                            </tr>
-                            <tr>
-                            <td>#1</td>
-                                <td class="d-none d-xl-table-cell">Indus</td>
-                                <td class="d-none d-xl-table-cell">xyz</td>
-                                <td class="d-none d-xl-table-cell">312456566</td>
-                                <td><span class="">gulshan</span></td>
-                                <td class="d-none d-md-table-cell">3:00 - 9:00 PM</td>
-                                <td class="d-none d-md-table-cell">3:00 - 9:00 PM</td>
-                                <td class="d-none d-md-table-cell">3:00 - 9:00 PM</td>
-                            </tr>
-                            <tr>
-                            <td>#1</td>
-                                <td class="d-none d-xl-table-cell">Indus</td>
-                                <td class="d-none d-xl-table-cell">xyz</td>
-                                <td class="d-none d-xl-table-cell">312456566</td>
-                                <td><span class="">gulshan</span></td>
-                                <td class="d-none d-md-table-cell">3:00 - 9:00 PM</td>
-                                <td class="d-none d-md-table-cell">3:00 - 9:00 PM</td>
-                                <td class="d-none d-md-table-cell">3:00 - 9:00 PM</td>
-                            </tr>
-                            <tr>
-                            <td>#1</td>
-                                <td class="d-none d-xl-table-cell">Indus</td>
-                                <td class="d-none d-xl-table-cell">xyz</td>
-                                <td class="d-none d-xl-table-cell">312456566</td>
-                                <td><span class="">gulshan</span></td>
-                                <td class="d-none d-md-table-cell">3:00 - 9:00 PM</td>
-                                <td class="d-none d-md-table-cell">3:00 - 9:00 PM</td>
-                                <td class="d-none d-md-table-cell">3:00 - 9:00 PM</td>
-                            </tr>
-                            <tr>
-                            <td>#1</td>
-                                <td class="d-none d-xl-table-cell">Indus</td>
-                                <td class="d-none d-xl-table-cell">xyz</td>
-                                <td class="d-none d-xl-table-cell">312456566</td>
-                                <td><span class="">gulshan</span></td>
-                                <td class="d-none d-md-table-cell">3:00 - 9:00 PM</td>
-                                <td class="d-none d-md-table-cell">3:00 - 9:00 PM</td>
-                                <td class="d-none d-md-table-cell">3:00 - 9:00 PM</td>
-                            </tr>
-                            <tr>
-                            <td>#1</td>
-                                <td class="d-none d-xl-table-cell">Indus</td>
-                                <td class="d-none d-xl-table-cell">xyz</td>
-                                <td class="d-none d-xl-table-cell">312456566</td>
-                                <td><span class="">gulshan</span></td>
-                                <td class="d-none d-md-table-cell">3:00 - 9:00 PM</td>
-                                <td class="d-none d-md-table-cell">3:00 - 9:00 PM</td>
-                                <td class="d-none d-md-table-cell">3:00 - 9:00 PM</td>
-                            </tr>
+
+
+                            @endforeach
+                          
                         </tbody>
                     </table>
                 </div>

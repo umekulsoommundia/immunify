@@ -13,11 +13,20 @@ return new class extends Migration
     {
         Schema::create('bookings', function (Blueprint $table) {
             $table->id();
-            $table->string("parentName");
-            $table->string("Email");
-            $table->string("Password");
-            $table->string("contact");
-            $table->string("address");
+            $table->string("fname");
+            $table->string("lname");
+            $table->string("dob");
+            $table->string("age");
+            $table->string("weight");
+            $table->string("medicalIssue");
+            $table->string("date");
+            $table->string("Timing");
+            $table->string("vaccineType");
+            $table->string("childImage");
+            $table->integer("parentId");
+            $table->foreign("parentId")->on("id")->references("user_parents");
+            $table->integer("hospitalId");
+            $table->foreign("hospitalId")->on("id")->references("added_hospitals");
             $table->timestamps();
         });
     }

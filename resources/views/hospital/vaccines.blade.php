@@ -147,7 +147,7 @@
                                 <td class="d-none d-xl-table-cell">{{$v->vaccineType}}</td>
                                 <td class="d-none d-xl-table-cell">{{$v->VaccineQuantity}}</td>
                                 <td class="record btnsearch"> <button class="btn btnsearch2 text-white"
-                                        style="background-color:#D62600;" type="submit"> <a
+                                        style="background-color:#203C71;" type="submit"> <a
                                             class="btnsearch2 text-white" href="vaccineedit/{{$v->id}}">update</a></button>
                                 </td>
 

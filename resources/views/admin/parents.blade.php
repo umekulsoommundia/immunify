@@ -91,84 +91,42 @@
                 <div class="card flex-fill">
                     <div class="card-header">
 
-                        <h5 class="card-title mb-0">Parents  Data</h5>
+                        <h5 class="card-title mb-0">Parents Data</h5>
                     </div>
                     <table class="table table-hover my-0">
                         <thead>
                             <tr>
+
+
                                 <th>Id</th>
-                                <th class="d-none d-xl-table-cell">username</th>
+                                <th class="d-none d-xl-table-cell">name</th>
                                 <th class="d-none d-xl-table-cell">email</th>
                                 <th>password</th>
-                                <th class="d-none d-md-table-cell">contact</th>
-                                <th class="d-none d-md-table-cell">address</th>
+                                <th class="d-none d-md-table-cell">contact Number</th>
+                                <th class="d-none d-md-table-cell">city</th>
+                                <th class="d-none d-md-table-cell">parent Image</th>
+
                             </tr>
                         </thead>
                         <tbody>
+
+
+                            @foreach($parents as $p)
                             <tr>
-                                <td>#1</td>
-                                <td class="d-none d-xl-table-cell">Indus</td>
-                                <td class="d-none d-xl-table-cell">xyz</td>
-                                <td class="d-none d-xl-table-cell">312456566</td>
-                                <td><span class="">gulshan</span></td>
-                                <td class="d-none d-md-table-cell">3:00 - 9:00 PM</td>
+
+
+                                <td>{{$p->id}}</td>
+                                <td class="d-none d-xl-table-cell">{{$p->name}}</td>
+                                <td class="d-none d-xl-table-cell">{{$p->email}}</td>
+                                <td class="d-none d-xl-table-cell">{{$p->password}}</td>
+                                <td><span class="">{{$p->contactNumber}}</span></td>
+                                <td class="d-none d-md-table-cell">{{$p->city}}</td>
+                                <td class="d-none d-md-table-cell"><img src="./parentImages/{{$p->parentImage}}"
+                                        height="32px" width="32px"></td>
                             </tr>
-                            <tr>
-                            <td>#1</td>
-                                <td class="d-none d-xl-table-cell">Indus</td>
-                                <td class="d-none d-xl-table-cell">xyz</td>
-                                <td class="d-none d-xl-table-cell">312456566</td>
-                                <td><span class="">gulshan</span></td>
-                                <td class="d-none d-md-table-cell">3:00 - 9:00 PM</td>
-                            </tr>
-                            <tr>
-                            <td>#1</td>
-                                <td class="d-none d-xl-table-cell">Indus</td>
-                                <td class="d-none d-xl-table-cell">xyz</td>
-                                <td class="d-none d-xl-table-cell">312456566</td>
-                                <td><span class="">gulshan</span></td>
-                                <td class="d-none d-md-table-cell">3:00 - 9:00 PM</td>
-                            </tr>
-                            <tr>
-                            <td>#1</td>
-                                <td class="d-none d-xl-table-cell">Indus</td>
-                                <td class="d-none d-xl-table-cell">xyz</td>
-                                <td class="d-none d-xl-table-cell">312456566</td>
-                                <td><span class="">gulshan</span></td>
-                                <td class="d-none d-md-table-cell">3:00 - 9:00 PM</td>
-                            </tr>
-                            <tr>
-                            <td>#1</td>
-                                <td class="d-none d-xl-table-cell">Indus</td>
-                                <td class="d-none d-xl-table-cell">xyz</td>
-                                <td class="d-none d-xl-table-cell">312456566</td>
-                                <td><span class="">gulshan</span></td>
-                                <td class="d-none d-md-table-cell">3:00 - 9:00 PM</td>
-                            </tr>
-                            <tr>
-                            <td>#1</td>
-                                <td class="d-none d-xl-table-cell">Indus</td>
-                                <td class="d-none d-xl-table-cell">xyz</td>
-                                <td class="d-none d-xl-table-cell">312456566</td>
-                                <td><span class="">gulshan</span></td>
-                                <td class="d-none d-md-table-cell">3:00 - 9:00 PM</td>
-                            </tr>
-                            <tr>
-                            <td>#1</td>
-                                <td class="d-none d-xl-table-cell">Indus</td>
-                                <td class="d-none d-xl-table-cell">xyz</td>
-                                <td class="d-none d-xl-table-cell">312456566</td>
-                                <td><span class="">gulshan</span></td>
-                                <td class="d-none d-md-table-cell">3:00 - 9:00 PM</td>
-                            </tr>
-                            <tr>
-                            <td>#1</td>
-                                <td class="d-none d-xl-table-cell">Indus</td>
-                                <td class="d-none d-xl-table-cell">xyz</td>
-                                <td class="d-none d-xl-table-cell">312456566</td>
-                                <td><span class="">gulshan</span></td>
-                                <td class="d-none d-md-table-cell">3:00 - 9:00 PM</td>
-                            </tr>
+
+
+                            @endforeach
                         </tbody>
                     </table>
                 </div>

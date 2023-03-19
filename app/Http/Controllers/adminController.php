@@ -11,6 +11,7 @@ use App\Models\vaccine;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\facades\hash;
 use Illuminate\Support\Facades\DB;
+use App\Models\cmodel;
 
 class adminController extends Controller
 {
@@ -121,18 +122,18 @@ class adminController extends Controller
 function hospitalSignupFunc(request $request){
        
 
-        // $request->validate([
-        //     'name' => 'required',
-        //     'email' => 'required|email|unique:admins',
-        //     'password' => 'required|min:8',
-        //     'confirmPassword' => 'required|same:password',
-        //     'location' => 'required',
-        //     'contactNumber' => 'required',
-        //     'certificate' => 'required',
-        //     'city' => 'required',
-        //     'Timing' => 'required',
-        //     'hospitalImages' => 'required',
-        // ]);
+        $request->validate([
+            'name' => 'required',
+            'email' => 'required|email|unique:admins',
+            'password' => 'required|min:8',
+            'confirmPassword' => 'required|same:password',
+            'location' => 'required',
+            'contactNumber' => 'required',
+            'certificate' => 'required',
+            'city' => 'required',
+            'Timing' => 'required',
+            'hospitalImages' => 'required',
+        ]);
         $h = new hospital();
         $h->name = $request->name;
         $h->email = $request->email;
@@ -270,19 +271,44 @@ function hospitalRequest(){
     }
 
     function vaccinesFetchAdmin(){
-      $vaccination = vaccine::all();
-       return view('admin.vaccines',compact('vaccination'));
+      $vaccination = DB::table('added_hospitals')->join('vaccines', 'added_hospitals.id', '=', 'vaccines.hospitalId')->select('added_hospitals.*', 'vaccines.*')->get();
+       return view('admin.vaccines',compact('vaccination'),['added_hospitals'=>$vaccination]);
+  
       }
 
-      function bookingVaccine()
+      function bookingVaccine($id)
       {
-          return view("admin.bookingVaccine");
+        $h = addedHospital::find($id);
+          return view('admin.bookingVaccine',compact('h'));
       }
-      function bookingVaccinePOST()
+      function bookingVaccinePOST($id)
       {
-          return view("admin.bookingVaccine");
+        $h = addedHospital::find($id);
+          return view('admin.bookingVaccine',compact('h'));
       }
   
 
-
+      public function getdata(Request $request){
+  
+        $data['location']  = $request->location;
+        $data['date'] = $request->daterange;
+        $data['vtype'] = $request->vtype;
+        
+        return view('admin.appointment')->with('data' , $data);
+      }
+      
+      function cfunc(Request $request){
+        $r =    new cmodel();
+        $r->name = $request->ffname;
+        $r->lastname = $request->lname;
+        $r->email = $request->cemail;
+        $r->message= $request->cmessage;
+        $r->save();
+        
+        return redirect()->back();
+       
+      }
+      
+      
+ 
 }

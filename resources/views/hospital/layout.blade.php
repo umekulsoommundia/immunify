@@ -123,9 +123,9 @@
                     </li>
 
                     <li class="sidebar-item">
-                        <a class="sidebar-link" href="hospitalAppointments" style="background-color:#0a77b1;">
+                        <a class="sidebar-link" href="vaccinatedH" style="background-color:#0a77b1;">
                             <i class="align-middle" data-feather="user"></i> <span
-                                class="align-middle">Appointments</span>
+                                class="align-middle">vaccinated</span>
                         </a>
                     </li>
 

@@ -149,8 +149,13 @@
                                             <div class="text-danger">{{ $message }}</div>
                                             @enderror
                                         </div>
-                                 
+                                        <input class="form-control form-control-lg" type="hidden" name="hospitalId" value="        @if(session('email'))
+                                               {{session('id')}}
+                                           @endif"
+                                                placeholder="Enter your email" />
                                
+                                
+
 
                                         @if(session('message'))
                                         <div class="alert alert-success">

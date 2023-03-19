@@ -163,11 +163,20 @@ section {
                         </a>
                     </li>
                     <li class="sidebar-item">
-                        <a class="sidebar-link" href="child"style="background-color:#0a77b1;">
-                            <i class="align-middle" data-feather="user"></i> <span class="align-middle">Child</span>
+                        <a class="sidebar-link" href="vaccinated"style="background-color:#0a77b1;">
+                            <i class="align-middle" data-feather="user"></i> <span class="align-middle">vaccinated</span>
                         </a>
                     </li>
-
+                    <li class="sidebar-item">
+                        <a class="sidebar-link" href="appointmentRequest"style="background-color:#0a77b1;">
+                            <i class="align-middle" data-feather="user"></i> <span class="align-middle">Request</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-link" href="bookingAdded"style="background-color:#0a77b1;">
+                            <i class="align-middle" data-feather="user"></i> <span class="align-middle">Booking</span>
+                        </a>
+                    </li>
 
              
                 </ul>

@@ -53,7 +53,7 @@
             </a>
         </div>
         <div class="dropdown-menu-footer">
-            <a href="notification" class="text-muted">Show all notifications</a>
+            <a href="#" class="text-muted">Show all notifications</a>
         </div>
     </div>
 </li>
@@ -91,84 +91,64 @@
                 <div class="card flex-fill">
                     <div class="card-header">
 
-                        <h5 class="card-title mb-0">Hospitals Data</h5>
+                        <h5 class="card-title mb-0">booking scheduled</h5>
                     </div>
                     <table class="table table-hover my-0">
                         <thead>
                             <tr>
+
+
                                 <th>Id</th>
-                                <th class="d-none d-xl-table-cell">Name</th>
-                                <th class="d-none d-xl-table-cell">Vaccine</th>
-                                <th>contact</th>
-                                <th class="d-none d-md-table-cell">Address</th>
-                                <th class="d-none d-md-table-cell">Timing</th>
+                                <th class="d-none d-xl-table-cell">first name</th>
+                                <th class="d-none d-xl-table-cell">last name</th>
+                                <th>date of birth</th>
+                                <th class="d-none d-md-table-cell">age</th>
+                                <th class="d-none d-md-table-cell">weight</th>
+                                <th class="d-none d-md-table-cell">medical issue</th>
+                                <th class="d-none d-xl-table-cell">date</th>
+                                <th>timing</th>
+                                <th class="d-none d-md-table-cell">vaccine</th>
+                            
+                                <th class="d-none d-md-table-cell">child Image</th>
+                                <th class="d-none d-md-table-cell">parent</th>
+                            
+                        
+
                             </tr>
                         </thead>
                         <tbody>
+
+
+                            @foreach($book as $b)
                             <tr>
-                                <td>#1</td>
-                                <td class="d-none d-xl-table-cell">Indus</td>
-                                <td class="d-none d-xl-table-cell">xyz</td>
-                                <td class="d-none d-xl-table-cell">312456566</td>
-                                <td><span class="">gulshan</span></td>
-                                <td class="d-none d-md-table-cell">3:00 - 9:00 PM</td>
-                            </tr>
-                            <tr>
-                            <td>#1</td>
-                                <td class="d-none d-xl-table-cell">Indus</td>
-                                <td class="d-none d-xl-table-cell">xyz</td>
-                                <td class="d-none d-xl-table-cell">312456566</td>
-                                <td><span class="">gulshan</span></td>
-                                <td class="d-none d-md-table-cell">3:00 - 9:00 PM</td>
-                            </tr>
-                            <tr>
-                            <td>#1</td>
-                                <td class="d-none d-xl-table-cell">Indus</td>
-                                <td class="d-none d-xl-table-cell">xyz</td>
-                                <td class="d-none d-xl-table-cell">312456566</td>
-                                <td><span class="">gulshan</span></td>
-                                <td class="d-none d-md-table-cell">3:00 - 9:00 PM</td>
-                            </tr>
-                            <tr>
-                            <td>#1</td>
-                                <td class="d-none d-xl-table-cell">Indus</td>
-                                <td class="d-none d-xl-table-cell">xyz</td>
-                                <td class="d-none d-xl-table-cell">312456566</td>
-                                <td><span class="">gulshan</span></td>
-                                <td class="d-none d-md-table-cell">3:00 - 9:00 PM</td>
-                            </tr>
-                            <tr>
-                            <td>#1</td>
-                                <td class="d-none d-xl-table-cell">Indus</td>
-                                <td class="d-none d-xl-table-cell">xyz</td>
-                                <td class="d-none d-xl-table-cell">312456566</td>
-                                <td><span class="">gulshan</span></td>
-                                <td class="d-none d-md-table-cell">3:00 - 9:00 PM</td>
-                            </tr>
-                            <tr>
-                            <td>#1</td>
-                                <td class="d-none d-xl-table-cell">Indus</td>
-                                <td class="d-none d-xl-table-cell">xyz</td>
-                                <td class="d-none d-xl-table-cell">312456566</td>
-                                <td><span class="">gulshan</span></td>
-                                <td class="d-none d-md-table-cell">3:00 - 9:00 PM</td>
-                            </tr>
-                            <tr>
-                            <td>#1</td>
-                                <td class="d-none d-xl-table-cell">Indus</td>
-                                <td class="d-none d-xl-table-cell">xyz</td>
-                                <td class="d-none d-xl-table-cell">312456566</td>
-                                <td><span class="">gulshan</span></td>
-                                <td class="d-none d-md-table-cell">3:00 - 9:00 PM</td>
-                            </tr>
-                            <tr>
-                            <td>#1</td>
-                                <td class="d-none d-xl-table-cell">Indus</td>
-                                <td class="d-none d-xl-table-cell">xyz</td>
-                                <td class="d-none d-xl-table-cell">312456566</td>
-                                <td><span class="">gulshan</span></td>
-                                <td class="d-none d-md-table-cell">3:00 - 9:00 PM</td>
-                            </tr>
+                        
+                                <td>{{$b->id}}</td>
+                                <td class="d-none d-xl-table-cell">{{$b->fname}}</td>
+                                <td class="d-none d-xl-table-cell">{{$b->lname}}</td>
+                                <td class="d-none d-xl-table-cell">{{$b->dob}}</td>
+                                <td><span class="">{{$b->age}}</span></td>
+                                <td class="d-none d-md-table-cell">{{$b->weight}}</td>
+                                <td class="d-none d-xl-table-cell">{{$b->medicalIssue}}</td>
+                                <td class="d-none d-xl-table-cell">{{$b->date}}</td>
+                                <td class="d-none d-xl-table-cell">{{$b->Timing}}</td>
+                                <td><span class="">{{$b->vaccineType}}</span></td>
+                      
+                                <td class="d-none d-md-table-cell"><img src="./childImages/{{$b->childImage}}"
+                                        height="32px" width="32px"></td>
+                        
+
+                                        <td class="d-none d-xl-table-cell"> {{$b->parent_name}}</td>
+
+
+                            
+                         
+
+                                <td class="record btnsearch"> <button class="btn btnsearch2 " style="background-color:#203C71;"
+                                      type="submit"> <a
+                                         style="background-color:#203C71;"   class="btnsearch2  text-white" href="/bookingdelete/{{$b->book_id}}">vaccinated</a></button>
+                                </td>
+                                </tr>
+                            @endforeach
                         </tbody>
                     </table>
                 </div>
@@ -181,4 +161,5 @@
 
     </div>
 </main>
+
 @endsection

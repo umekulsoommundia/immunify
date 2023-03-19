@@ -14,8 +14,8 @@ return new class extends Migration
         Schema::create('appointment_requests', function (Blueprint $table) {
             $table->id();
             $table->string("fname");
-               $table->string("lname");
-               $table->string("dob");
+            $table->string("lname");
+            $table->string("dob");
             $table->string("age");
             $table->string("weight");
             $table->string("medicalIssue");
@@ -23,6 +23,10 @@ return new class extends Migration
             $table->string("Timing");
             $table->string("vaccineType");
             $table->string("childImage");
+            $table->integer("parentId");
+            $table->foreign("parentId")->on("id")->references("user_parents");
+            $table->integer("hospitalId");
+            $table->foreign("hospitalId")->on("id")->references("added_hospitals");
             $table->timestamps();
         });
     }
