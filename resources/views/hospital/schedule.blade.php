@@ -98,9 +98,9 @@
                         <h5 style="color: #0A77B1;" class="card-title mb-0">Tasks</h5>
                     </div>
                     <div class="card-body d-flex">
-                        <div class="align-self-center  w-100">
+                        <div class="  w-100">
 
-                            <table class="table align-middle">
+                            <table class="table ">
                                 <th>Name</th>
                                 <th>Time</th>
                                 <th>Description</th>
@@ -110,103 +110,22 @@
                                 <tbody>
 
                                     <tr>
-                                        <td>Sarah</td>
+                                        <td>maintenance </td>
                                         <td>3:00 pm</td>
-                                        <td >Indus</td>
-                                        <td><span style="background-color:#3A55A4;"
-                                                class="btn text-white ">done</span></td>
-                                        <td><span class="btn ">x</span></td>
-
-                                    </tr>
-                                    <tr>
-                                    <td>Sarah</td>
-                                        <td>3:00 pm</td>
-                                        <td >Indus</td>
+                                        <td >room 103</td>
                                         <td><span style="background-color:#3A55A4;"
                                                 class="btn text-white ">done</span></td>
                                         <td><span class="btn ">x</span></td>
                                     </tr>
                                     <tr>
-                                    <td>Sarah</td>
-                                        <td>3:00 pm</td>
-                                        <td >Indus</td>
+                                        <td>Vaccine Report </td>
+                                        <td>9:00 pm</td>
+                                        <td >patient 11</td>
                                         <td><span style="background-color:#3A55A4;"
                                                 class="btn text-white ">done</span></td>
                                         <td><span class="btn ">x</span></td>
                                     </tr>
-                                    <tr>
-                                    <td>Sarah</td>
-                                        <td>3:00 pm</td>
-                                        <td >Indus</td>
-                                        <td><span style="background-color:#3A55A4;"
-                                                class="btn text-white ">done</span></td>
-                                        <td><span class="btn ">x</span></td>
-                                    </tr>
-                                    <tr>
-                                    <td>Sarah</td>
-                                        <td>3:00 pm</td>
-                                        <td >Indus</td>
-                                        <td><span style="background-color:#3A55A4;"
-                                                class="btn text-white ">done</span></td>
-                                        <td><span class="btn ">x</span></td>
-                                    </tr>
-                                    <tr>
-                                    <td>Sarah</td>
-                                        <td>3:00 pm</td>
-                                        <td >Indus</td>
-                                        <td><span style="background-color:#3A55A4;"
-                                                class="btn text-white ">done</span></td>
-                                        <td><span class="btn ">x</span></td>
-                                    </tr>
-                                    <tr>
-                                    <td>Sarah</td>
-                                        <td>3:00 pm</td>
-                                        <td >Indus</td>
-                                        <td><span style="background-color:#3A55A4;"
-                                                class="btn text-white ">done</span></td>
-                                        <td><span class="btn ">x</span></td>
-
-                                    </tr>
-                                    <tr>
-                                    <td>Sarah</td>
-                                        <td>3:00 pm</td>
-                                        <td >Indus</td>
-                                        <td><span style="background-color:#3A55A4;"
-                                                class="btn text-white ">done</span></td>
-                                        <td><span class="btn ">x</span></td>
-                                    </tr>
-                                    <tr>
-                                    <td>Sarah</td>
-                                        <td>3:00 pm</td>
-                                        <td >Indus</td>
-                                        <td><span style="background-color:#3A55A4;"
-                                                class="btn text-white ">done</span></td>
-                                        <td><span class="btn ">x</span></td>
-                                    </tr>
-                                    <tr>
-                                    <td>Sarah</td>
-                                        <td>3:00 pm</td>
-                                        <td >Indus</td>
-                                        <td><span style="background-color:#3A55A4;"
-                                                class="btn text-white ">done</span></td>
-                                        <td><span class="btn ">x</span></td>
-                                    </tr>
-                                    <tr>
-                                    <td>Sarah</td>
-                                        <td>3:00 pm</td>
-                                        <td >Indus</td>
-                                        <td><span style="background-color:#3A55A4;"
-                                                class="btn text-white ">done</span></td>
-                                        <td><span class="btn ">x</span></td>
-                                    </tr>
-                                    <tr>
-                                    <td>Sarah</td>
-                                        <td>3:00 pm</td>
-                                        <td >Indus</td>
-                                        <td><span style="background-color:#3A55A4;"
-                                                class="btn text-white ">done</span></td>
-                                        <td><span class="btn ">x</span></td>
-                                    </tr>
+                                  
                                 </tbody>
                             </table>
                         </div>

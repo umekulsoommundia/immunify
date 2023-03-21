@@ -2,7 +2,7 @@
 @section("main")
 
 
-                <li class="nav-item dropdown">
+                <!-- <li class="nav-item dropdown">
                     <a class="nav-icon dropdown-toggle" href="#" id="alertsDropdown" data-bs-toggle="dropdown">
                         <div class="position-relative">
                             <i class="align-middle" data-feather="bell"> </i>
@@ -79,7 +79,7 @@
                     </div>
                 </li>
             </ul>
-        </div>
+        </div> -->
     </nav>
 
     <main class="content">
@@ -306,68 +306,35 @@
     </thead>
     <tbody>
       <tr>
-        <td>Hurrain</td>
+        <td>child 1</td>
         <td class="d-none d-xl-table-cell">4</td>
         <td class="d-none d-xl-table-cell">3:00 PM</td>
         <td><span class="badge bg-success">Done</span></td>
-        <td class="d-none d-md-table-cell">Indus</td>
+        <td class="d-none d-md-table-cell">xyz</td>
       </tr>
       <tr>
       <tr>
-        <td>Hurrain</td>
-        <td class="d-none d-xl-table-cell">4</td>
+        <td>child 2</td>
+        <td class="d-none d-xl-table-cell">2</td>
         <td class="d-none d-xl-table-cell">3:00 PM</td>
-        <td><span class="badge bg-success">Done</span></td>
-        <td class="d-none d-md-table-cell">Indus</td>
+        <td><span class="badge bg-warning">on progress</span></td>
+        <td class="d-none d-md-table-cell">xyz</td>
       </tr>
       <tr>
-        <td>Hurrain</td>
-        <td class="d-none d-xl-table-cell">4</td>
+        <td>child 3</td>
+        <td class="d-none d-xl-table-cell">1</td>
         <td class="d-none d-xl-table-cell">3:00 PM</td>
-        <td><span class="badge bg-success">Done</span></td>
-        <td class="d-none d-md-table-cell">Indus</td>
+        <td><span class="badge bg-danger">cancelled</span></td>
+        <td class="d-none d-md-table-cell">xyz</td>
       </tr>
       <tr>
-        <td>Hurrain</td>
-        <td class="d-none d-xl-table-cell">4</td>
+        <td>child 4</td>
+        <td class="d-none d-xl-table-cell">3</td>
         <td class="d-none d-xl-table-cell">3:00 PM</td>
         <td><span class="badge bg-success">Done</span></td>
-        <td class="d-none d-md-table-cell">Indus</td>
+        <td class="d-none d-md-table-cell">xyz</td>
       </tr>
-      <tr>
-        <td>Hurrain</td>
-        <td class="d-none d-xl-table-cell">4</td>
-        <td class="d-none d-xl-table-cell">3:00 PM</td>
-        <td><span class="badge bg-success">Done</span></td>
-        <td class="d-none d-md-table-cell">Indus</td>
-      </tr>
-      <tr>
-        <td>Hurrain</td>
-        <td class="d-none d-xl-table-cell">4</td>
-        <td class="d-none d-xl-table-cell">3:00 PM</td>
-        <td><span class="badge bg-success">Done</span></td>
-        <td class="d-none d-md-table-cell">Indus</td>
-      </tr>
-      <tr>
-        <td>Hurrain</td>
-        <td class="d-none d-xl-table-cell">4</td>
-        <td class="d-none d-xl-table-cell">3:00 PM</td>
-        <td><span class="badge bg-success">Done</span></td>
-        <td class="d-none d-md-table-cell">Indus</td>
-      </tr>
-        <td>Hurrain</td>
-        <td class="d-none d-xl-table-cell">4</td>
-        <td class="d-none d-xl-table-cell">3:00 PM</td>
-        <td><span class="badge bg-success">Done</span></td>
-        <td class="d-none d-md-table-cell">Indus</td>
-      </tr>
-      <tr>
-        <td>Hurrain</td>
-        <td class="d-none d-xl-table-cell">4</td>
-        <td class="d-none d-xl-table-cell">3:00 PM</td>
-        <td><span class="badge bg-success">Done</span></td>
-        <td class="d-none d-md-table-cell">Indus</td>
-      </tr>
+  
       <!-- rest of the table rows -->
     </tbody>
   </table>

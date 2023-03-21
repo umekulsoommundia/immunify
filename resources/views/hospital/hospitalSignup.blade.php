@@ -93,7 +93,7 @@ section {
                                         <p class="lead">You will be notified if Your request get accepted</p>
                                     </div>
                                     <div class="text-center">
-                                        <img src="{{asset('public\logoBluePng.png')}}" alt="logo" class="img-fluid" width="132"
+                                        <img src="./logoBluePng.png" alt="logo" class="img-fluid" width="132"
                                             height="132" />
                                     </div>
                                     <form method="POST" action="/hospitalSignupPost" enctype="multipart/form-data">

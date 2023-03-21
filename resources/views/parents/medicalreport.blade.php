@@ -70,7 +70,7 @@
                 <div class="card flex-fill w-100">
                     <div class="card-header">
 
-                        <h5 class="card-title mb-0">Admin Profile</h5>
+                        <h5 class="card-title mb-0">    Medical Report for Adam - Polio Vaccination at xyz Hospital</h5>
                     </div>
                     <div class="card-body d-flex">
                         <div class="align-self-center w-100">
@@ -80,39 +80,48 @@
                                 <tbody>
 
                                     <tr>
-                                        <td>username</td>
-                                        <td class="text-end">Ume Kulsoom</td>
+                                        <td>Patient Name:</td>
+                                        <td class="text-end">xyz child</td>
 
 
                                     </tr>
                                     <tr>
-                                        <td>email</td>
-                                        <td class="text-end">kulsoom2204e@aptechgdn.net</td>
+                                        <td>Age:</td>
+                                        <td class="text-end">2 years</td>
 
                                     </tr>
                                     <tr>
-                                        <td>Phone</td>
-                                        <td class="text-end">021438322</td>
+                                        <td>Gender:</td>
+                                        <td class="text-end">Male</td>
 
                                     </tr>
                                     <tr>
-                                        <td>project name</td>
-                                        <td class="text-end">Immunify</td>
+                                        <td>History:</td>
+                                        <td class="text-end">xyz came to the Aga Khan Hospital for his polio vaccination. He had no previous medical history and was healthy at the time of the visit.
+</td>
 
                                     </tr>
                                     <tr>
-                                        <td>begining date</td>
-                                        <td class="text-end">12-1-23</td>
+                                        <td>Physical Examination:</td>
+                                        <td class="text-end">xyz was examined prior to receiving his polio vaccination. The examination revealed that Adam was in good health with no visible signs of illness or injury. His vital signs were normal and within a healthy range for his age.</td>
 
                                     </tr>
                                     <tr>
-                                        <td>ending date</td>
-                                        <td class="text-end">16-6-23</td>
+                                        <td>Assessment and Treatment:</td>
+                                        <td class="text-end">xyz received the polio vaccine during his visit to the hospital. The vaccine was administered by a trained healthcare professional using a sterile needle and syringe. Adam tolerated the vaccine well and did not exhibit any adverse reactions.</td>
 
                                     </tr>
 
+                                    <tr>
+                                        <td>Follow-up:</td>
+                                        <td class="text-end">xyz's parents were instructed to monitor his health for any adverse reactions to the vaccine, such as fever or swelling at the injection site. They were advised to contact the hospital if any such reactions occurred. They were also given information on when to bring Adam in for his next polio vaccine.</td>
 
+                                    </tr>
+                                    <tr>
+                                        <td>Conclusion:</td>
+                                        <td class="text-end">xyz received his polio vaccine at Aga Khan Hospital and did not experience any adverse reactions. He was in good health at the time of the visit and was monitored closely for any potential side effects. Adam's parents were satisfied with the care he received and were provided with information on when to bring him back for his next vaccination.</td>
 
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>

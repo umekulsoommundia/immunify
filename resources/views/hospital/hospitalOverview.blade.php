@@ -23,7 +23,7 @@
                     </form>
 
 <li class="nav-item dropdown">
-                    <a class="nav-icon dropdown-toggle" href="#" id="alertsDropdown" data-bs-toggle="dropdown">
+                    <!-- <a class="nav-icon dropdown-toggle" href="#" id="alertsDropdown" data-bs-toggle="dropdown">
                         <div class="position-relative">
                             <i class="align-middle" data-feather="bell"> </i>
                             <span class="indicator">4</span>
@@ -81,7 +81,7 @@
                                             class="btn btn-lg m-t5">
                                             logout</a>
             </ul>
-        </div>
+        </div> -->
     </nav>
 
 

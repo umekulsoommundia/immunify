@@ -327,7 +327,10 @@
                                                     <select class="form-control form-control-lg" name="vaccineType">
                                                         <option value="">Select Hospital Timing</option>
                                                         <option value="polio">polio</option>
+                                                        <option value="hepatis">Mumps</option>
+                                                        <option value="hepatis">Rubella</option>
                                                         <option value="hepatis">hepatis</option>
+                                                        <option value="hepatis">Rotavirus</option>
                                                     
                                                     </select>
                                                     @error('vaccineType')
@@ -370,9 +373,13 @@
                                                     <label class="form-label">date</label>
                                                     <select class="form-control form-control-lg" name="date">
                                                         <option value="">Select Appointment Date</option>
-                                                        <option value="12:00 am to 9:00 am">12:00 am to 9:00 am</option>
-                                                        <option value="9:00 am to 6:00 pm">9:00 am to 6:00 pm</option>
-                                                        <option value="6:00 pm to 3:00 am">6:00 pm to 3:00 am</option>
+                                                        <option value="21 March">21 March</option>
+                                                        <option value="22 March">22 March</option>
+                                                        <option value="23 March">23 March</option>
+                                                        <option value="24 March">24 March</option>
+                                                        <option value="25 March">25 March</option>
+                                                        <option value="26 March">26 March</option>
+                                                  
                                                     </select>
                                                     @error('date')
                                                     <div class="text-danger">{{ $message }}</div>

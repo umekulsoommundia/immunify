@@ -99,40 +99,12 @@ section {
                                             Your Immunity Is Our Priority
                                         </p>
                                     </div>
-                                    <div class="text-center">
-                                        <img src="./logoBluePng.png" alt="Charles Hall" class="img-fluid" width="132"
-                                            height="132" />
-                                    </div>
-                                 
-                                    <form method="POST" action="/signinPost" enctype="multipart-formdata">
-                                        @csrf
-                                        <div class="mb-3">
-                                            <label style="color: #0A77B1;" class="form-label">Email</label>
-                                            <input class="form-control form-control-lg" type="email" name="email"
-                                                placeholder="Enter your email" />
-                                        </div>
-                                        <div class="mb-3">
-                                            <label style="color: #0A77B1;" class="form-label">Password</label>
-                                            <input class="form-control form-control-lg" type="password" name="password"
-                                                placeholder="Enter password" />
-                                        </div>
-                                        @if(session('message'))
-                                        <div class="alert alert-success">
-                                            {{session('message')}}
-                                        </div>
-
-                                        @endif
-                                        @if(session('error'))
-                                        <div class="alert alert-danger">
-                                            {{session('error')}}
-                                        </div>
-
-                                        @endif
-                                        <a class="small text-muted" href="#!">Forgot password?</a>
-                                        <p class="mb-5 pb-lg-2" style="color: #0A77B1;">Don't have an account? <a
-                                                href="signup" style="color:#203C71;">Register here</a></p>
-                                        <div class="text-center mt-3">
-                                        <button type="submit" class="btn btn-lg btn-primary">Sign In</button>
+                                  
+                                       <a href="/parentSignin"> <button  type="button" class="btn btn-info"
+                                style="background-color:#0976B1; font-size:16px">For Parents</button></a> <br>
+                          <a href="/hospitalSignin"> <button  type="button" class="btn btn-info"
+                                style="background-color:#0976B1; font-size:16px">For Hospital</button></a> <br>
+                                       
                                         </div>
                                     </form>
 

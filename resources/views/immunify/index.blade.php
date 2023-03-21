@@ -345,9 +345,9 @@
                             <figure class="img-wrap">
                                 <img src="images/person_2.jpg" alt="Image" class="img-fluid">
                             </figure>
-                            <h3 class="name">Adam Aderson</h3>
+                            <h3 class="name">Sarah</h3>
                             <blockquote>
-                                <p>&ldquo;ur team of experts includes healthcare professionals, scientists, and communicators who are passionate about public health and dedicated to sharing the latest research and recommendations regarding vaccines. We strive to make our content accessible to everyone, including parents, caregivers, educators, and healthcare providers.
+                                <p>&ldquo;I cannot thank the staff at the vaccination center enough for their incredible service. From the moment we arrived, we were greeted with warm smiles and kindness. The process was seamless and efficient, and my child felt comfortable and at ease the entire time. I appreciate the dedication and hard work that goes into administering these vaccines, and I would highly recommend this center to any parent seeking a safe and stress-free vaccination experience.
 &rdquo;</p>
                             </blockquote>
                         </div>
@@ -356,9 +356,9 @@
                             <figure class="img-wrap">
                                 <img src="images/person_3.jpg" alt="Image" class="img-fluid">
                             </figure>
-                            <h3 class="name">Lukas Devlin</h3>
+                            <h3 class="name">Ahad</h3>
                             <blockquote>
-                                <p>&ldquo;Our mission is to provide reliable and accurate information about vaccines and promote the importance of vaccination&rdquo;</p>
+                                <p>&ldquo;I was nervous about taking my child to get vaccinated, but the team at the vaccination center put all of my fears at ease. They were patient, understanding, and took the time to answer all of my questions. The facility was clean and well-maintained, and I felt confident that my child was in good hands. I am so grateful to the staff for their expertise and professionalism, and I would absolutely recommend this center to other parents.&rdquo;</p>
                             </blockquote>
                         </div>
 
@@ -366,9 +366,9 @@
                             <figure class="img-wrap">
                                 <img src="images/person_4.jpg" alt="Image" class="img-fluid">
                             </figure>
-                            <h3 class="name">Kayla Bryant</h3>
+                            <h3 class="name">Janet</h3>
                             <blockquote>
-                                <p>&ldquo;Our mission is to provide reliable and accurate information about vaccines and promote the importance of vaccination&rdquo;</p>
+                                <p>&ldquo;"I cannot thank the staff at the vaccination center enough for their incredible service. From the moment we arrived, we were greeted with warm smiles and kindness. The process was seamless and efficient, and my child felt comfortable and at ease the entire time. I appreciate the dedication and hard work that goes into administering these vaccines, and I would highly recommend this center to any parent seeking a safe and stress-free vaccination experience.&rdquo;</p>
                             </blockquote>
                         </div>
 
@@ -476,19 +476,19 @@
         <div class="quick-contact-item d-flex align-items-center mb-4">
           <span class="flaticon-house"></span>
           <address class="text">
-            155 Market St #101, Paterson, NJ 07505, United States
+          4/B Shahrah-e-Ghalib Rd, Block 6 Clifton
           </address>
         </div>
         <div class="quick-contact-item d-flex align-items-center mb-4">
           <span class="flaticon-phone-call"></span>
           <address class="text">
-            +1 202 2020 200
+            09244791442
           </address>
         </div>
         <div class="quick-contact-item d-flex align-items-center mb-4">
           <span class="flaticon-mail"></span>
           <address class="text">
-            @info@mydomain.com
+            @immunify@gmail.com
           </address>
         </div>
       </div>
@@ -562,9 +562,9 @@
                         <div class="widget">
                             <h3 class="heading">Contact</h3>
                             <ul class="list-unstyled quick-info links">
-                                <li class="email"><a href="#">mail@example.com</a></li>
-                                <li class="phone"><a href="#">+1 222 212 3819</a></li>
-                                <li class="address"><a href="#">43 Raymouth Rd. Baltemoer, London 3910</a></li>
+                                <li class="email"><a href="#">  4/B Shahrah-e-Ghalib Rd, Block 6 Clifton</a></li>
+                                <li class="phone"><a href="#"> 09244791442</a></li>
+                                <li class="address"><a href="#"> @immunify@gmail.com</a></li>
                             </ul>
                         </div>
                     </div>
@@ -573,24 +573,6 @@
         </div>
 
 
-
-        <div class="inner dark">
-            <div class="container">
-                <div class="row text-center">
-                    <div class="col-md-8 mb-3 mb-md-0 mx-auto">
-                        <p>Copyright &copy;<script>
-                            document.write(new Date().getFullYear());
-                            </script>. All Rights Reserved. &mdash; Designed with love by <a href="https://untree.co"
-                                class="link-highlight">Untree.co</a>
-                            <!-- License information: https://untree.co/license/ -->Distributed By <a
-                                href="https://themewagon.com" target="_blank">ThemeWagon</a>
-                        </p>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
 
     <div id="overlayer"></div>
     <div class="loader">

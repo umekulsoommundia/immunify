@@ -87,7 +87,11 @@
                         </a>
                     </li>
 
-
+                    <li class="sidebar-item">
+                        <a class="sidebar-link" href="/logout" style="background-color:#0a77b1;">
+                            <i class="align-middle" data-feather="user"></i> <span class="align-middle">log out</span>
+                        </a>
+                    </li>
 
                     <li class="sidebar-item"> 
                         <a class="sidebar-link" href="parentSchedule" style="background-color:#0a77b1;">
@@ -99,11 +103,7 @@
                         Tools & Components
                     </li>
 
-                    <li class="sidebar-item">
-                        <a class="sidebar-link" href="parentAppointment" style="background-color:#0a77b1;">
-                            <i class="align-middle" data-feather="square"></i> <span class="align-middle">Appointment</span>
-                        </a>
-                    </li>
+               
 
                     <li class="sidebar-item">
                         <a class="sidebar-link" href="parentHospitals" style="background-color:#0a77b1;">

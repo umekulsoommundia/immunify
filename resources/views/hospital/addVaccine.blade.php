@@ -136,7 +136,7 @@
                                         <div class="mb-3">
                                             <label class="form-label">Vaccine Type</label>
                                             <input class="form-control form-control-lg" type="text" name="vaccineType"
-                                                placeholder="Enter your name" />
+                                                placeholder="Enter name" />
                                                 @error('vaccineType')
                                             <div class="text-danger">{{ $message }}</div>
                                             @enderror
@@ -144,7 +144,7 @@
                                         <div class="mb-3">
                                             <label class="form-label">Quantity</label>
                                             <input class="form-control form-control-lg" type="text" name="VaccineQuantity"
-                                                placeholder="Enter your email" />
+                                                placeholder="Enter quantity" />
                                                 @error('VaccineQuantity')
                                             <div class="text-danger">{{ $message }}</div>
                                             @enderror
@@ -168,7 +168,7 @@
                                         <div class="text-center mt-3">
                                             <!-- <button type="submit"style="background-color:#3A55A4;" class="btn-lg text-white">Sign up<button> -->
 
-                                            <button type="submit" class="btn btn-lg btn-primary">Sign up</button>
+                                            <button type="submit" class="btn btn-lg btn-primary">add</button>
                                         </div>
                                     </form>
             </div>

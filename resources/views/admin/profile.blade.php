@@ -141,7 +141,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td class="fw-bold">Password</td>
+                                                <td class="fw-bold">password</td>
                                                 <td class="text-end">
                                                     @if(session('password'))
                                                   

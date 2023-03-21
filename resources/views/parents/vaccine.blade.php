@@ -119,7 +119,7 @@
 
 
                                             <div class="col-auto">
-                                                <h4 class="app-card-title">Ibpprofen Karoten</h4>
+                                                <h4 class="app-card-title">I Polio</h4>
                                             </div>
                                             <!--//col-->
                                         </div>
@@ -132,7 +132,7 @@
                                     </div>
                                     <!--//app-card-body-->
                                     <div class="app-card-footer p-4 mt-auto">
-                                        <a href="index.html" style="border-color:#3A55A4; color:#3A55A4 "
+                                        <a href="#" style="border-color:#3A55A4; color:#3A55A4 "
                                             class="btn btn-lg m-t5">
                                             book</a>
                                     </div>
@@ -155,7 +155,7 @@
 
                                             <!--//col-->
                                             <div class="col-auto">
-                                                <h4 class="app-card-title">Ibpprofen Karoten</h4>
+                                                <h4 class="app-card-title">Rubella</h4>
                                             </div>
                                             <!--//col-->
                                         </div>
@@ -168,7 +168,7 @@
                                     </div>
                                     <!--//app-card-body-->
                                     <div class="app-card-footer p-4 mt-auto">
-                                        <a href="index.html" style="border-color:#3A55A4; color:#3A55A4 "
+                                        <a href="#" style="border-color:#3A55A4; color:#3A55A4 "
                                             class="btn btn-lg m-t5">
                                             book</a>
                                     </div>
@@ -195,7 +195,7 @@
 
 
                                             <div class="col-auto">
-                                                <h4 class="app-card-title">Ibpprofen Karoten</h4>
+                                                <h4 class="app-card-title">Hepatits</h4>
                                             </div>
                                             <!--//col-->
                                         </div>
@@ -208,7 +208,7 @@
                                     </div>
                                     <!--//app-card-body-->
                                     <div class="app-card-footer p-4 mt-auto">
-                                        <a href="index.html" style="border-color:#3A55A4; color:#3A55A4 "
+                                        <a href="#" style="border-color:#3A55A4; color:#3A55A4 "
                                             class="btn btn-lg m-t5">
                                             book</a>
                                     </div>
@@ -231,7 +231,7 @@
 
                                             <!--//col-->
                                             <div class="col-auto">
-                                                <h4 class="app-card-title">Ibpprofen Karoten</h4>
+                                                <h4 class="app-card-title">Diphteria</h4>
                                             </div>
                                             <!--//col-->
                                         </div>
@@ -244,7 +244,7 @@
                                     </div>
                                     <!--//app-card-body-->
                                     <div class="app-card-footer p-4 mt-auto">
-                                        <a href="index.html" style="border-color:#3A55A4; color:#3A55A4 "
+                                        <a href="#" style="border-color:#3A55A4; color:#3A55A4 "
                                             class="btn btn-lg m-t5">
                                             book</a>
                                     </div>
@@ -255,157 +255,6 @@
                             <!--//col-->
 
               
-                            <div class="col-12 col-lg-6">
-                                <div class="app-card app-card-basic d-flex flex-column align-items-start shadow-sm">
-                                    <div class="app-card-header p-3 border-bottom-0">
-                                        <div class="row align-items-center gx-3">
-                                            <div class="col-auto">
-
-
-                                                <img src="vaccine12.jpg" class="avatar img-fluid rounded-circle me-1"
-                                                    alt="Charles Hall" />
-
-                                            </div>
-                                            <!--//icon-holder-->
-
-                                            <!--//col-->
-
-
-                                            <div class="col-auto">
-                                                <h4 class="app-card-title">Ibpprofen Karoten</h4>
-                                            </div>
-                                            <!--//col-->
-                                        </div>
-                                        <!--//row-->
-                                    </div>
-                                    <!--//app-card-header-->
-                                    <div class="app-card-body px-4">
-
-                                        <div class="intro">xyz hospital</div>
-                                    </div>
-                                    <!--//app-card-body-->
-                                    <div class="app-card-footer p-4 mt-auto">
-                                        <a href="index.html" style="border-color:#3A55A4; color:#3A55A4 "
-                                            class="btn btn-lg m-t5">
-                                            book</a>
-                                    </div>
-                                    <!--//app-card-footer-->
-                                </div>
-                                <!--//app-card-->
-                            </div>
-                            <!--//col-->
-                            <div class="col-12 col-lg-6">
-                                <div class="app-card app-card-basic d-flex flex-column align-items-start shadow-sm">
-                                    <div class="app-card-header p-3 border-bottom-0">
-                                        <div class="row align-items-center gx-3">
-                                            <div class="col-auto">
-
-                                                <img src="./vaccine31.jpg" class="avatar img-fluid rounded-circle"
-                                                    alt="Charles Hall" />
-                                            </div>
-                                            <!--//icon-holder-->
-
-
-                                            <!--//col-->
-                                            <div class="col-auto">
-                                                <h4 class="app-card-title">Ibpprofen Karoten</h4>
-                                            </div>
-                                            <!--//col-->
-                                        </div>
-                                        <!--//row-->
-                                    </div>
-                                    <!--//app-card-header-->
-                                    <div class="app-card-body px-4">
-
-                                        <div class="intro">xyz hospital</div>
-                                    </div>
-                                    <!--//app-card-body-->
-                                    <div class="app-card-footer p-4 mt-auto">
-                                        <a href="index.html" style="border-color:#3A55A4; color:#3A55A4 "
-                                            class="btn btn-lg m-t5">
-                                            book</a>
-                                    </div>
-                                    <!--//app-card-footer-->
-                                </div>
-                                <!--//app-card-->
-                            </div>
-                            <!--//col-->
-
-              
-                            <div class="col-12 col-lg-6">
-                                <div class="app-card app-card-basic d-flex flex-column align-items-start shadow-sm">
-                                    <div class="app-card-header p-3 border-bottom-0">
-                                        <div class="row align-items-center gx-3">
-                                            <div class="col-auto">
-
-
-                                                <img src="vaccine12.jpg" class="avatar img-fluid rounded-circle me-1"
-                                                    alt="Charles Hall" />
-
-                                            </div>
-                                            <!--//icon-holder-->
-
-                                            <!--//col-->
-
-
-                                            <div class="col-auto">
-                                                <h4 class="app-card-title">Ibpprofen Karoten</h4>
-                                            </div>
-                                            <!--//col-->
-                                        </div>
-                                        <!--//row-->
-                                    </div>
-                                    <!--//app-card-header-->
-                                    <div class="app-card-body px-4">
-
-                                        <div class="intro">xyz hospital</div>
-                                    </div>
-                                    <!--//app-card-body-->
-                                    <div class="app-card-footer p-4 mt-auto">
-                                        <a href="index.html" style="border-color:#3A55A4; color:#3A55A4 "
-                                            class="btn btn-lg m-t5">
-                                            book</a>
-                                    </div>
-                                    <!--//app-card-footer-->
-                                </div>
-                                <!--//app-card-->
-                            </div>
-                            <!--//col-->
-                            <div class="col-12 col-lg-6">
-                                <div class="app-card app-card-basic d-flex flex-column align-items-start shadow-sm">
-                                    <div class="app-card-header p-3 border-bottom-0">
-                                        <div class="row align-items-center gx-3">
-                                            <div class="col-auto">
-
-                                                <img src="./vaccine31.jpg" class="avatar img-fluid rounded-circle"
-                                                    alt="Charles Hall" />
-                                            </div>
-                                            <!--//icon-holder-->
-
-
-                                            <!--//col-->
-                                            <div class="col-auto">
-                                                <h4 class="app-card-title">Ibpprofen Karoten</h4>
-                                            </div>
-                                            <!--//col-->
-                                        </div>
-                                        <!--//row-->
-                                    </div>
-                                    <!--//app-card-header-->
-                                    <div class="app-card-body px-4">
-
-                                        <div class="intro">xyz hospital</div>
-                                    </div>
-                                    <!--//app-card-body-->
-                                    <div class="app-card-footer p-4 mt-auto">
-                                        <a href="index.html" style="border-color:#3A55A4; color:#3A55A4 "
-                                            class="btn btn-lg m-t5">
-                                            book</a>
-                                    </div>
-                                    <!--//app-card-footer-->
-                                </div>
-                                <!--//app-card-->
-                            </div>
                             <!--//col-->
 
               

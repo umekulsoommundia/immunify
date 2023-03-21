@@ -58,19 +58,20 @@ class parentController extends Controller
 function parentSignupFunc(request $request){
        
 
-    $request->validate([
+   $request->validate([
         'name' => 'required',
-        'email' => 'required|email|unique:admins',
+       'email' => 'required|email|unique:user_parents',
         'password' => 'required|min:8',
         'confirmPassword' => 'required|same:password',
         'location' => 'required',
         'contactNumber' => 'required',
-        'certificate' => 'required',
+       
         'city' => 'required',
-        'Timing' => 'required',
-        'hospitalImages' => 'required',
+      
+        'parentImage' => 'required',
     ]);
-    $p = new userParents();
+
+    $p = new userParents(); 
     $p->name = $request->name;
     $p->password = $request->password;
     $p->location = $request->location;
@@ -124,18 +125,18 @@ function parentHospital(){
     function bookingVaccinePOSTFunc(request $request){
        
 
-        $request->validate([
-            'name' => 'required',
-            'email' => 'required|email|unique:admins',
-            'password' => 'required|min:8',
-            'confirmPassword' => 'required|same:password',
-            'location' => 'required',
-            'contactNumber' => 'required',
-            'certificate' => 'required',
-            'city' => 'required',
-            'Timing' => 'required',
-            'hospitalImages' => 'required',
-        ]);
+        // $request->validate([
+        //     'name' => 'required',
+        //     'email' => 'required|email|unique:admins',
+        //     'password' => 'required|min:8',
+        //     'confirmPassword' => 'required|same:password',
+        //     'location' => 'required',
+        //     'contactNumber' => 'required',
+        //     'certificate' => 'required',
+        //     'city' => 'required',
+        //     'Timing' => 'required',
+        //     'hospitalImages' => 'required',
+        // ]);
 
 
 
@@ -377,5 +378,11 @@ return view('admin.appointmentRequest', compact('Req'));
         //     // Redirect back to the page with a success message
         //     return redirect()->back()->with("msg", "Booking added.");
         //   }
+        function loginForm()
+        {
+            return view("immunify.loginForm");
+        }
+      
+        
           
 }

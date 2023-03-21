@@ -134,7 +134,7 @@
                                 <td><span class="">{{$b->vaccineType}}</span></td>
                       
                                 <td class="d-none d-md-table-cell"><img src="./childImages/{{$b->childImage}}"
-                                        height="32px" width="32px"></td>
+                                        height="52px" width="52px"></td>
                         
 
                                         <td class="d-none d-xl-table-cell"> {{$b->parent_name}}</td>

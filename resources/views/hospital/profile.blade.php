@@ -97,7 +97,7 @@
                             <img src="./hospital6.jpg" alt="Christina Mason"
                                 class="img-fluid rounded-circle mb-2" width="128" height="128" />
                             <h5 class="card-title mb-0">xyz hospital</h5>
-                            <div class="text-muted mb-2">Pharma and clinics</div>
+                            <div class="text-muted mb-2">Immunify</div>
                         
                                         <a href="index.html" style=" color:#3A55A4 "
                                             class="btn btn-lg m-t5">
@@ -149,13 +149,26 @@
 
                                         <tr>
                                             <td>name</td>
-                                            <td class="text-end">xyz hospital</td>
+                                            <td class="text-end">name</td>
                                  
                                           
                                         </tr>
                                         <tr>
                                             <td>email</td>
-                                            <td class="text-end">xyzhospital@gmail.com</td>
+                                            <td class="text-end">  @if(session('email'))
+                                                  
+                                                        {{session('email')}}
+                                                  
+                                                    @endif</td>
+                                
+                                        </tr>
+                                        <tr>
+                                            <td>password</td>
+                                            <td class="text-end">  @if(session('password'))
+                                                  
+                                                        {{session('password')}}
+                                                  
+                                                    @endif</td>
                                 
                                         </tr>
                                         <tr>
@@ -173,12 +186,7 @@
                                             <td class="text-end">12-1-23</td>
                                            
                                         </tr>
-                                        <tr>
-                                            <td>ending date</td>
-                                            <td class="text-end">16-6-23</td>
-                                           
-                                        </tr>
-                                  
+                                   
                                     
                                    
                                     </tbody>

@@ -124,16 +124,17 @@ function hospitalSignupFunc(request $request){
 
         $request->validate([
             'name' => 'required',
-            'email' => 'required|email|unique:admins',
+            'email' => 'required|email|unique:hospitals',
             'password' => 'required|min:8',
             'confirmPassword' => 'required|same:password',
             'location' => 'required',
             'contactNumber' => 'required',
             'certificate' => 'required',
             'city' => 'required',
-            'Timing' => 'required',
-            'hospitalImages' => 'required',
+            // 'Timing' => 'required',
+            'hospitalImage' => 'required',
         ]);
+
         $h = new hospital();
         $h->name = $request->name;
         $h->email = $request->email;

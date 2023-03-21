@@ -71,7 +71,7 @@
 
                 <ul class="sidebar-nav">
                     <li class="sidebar-header">
-                        Pages
+                       ..
                     </li>
 
                     <li class="sidebar-item ">
@@ -85,7 +85,13 @@
                             <i class="align-middle" data-feather="user"></i> <span class="align-middle">profile</span>
                         </a>
                     </li>
-
+                    
+                    <li class="sidebar-item">
+                        <a class="sidebar-link" href="/logout" style="background-color:#0a77b1;">
+                            <i class="align-middle" data-feather="user"></i> <span class="align-middle">log out</span>
+                        </a>
+                    </li>
+                    
 
 
                     <li class="sidebar-item">
@@ -96,7 +102,7 @@
                     </li>
 
                     <li class="sidebar-header">
-                        Tools & Components
+                       ..
                     </li>
 
                     <li class="sidebar-item">
@@ -106,13 +112,7 @@
                         </a>
                     </li>
 
-                    <li class="sidebar-item">
-                        <a class="sidebar-link" href="hospitalRequests" style="background-color:#0a77b1;">
-                            <i class="align-middle" data-feather="check-square"></i> <span
-                                class="align-middle">Requests</span>
-                        </a>
-                    </li>
-
+         
 
 
                     <li class="sidebar-item">

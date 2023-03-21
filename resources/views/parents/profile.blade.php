@@ -96,8 +96,8 @@
             <div class="card-body text-center">
                 <img src="./vesctor.png" alt="Christina Mason" class="img-fluid rounded-circle mb-2" width="128"
                     height="128" />
-                <h5 class="card-title mb-0">U K</h5>
-                <div class="text-muted mb-2">Graphic Designer | Web Developer</div>
+                <h5 class="card-title mb-0">xyz patient</h5>
+                <div class="text-muted mb-2">immunify</div>
                 <a href="index.html" style=" color:#3A55A4 "
                                             class="btn btn-lg m-t5">
                                             edit</a>
@@ -153,7 +153,20 @@
                             </tr>
                             <tr>
                                 <td>email</td>
-                                <td class="text-end">kulsoom2204e@aptechgdn.net</td>
+                                <td class="text-end">  @if(session('email'))
+                                                  
+                                                  {{session('email')}}
+                                            
+                                              @endif</td>
+
+                            </tr>
+                            <tr>
+                                <td>password</td>
+                                <td class="text-end"> @if(session('password'))
+                                                  
+                                                  {{session('password')}}
+                                            
+                                              @endif</td>
 
                             </tr>
                             <tr>
@@ -166,16 +179,7 @@
                                 <td class="text-end">Immunify</td>
 
                             </tr>
-                            <tr>
-                                <td>begining date</td>
-                                <td class="text-end">12-1-23</td>
-
-                            </tr>
-                            <tr>
-                                <td>ending date</td>
-                                <td class="text-end">16-6-23</td>
-
-                            </tr>
+                        
 
 
 

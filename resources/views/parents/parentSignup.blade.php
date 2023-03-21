@@ -104,7 +104,7 @@ section {
                                                 <div class="mb-3">
                                                     <label class="form-label"> Name</label>
                                                     <input class="form-control form-control-lg" type="text" name="name"
-                                                        placeholder="Enter your hospital name" />
+                                                        placeholder="Enter your name" />
                                                     @error('name')
                                                     <div class="text-danger">{{ $message }}</div>
                                                     @enderror
@@ -174,7 +174,7 @@ section {
                                                 <div class="mb-3">
                                                     <label class="form-label"> Parent Profile</label>
                                                     <input class="form-control form-control-lg" type="file"
-                                                        name="parentImage" placeholder="Enter hospital Images" />
+                                                        name="parentImage" placeholder="Enter profile Image" />
                                                     @error('parentImage')
                                                     <div class="text-danger">{{ $message }}</div>
                                                     @enderror
